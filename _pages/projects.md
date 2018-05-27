@@ -20,7 +20,11 @@ Furthermore, we work towards making semantic perception robust enough to be used
 
 ### Visual Place Recognition in Changing Environments (ongoing since 2013)
 <img class="col one" src="/assets/img/projects/placeRec.png"/>
-An autonomous robot that operates on our campus should be able to recognize different places when it comes back to them after some time. This is important to support reliable navigation and localisation and therefore enable the robot to perform a useful task. The problem of visual place recognition gets challenging if the visual appearance of these places changed in the meantime. This usually happens due to changes in the lighting conditions (think day vs. night or early morning vs. late afternoon), shadows, different weather conditions, or even different seasons. We develop algorithms for vision-based place recognition that can deal with these changes in visual appearance. [Read more …](placerecognition)
+An autonomous robot that operates on our campus should be able to recognize different places when it comes back to them after some time. This is important to support reliable navigation and localisation and therefore enable the robot to perform a useful task.
+
+The problem of visual place recognition gets challenging if the visual appearance of these places changed in the meantime. This usually happens due to changes in the lighting conditions (think day vs. night or early morning vs. late afternoon), shadows, different weather conditions, or even different seasons.
+
+We develop algorithms for vision-based place recognition that can deal with these changes in visual appearance. [Read more …](placerecognition)
 
 
 ### The DLR SpaceBot Cup (2013)

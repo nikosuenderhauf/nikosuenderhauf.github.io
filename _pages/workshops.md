@@ -78,13 +78,20 @@ This half-day workshop, co-organised with Ben Upcroft, Michael Milford (QUT, Bri
 ---
 [**Visual Place Recognition in Changing Environments**](http://www.tinyurl.com/vprice-ICRA15) (ICRA 2015)
 
-This half-day workshop at ICRA 2015 built on the highly successful 2014 workshop of the same name at ICRA, and discussed novel concepts and ideas for robust vision-based place recognition in severely changing environments. Organised with Peter Corke and Michael Milford.
+This half-day workshop at ICRA 2015 in Seattle built on the highly successful 2014 workshop of the same name at ICRA, and discussed novel concepts and ideas for robust vision-based place recognition in severely changing environments. Organised with Peter Corke and Michael Milford.
+
+Around 130 people followed the invited talks and paper presentations in a large ballroom.
+<div class="img_row">
+<img class="col three" src="/assets/img/workshops/ICRA15Workshop.jpg">
+</div>
 
 ---
 
 [**Visual Place Recognition in Changing Environments**](http://www.tinyurl.com/vprice-cvpr15) (CVPR 2015)
 
 This workshop continued the discussion from the previous year at ICRA and addressed the computer vision community at CVPR. Organised with Peter Corke and Michael Milford (QUT, Brisbane), and Torsten Sattler (ETH Zürich).
+
+Approximately 40 people came by for talks and poster presentations. It was great to interact with the authors and of course the invited speakers Josef Sivic and John Leonard at CVPR as well as David Cox and Chi Hay Tong at ICRA. Thanks everybody for contributing!
 
 ---
 
@@ -93,6 +100,14 @@ This workshop continued the discussion from the previous year at ICRA and addres
 Organised with Peter Corke and Michael Milford (QUT, Brisbane).
 We discussed novel concepts and ideas for robust vision-based place recognition in severely changing environments. Such changes – induced e.g. by the time of day, weather or seasonal effects as well as human activity – are a ubiquitous challenge for all autonomous systems aiming at long-term operations in both indoor and outdoor settings.
 
+We had 9 contributed papers, a tutorial given by Peter, and invited talks by Michael and Paul Newman.
+
+<div class="img_row_large">
+<img class="col three" src="/assets/img/workshops/ICRA14Workshop.jpg">
+</div>
+<div class="col three caption">
+Impressions from our Workshop on Visual Place Recognition in Changing Environments at ICRA 2014. (c) Michael Milford
+</div>
 ---
 [**Robust and Multimodal Inference in Factor Graphs**](http://www.tu-chemnitz.de/etit/proaut/ICRAWorkshopFactorGraphs) (ICRA 2013
 
