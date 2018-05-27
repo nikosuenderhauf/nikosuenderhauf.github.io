@@ -17,24 +17,24 @@
     <span class="author">
       {% for author in entry.author_array %}
         {% unless forloop.last %}
-          {% if author.last == site.scholar.last_name %}
-            <em>{{author.last}}, {{author.first}}</em>,
+          {% if author.first == site.scholar.first_name %}
+            <em>{{author.first}} {{author.last}}</em>,
           {% else %}
             {% if site.data.coauthors[author.last] %}
               <a href="{{site.data.coauthors[author.last].url}}" target="_blank">{{author.last}}, {{author.first}}</a>,
             {% else %}
-              {{author.last}}, {{author.first}},
+              {{author.first}} {{author.last}},
             {% endif %}
           {% endif %}
         {% else %}
           and
           {% if author.last == site.scholar.last_name %}
-            <em>{{author.last}}, {{author.first}}</em>
+            <em>{{author.first}} {{author.last}}</em>.
           {% else %}
             {% if site.data.coauthors[author.last] %}
               <a href="{{site.data.coauthors[author.last].url}}" target="_blank">{{author.last}}, {{author.first}}</a>
             {% else %}
-              {{author.last}}, {{author.first}}
+              {{author.first}} {{author.last}}.
             {% endif %}
           {% endif %}
         {% endunless %}
@@ -53,15 +53,31 @@
     </span>
   {% endif %}
 
-  <span class="links">
-  {% if entry.abstract %}
-    [<a class="abstract">Abs</a>]
+  {% if entry.award %}
+  <span class="award">{{ entry.award }}</span>
   {% endif %}
+
+  {% if entry.thumb %}
+  <img class="paper_thumb" src="/assets/paper-thumbnails/{{entry.thumb}} "/>
+  {% endif %}
+  {% if entry.abstract %}
+  <span class="abstract">
+    {{ entry.abstract }}
+  </span>
+  {% endif %}
+
+  <span class="links">
+  <!-- {% if entry.abstract %}
+    [<a class="abstract">Abs</a>]
+  {% endif %} -->
   {% if entry.arxiv %}
     [<a href="http://arxiv.org/abs/{{ entry.arxiv }}" target="_blank">arXiv</a>]
   {% endif %}
   {% if entry.html %}
     [<a href="{{ entry.html }}" target="_blank">HTML</a>]
+  {% endif %}
+  {% if entry.link %}
+    [<a href="{{ entry.link }}" target="_blank">PDF</a>]
   {% endif %}
   {% if entry.pdf %}
     [<a href="{{ entry.pdf | prepend: '/assets/pdf/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">PDF</a>]
@@ -80,10 +96,8 @@
   {% endif %}
   </span>
 
+
+
   <!-- Hidden abstract block -->
-  {% if entry.abstract %}
-  <span class="abstract hidden">
-    <p>{{ entry.abstract }}</p>
-  </span>
-  {% endif %}
+
 </div>

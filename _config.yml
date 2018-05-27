@@ -1,8 +1,8 @@
 # -----------------------------------------------------------------------------
 # Site settings
 # -----------------------------------------------------------------------------
-name: Your Name
-email: you@example.com
+name: Niko Sünderhauf
+email: niko.suenderhauf@qut.edu.au
 description: > # this means to ignore newlines until "url:"
   A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 footer_text: >
@@ -11,16 +11,16 @@ footer_text: >
   Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
 
 url:  # the base hostname & protocol for your site
-baseurl: /al-folio # the subpath of your site, e.g. /blog/
+baseurl: / # the subpath of your site, e.g. /blog/
 last_updated: # leave blank if you don't want to display last updated
 
 # -----------------------------------------------------------------------------
 # Social integration
 # -----------------------------------------------------------------------------
 github_username: # your GitHub user name
-twitter_username: # your Twitter handle
-linkedin_username: # your LinkedIn user name
-scholar_userid: # your Google Scholar ID
+twitter_username: nikosuenderhauf
+linkedin_username: nikosuenderhauf
+scholar_userid: WnKjfFEAAAAJ
 orcid_id: # your ORCID ID
 contact_note: >
   You can even add a little note about which of these is the best way to reach you.
@@ -30,8 +30,8 @@ google_analytics: UA-XXXXXXXXX # out your google-analytics code
 # -----------------------------------------------------------------------------
 # Blog
 # -----------------------------------------------------------------------------
-blog_name: al-folio
-blog_description: a simple whitespace theme for academics
+blog_name: Niko Sünderhauf
+blog_description: blogging about robotic vision
 
 # Pagination
 paginate: 4
@@ -73,6 +73,8 @@ news_limit: 5
 # Build settings
 markdown: kramdown
 highlighter: pygments
+kramdown:
+    math_engine: mathjax
 
 # Includes
 include: ['_pages']
@@ -87,7 +89,8 @@ plugins:
 # Jekyll-Scholar
 scholar:
 
-  last_name: Einstein
+  last_name: Sünderhauf
+  first_name: Niko
 
   style: apa
   locale: en
