@@ -1,7 +1,7 @@
 ---
 layout: page
 title: research
-permalink: /research/
+permalink: /projects/
 description: past and current research projects.
 
 social: true
