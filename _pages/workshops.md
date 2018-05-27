@@ -51,7 +51,7 @@ Jürgen Leitner, Michael Milford, Ben Upcroft, Peter Corke (QUT, Brisbane), Piet
 <div class="img_row_large">
 <img class="col two" src="/assets/img/workshops/2017-cvpr-speakers.jpg">
 </div>
-<div class="col three caption">
+<div class="col two caption">
     Invited speakers at our workshops at CVPR in 2017.
 </div>
 

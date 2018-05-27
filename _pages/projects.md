@@ -1,15 +1,88 @@
 ---
 layout: page
-title: projects
+title: research
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: past and current research projects.
 
 social: true
 enable_katex: true
 
 ---
 
-Coming soon ...
+
+### Robotic Scene Understanding and Semantic Mapping (ongoing since 2014)
+Making a robot understand what it sees is one of the most fascinating goals in my current research.
+
+Our ongoing research in scene understanding will help to provide answers to a robot’s questions like „What are these objects I can see in front of me?“ (object detection and recognition), „What can I do with these objects?“ (affordance detection), „Am I in an office, a kitchen, or a living room? What can I expect to find here?“ (semantic mapping, holistic scene understanding.
+
+Furthermore, we work towards making semantic perception robust enough to be used on autonomous robots. To achieve this goal, we analyse the key differences between robotic vision and computer vision (where great breakthroughs have happened since 2013 with the advent of convolutional networks), and adapt learning procedures and network architectures accordingly. This is ongoing work, stay tuned for updates.
+
+
+### Visual Place Recognition in Changing Environments (ongoing since 2013)
+<img class="col one" src="/assets/img/projects/placeRec.png"/>
+An autonomous robot that operates on our campus should be able to recognize different places when it comes back to them after some time. This is important to support reliable navigation and localisation and therefore enable the robot to perform a useful task. The problem of visual place recognition gets challenging if the visual appearance of these places changed in the meantime. This usually happens due to changes in the lighting conditions (think day vs. night or early morning vs. late afternoon), shadows, different weather conditions, or even different seasons. We develop algorithms for vision-based place recognition that can deal with these changes in visual appearance. [Read more …](placerecognition)
+
+
+### The DLR SpaceBot Cup (2013)
+<div class="col">
+<img class="col one" src="/assets/img/projects/spacebot/robot.png"/>
+<img class="col two" src="/assets/img/projects/spacebot/alle_roboter.png"/>
+</div>
+<div class="col three caption">
+      (Left) Our two robots, Phobos and Deimos, in the rugged Mars-like terrain after the contest. (Right) The robots of all teams after the competition.
+</div>
+
+
+In 2013, ten teams from German universities and research institutes participated in a national robot competition called SpaceBot Cup, organized by the DLR Space Administration.
+
+The robots had one hour to autonomously explore and map a challenging Mars-like environment, find, transport, and manipulate two objects, and navigate back to the landing site. Localization without GPS in an unstructured environment was a major issue as was mobile manipulation and very restricted communication. We entered the competition with a multi-robot system of two rovers operating on the ground plus a quadrotor UAV simulating an observing orbiting satellite.
+
+We relied on ROS as the software infrastructure. Despite (or because of) faults, communication loss and break- downs, it was a valuable experience with many lessons learned. [Read more …](spacebotcup)
+
+
+
+### Switchable Constraints for Robust SLAM (2011 – 2013)
+<img class="col one" src="/assets/img/projects/manhattan.png"/>
+Current state of the art solutions of the SLAM problem are based on efﬁcient sparse optimization techniques and represent the problem as probabilistic constraint graphs. The optimizer, the so called back-end of the system, relies heavily on the topological correctness of the graph structure and is not robust against misplaced constraint edges. Especially edges representing false positive loop closures will lead to the divergence of current solvers.
+
+We propose to augment the original optimization problem by a new set of hidden variables. These switch variables allow the optimizer to estimate the optimal graph topology and the optimal covariance for each potential outlier constraint. Despite the increased number of variables, the sparse structure of the problem is maintained, which allows efficient calculations. Read more …
+
+
+### Multipath Mitigation for GNSS-based Vehicle Localization (2012 – 2013)
+<img class="col one" src="/assets/img/projects/3Sats.png"/>
+A common challenge for vehicle localization based on global navigation satellite systems (GNSS) is the multipath problem when high buildings block the direct line of sight to one or several satellites. The blocked signals may still reach the receiver on the ground via one or several reflections on building structures or the ground. Since the signal path is longer for the reflected signal, ranging errors occur that can either prolongate the observed pseudorange or, due to correlation effects, shorten it. This leads to severely biased position estimates.
+
+We work on methods for mitigation of such effects and apply approaches of robust estimation using graphical models.  Read more …
+
+### Application of Biologically Inspired Methods for Autonomous Navigation and SLAM (2010)
+
+<img class="col one pad10" src="/assets/img/projects/poseCellNetwork.png"/>
+Since the 1970’s different types of neurons involved in spacial navigation have been identified in the brains of rats, primates and humans. Several experiments of different researchers show that these cells code the position and orientation of the animal in its environment.
+Neurologists and theoretical biologists have been developing models that help to understand the behaviour of animals as well as humans in different situations. These models explain the workings of the different cell assemblies and their connections with other areas in the brain.
+
+We are interested in these developements and want to derive efficient algorithms that help solving navigation tasks and SLAM on autonomous mobile robots. Our goal is explicitly not to mimic the behaviour of the involved biological processes on the level of single neurons or even spike trains. Instead, we want to understand the principles behind these biological processes and project them onto higher levels of abstraction that are suitable for implementation and application on autonomous systems.
+
+
+
+### Autonomous Quadrotor UAVs (2007 – 2009)
+<img class="col one pad10" src="/assets/img/projects/pelican.png"/>
+In 2007 we started working with quadrotors by using 3 AscTec Hummingbirds shortly after they became available. From the beginning, our research has focused on fully autonomous systems in indoor/GPS-denied environments without external sensors or computation. Since this required additional on-board sensors and computing power we got an AscTec Pelican quadrotor in 2010 because of its higher available payload.
+
+The results of several projects using these MAVs with additional sensors and modifications have been published in a number of papers, e.g. an autonomous landing procedure by using a camera and a self-made optical flow sensor or [one of the first autonomous indoor flights using a Kinect on the Pelican](https://youtu.be/kmMzc2-ray0). This work has been conducted in close collaboration with [Sven Lange](https://www.tu-chemnitz.de/etit/proaut/en/team/svenLange.html) and other colleagues at Chemnitz University of Technology. Check out their project website for up-to-date information.
+
+<center><iframe width="560" height="315" src="https://www.youtube.com/embed/kmMzc2-ray0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></center>
+
+
+### Stereo Odometry and Visual Odometry (2004 – 2007)
+<img class="col one pad10" src="/assets/img/projects/pointMatching.png"/>
+Estimating its ego-motion is one of the most important capabilities for an autonomous mobile platform. Without reliable ego-motion estimation no long-term navigation is possible. Besides odometry, inertial sensors, DGPS, laser range finders and so on, vision based algorithms can contribute a lot of information. Stereo odometry is a vision based motion estimation algorithm that estimates the ego-motion of a stereo camera through its environment by evaluating the captured images.
+
+Stereo Odometry was the topic of my first scientific research project. I started working on it during a research internship at [LAAS / CNRS](http://www.laas.fr) in Toulouse, France under the supervision of [Simon Lacroix](https://scholar.google.com.au/citations?user=7cgLDwUAAAAJ&hl=en&oi=ao) and [Kurt Konolige](https://scholar.google.com.au/citations?user=hczHVxEAAAAJ&hl=en).
+
+
+### RoboKing – Organizing a Nation-Wide Robotics Contest for Students (2004 – 2008)
+[<img class="col one pad10" src="/assets/img/projects/roboking.png"/>](roboking)
+RoboKing was an annual robotics challenge for high school students between 12 and 19 years of age. It was organized by a team of students and research associates working at the chair of Automation Technology at Chemnitz University of Technology in Germany. Our goal was to raise student’s interest in robotics and engineering and computer science in general, and to motivate them to study an engineering subject at university. I was part of the organizing team during all these years, which was both a great fun and a fantastic experience. [Read more …](roboking)
 
 <!--
 **A bit of Text**
@@ -74,6 +147,8 @@ def test(a=1):
     This image can also have a caption. It's like magic.
 </div>
 
+-->
+<!--
 
 {% for project in site.projects %}
 

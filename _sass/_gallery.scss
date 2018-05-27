@@ -58,8 +58,9 @@ figcaption {
     text-align: center;
     vertical-align: middle;
     font-size: $caption-font-size;
+    float: left;
 }
 
 .pad10 {
-  padding: 5px;
+  padding: 10px;
 }

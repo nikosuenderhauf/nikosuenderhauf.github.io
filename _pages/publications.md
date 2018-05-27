@@ -9,7 +9,7 @@ journals: [2018, 2017, 2015, 2010]
 special_issues: [2018]
 misc: [2012, 2006, 2007]
 ---
-
+ 
 {% for y in page.years %}
   <h3 class="year">{{y}}</h3>
 
