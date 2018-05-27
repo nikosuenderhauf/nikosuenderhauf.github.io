@@ -4,12 +4,12 @@ permalink: /publications/
 title: publications
 description: I attempt to keep this list up to date. Also check my <a href="https://scholar.google.com/citations?user=WnKjfFEAAAAJ">Google Scholar</a> profile.
 years: [2018,2017,2016,2015,2014,2013,2012,2011,2010,2009,2008,2007,2006,2005]
-workshops: [2018, 2017,2015,2013,2012,2005]
+workshops: [2018, 2017,2015,2014,2013,2012,2005]
 journals: [2018, 2017, 2015, 2010]
 special_issues: [2018]
 misc: [2012, 2006, 2007]
 ---
- 
+
 {% for y in page.years %}
   <h3 class="year">{{y}}</h3>
 
