@@ -49,7 +49,7 @@ The team of Chemnitz University of Technology competes again in the SpaceBot Cup
 <iframe width="560" height="315" src="https://www.youtube.com/embed/aAKRBBDcFvs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </center>
 
-<img class="col three" src="/assets/img/projects/spacebot/alle_roboter.png"/>
+<img class="col three" src="/assets/img/projects/spacebot/alle_Roboter.png"/>
 <div class="col three caption">
     The robots of all teams after the SpaceBot Cup 2013. Image credit DLR.
 </div>

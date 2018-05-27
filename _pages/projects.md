@@ -1,7 +1,7 @@
 ---
 layout: page
 title: research
-permalink: /projects/
+permalink: /research/
 description: past and current research projects.
 
 social: true
@@ -26,7 +26,7 @@ An autonomous robot that operates on our campus should be able to recognize diff
 ### The DLR SpaceBot Cup (2013)
 <div class="col">
 <img class="col one" src="/assets/img/projects/spacebot/robot.png"/>
-<img class="col two" src="/assets/img/projects/spacebot/alle_roboter.png"/>
+<img class="col two" src="/assets/img/projects/spacebot/alle_Roboter.png"/>
 </div>
 <div class="col three caption">
       (Left) Our two robots, Phobos and Deimos, in the rugged Mars-like terrain after the contest. (Right) The robots of all teams after the competition.
