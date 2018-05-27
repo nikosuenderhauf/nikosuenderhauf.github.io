@@ -9,6 +9,9 @@ enable_katex: true
 
 ---
 
+Coming soon ...
+
+<!--
 **A bit of Text**
 
 Some maths:
@@ -112,4 +115,4 @@ def test(a=1):
 
 {% endif %}
 
-{% endfor %}
+{% endfor %} -->
