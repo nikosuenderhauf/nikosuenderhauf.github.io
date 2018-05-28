@@ -50,6 +50,13 @@ Organised with the support of Jürgen Leitner, Michael Milford, Peter Corke (QUT
     Invited speakers at our workshops at RSS in 2017.
 </div>
 
+
+<div class="img_row">
+<img class="col three" src="/assets/img/workshops/2017-rss-Yann.jpg">
+</div>
+<div class="col three caption">
+    The audience during Yann LeCun's invited talk.
+</div>
 ---
 
 [**Deep Learning for Robotic Vision**](http://juxi.net/workshop/deep-learning-robotic-vision-cvpr-2017/) (CVPR 2017)
