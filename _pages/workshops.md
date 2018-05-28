@@ -27,6 +27,14 @@ I am very active in organising workshops that help bringing the computer vision,
 
 This workshop (led by [Feras Dayoub](http://www.google.com/url?q=http%3A%2F%2Fstaff.qut.edu.au%2Fstaff%2Fdayoub%2F&sa=D&sntz=1&usg=AFQjCNE-tlKEvYVgIqZ5312cYTJILFal0g)) discussed the challenges of autonomous robots that have to reliably operate for long  periods of time while having to demonstrate a high level of robustness and fault tolerance.
 
+<div class="img_row">
+<img class="col three" src="/assets/img/workshops/ICRA18.JPG">
+</div>
+<div class="col three caption">
+    Our workshop at ICRA 2018 during the invited talk of John Leonard (MIT).
+</div>
+
+
 ---
 [**New Frontiers for Deep Learning in Robotics**](http://juxi.net/workshop/deep-learning-rss-2017/) (RSS 2017)
 
