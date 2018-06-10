@@ -9,7 +9,10 @@ enable_katex: true
 
 ---
 
-I am very active in organising workshops that help bringing the computer vision, machine learning, and robotics research communities closer together again.
+I am very active in organising workshops at robotics and computer vision conferences.
+
+
+---
 
 
 
@@ -40,6 +43,8 @@ This workshop (led by [Feras Dayoub](http://www.google.com/url?q=http%3A%2F%2Fst
 
 A wide range of renowned experts discussed deep learning techniques at the frontier of research that are not yet widely adopted, discussed, or well-known in our community. We carefully selected research topics such as Bayesian deep learning, generative models, or deep reinforcement learning for planning and navigation that are of high relevance and potentially groundbreaking for robotic perception, learning, and control. The workshop introduces these techniques to the robotics audience, but also exposes participants from the machine learning community to real-world problems encountered by robotics researchers that apply deep learning in their research.
 
+Invited speakers: Yann LeCun (Facebook, NYU),  Yarin Gal (University of Cambridge), Josh Tenenbaum (MIT), David Cox (Harvard), Chelsea Finn (UC Berkeley), Piotr Mirowski (DeepMind), Aaron Courville (Université de Montréal).
+
 Organised with the support of Jürgen Leitner, Michael Milford, Peter Corke (QUT, Brisbane), and Pieter Abbeel (UC Berkeley).
 
 <div class="img_row_large">
@@ -61,7 +66,13 @@ Organised with the support of Jürgen Leitner, Michael Milford, Peter Corke (QUT
 
 [**Deep Learning for Robotic Vision**](http://juxi.net/workshop/deep-learning-robotic-vision-cvpr-2017/) (CVPR 2017)
 
-Jürgen Leitner, Michael Milford, Ben Upcroft, Peter Corke (QUT, Brisbane), Pieter Abbeel (UC Berkeley), Wolfram Burgard (Uni Freiburg)
+Recent advances in deep learning techniques have made impressive progress in many areas of computer vision, including classification, detection, and segmentation. While all of these areas are relevant to robotics applications, robotics also presents many unique challenges which require new approaches.
+
+Robotic vision specific challenges include the need for real-time analysis, the need for accurate 3d understanding of scenes, and the difficulty of doing experiments at scale. There are also opportunities robotics brings to computer vision, for example the ability to control position and viewing direction of the camera, and to provide a data source for "grounded" learning of concepts, reducing the need for manual labeling.
+
+Invited speakers: Jitendra Malik (UC Berkeley), Raquel Urtasun (U Toronto / Uber ATG), Dieter Fox (U Washington), Honglak Lee (Google Brain / U Michigan), Abhinav Gupta (CMU), Jianxiong Xiao (AutoX), Richard Newcombe (Facebook), Raia Hadsell (Google DeepMind), Ashutosh Saxena (Brain of Things).
+
+Organised with support from Jürgen Leitner, Michael Milford, Ben Upcroft, Peter Corke (QUT, Brisbane), Pieter Abbeel (UC Berkeley), Wolfram Burgard (Uni Freiburg).
 
 <div class="img_row_large">
 <img class="col two" src="/assets/img/workshops/2017-cvpr-speakers.jpg">
@@ -75,6 +86,8 @@ Jürgen Leitner, Michael Milford, Ben Upcroft, Peter Corke (QUT, Brisbane), Piet
 [**Are the Sceptics Right? - Limits and Potentials of Deep Learning in Robotics**](http://juxi.net/workshop/deep-learning-rss-2016/) (RSS 2016)
 
 We analysed why deep learning has not yet had the huge impact in robotics it had in neighboring research disciplines, and especially in computer vision. The workshop will identify the limits and potentials of current deep learning techniques in robotics, and will propose directions for future research to overcome those limits and realize the promising potentials.
+
+Invited speakers: John Leonard (MIT), Larry Jackel (North C Technologies), Dieter Fox (Washington University), Oliver Brock (TU Berlin), Pieter Abbeel (UC Berkeley), Walter Scheirer (University of Notre Dame), Raia Hadsell (Google DeepMind), Ashutosh Saxena (Cornell and Stanford University).
 
 Co-organisers were Jürgen Leitner, Michael Milford, Ben Upcroft, Peter Corke (QUT, Brisbane), Pieter Abbeel (UC Berkeley), Wolfram Burgard (Uni Freiburg).
 
