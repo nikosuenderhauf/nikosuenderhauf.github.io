@@ -28,7 +28,7 @@ We develop algorithms for vision-based place recognition that can deal with thes
 
 
 ### The DLR SpaceBot Cup (2013)
-<div class="col">
+<div class="img_row">
 <img class="col one" src="/assets/img/projects/spacebot/robot.png"/>
 <img class="col two" src="/assets/img/projects/spacebot/alle_Roboter.png"/>
 </div>
@@ -49,7 +49,7 @@ We relied on ROS as the software infrastructure. Despite (or because of) faults,
 <img class="col one" src="/assets/img/projects/manhattan.png"/>
 Current state of the art solutions of the SLAM problem are based on efﬁcient sparse optimization techniques and represent the problem as probabilistic constraint graphs. The optimizer, the so called back-end of the system, relies heavily on the topological correctness of the graph structure and is not robust against misplaced constraint edges. Especially edges representing false positive loop closures will lead to the divergence of current solvers.
 
-We propose to augment the original optimization problem by a new set of hidden variables. These switch variables allow the optimizer to estimate the optimal graph topology and the optimal covariance for each potential outlier constraint. Despite the increased number of variables, the sparse structure of the problem is maintained, which allows efficient calculations. Read more …
+We propose to augment the original optimization problem by a new set of hidden variables. These switch variables allow the optimizer to estimate the optimal graph topology and the optimal covariance for each potential outlier constraint. Despite the increased number of variables, the sparse structure of the problem is maintained, which allows efficient calculations. [Read more …](switchableConstraints)
 
 
 ### Multipath Mitigation for GNSS-based Vehicle Localization (2012 – 2013)
@@ -84,9 +84,13 @@ Estimating its ego-motion is one of the most important capabilities for an auton
 Stereo Odometry was the topic of my first scientific research project. I started working on it during a research internship at [LAAS / CNRS](http://www.laas.fr) in Toulouse, France under the supervision of [Simon Lacroix](https://scholar.google.com.au/citations?user=7cgLDwUAAAAJ&hl=en&oi=ao) and [Kurt Konolige](https://scholar.google.com.au/citations?user=hczHVxEAAAAJ&hl=en).
 
 
-### RoboKing – Organizing a Nation-Wide Robotics Contest for Students (2004 – 2008)
-[<img class="col one pad10" src="/assets/img/projects/roboking.png"/>](roboking)
-RoboKing was an annual robotics challenge for high school students between 12 and 19 years of age. It was organized by a team of students and research associates working at the chair of Automation Technology at Chemnitz University of Technology in Germany. Our goal was to raise student’s interest in robotics and engineering and computer science in general, and to motivate them to study an engineering subject at university. I was part of the organizing team during all these years, which was both a great fun and a fantastic experience. [Read more …](roboking)
+### RoboKing – Organizing a Nation-Wide Robotics Competition for Students (2004 – 2008)
+[<img class="col one pad10" src="/assets/img/projects/roboking/3.jpg"/>](roboking)
+RoboKing was an annual robotics challenge for high school students between 12 and 19 years of age. It was organized by a team of students and research associates working at the chair of Automation Technology at Chemnitz University of Technology in Germany.
+
+Our goal was to raise student’s interest in robotics and engineering and computer science in general, and to motivate them to study an engineering subject at university.
+
+I was part of the organizing team during all these years, which was both a great fun and a fantastic experience. [Read more …](roboking)
 
 <!--
 **A bit of Text**

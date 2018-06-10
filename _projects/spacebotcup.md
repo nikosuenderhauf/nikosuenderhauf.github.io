@@ -8,7 +8,10 @@ img: /assets/img/projects/spacebot/Teamfoto.png
 
 In 2013, ten teams from German universities and research institutes participated in a national robot competition called SpaceBot Cup, organized by the [DLR Space Administration](http://www.dlr.de/rd/en/desktopdefault.aspx/tabid-2091/). The robots had one hour to autonomously explore and map a challenging Mars-like environment, find, transport, and manipulate two objects, and navigate back to the landing site. Localization without GPS in an unstructured environment was a major issue as was mobile manipulation and very restricted communication. We  entered the competition with a multi-robot system of two rovers operating on the ground plus a quadrotor UAV simulating an observing orbiting satellite. We relied on ROS as the software infrastructure. Despite (or because of) faults, communication loss and break-downs, it was a valuable experience with many lessons learned.
 
-Our iSAIRAS14 paper [Phobos and Deimos on Mars – Two Autonomous Robots for the DLR SpaceBot Cup](https://www.tu-chemnitz.de/etit/proaut/publications/iSAIRAS2014.pdf) describes the robot and aspects of our strategy in more detail.
+Our iSAIRAS14 paper describes the robot and aspects of our strategy in more detail:
+{% bibliography -f conferences -q @*[id=Suenderhauf14]* %}
+
+
 
 <img class="col three" src="/assets/img/projects/spacebot/Teamfoto.png"/>
 <div class="col three caption">

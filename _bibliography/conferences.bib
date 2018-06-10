@@ -205,7 +205,8 @@ link={http://arxiv.org/abs/1709.07158}
     Robotics and Automation in Space (iSAIRAS)},
   year = {2014},
   owner = {niko},
-  timestamp = {2014.06.12}
+  timestamp = {2014.06.12},
+  link={https://www.tu-chemnitz.de/etit/proaut/publications/iSAIRAS2014.pdf}
 }
 
 @INPROCEEDINGS{Suenderhauf13,
@@ -227,7 +228,28 @@ link={http://arxiv.org/abs/1709.07158}
   booktitle = {Proc. of IEEE Intelligent Vehicles Symposium (IV)},
   year = {2013},
   owner = {niko},
-  timestamp = {2013.05.26}
+  timestamp = {2013.05.26},
+  thumb={suenderhauf13iv.png},
+  link={/assets/papers/IV13-NLOS-iSAM2.pdf},
+  abstract={Reliable vehicle positioning is a crucial requirement
+for many applications of advanced driver assistance
+systems. While satellite navigation provides a reasonable performance
+in general, it often suffers from multipath and non-line-of-sight
+errors when it is applied in urban areas and therefore
+does not guarantee consistent results anymore. Our paper
+proposes a novel online method that identifies and excludes
+the affected pseudorange measurements. Our approach does
+not depend on additional sensors, maps, or environmental
+models. We rather formulate the positioning problem as a
+Bayesian inference problem in a factor graph and combine
+the recently developed concept of switchable constraints with
+an algorithm for efficient incremental inference in such graphs.
+We furthermore introduce the concepts of auxiliary updates and
+factor graph pruning in order to accelerate convergence while
+keeping the graph size and required runtime bounded. A realworld
+experiment demonstrates that the resulting algorithm is
+able to successfully localize despite a large number of satellite
+observations are influenced by NLOS or multipath effects.}
 }
 
 @INPROCEEDINGS{Suenderhauf13a,
@@ -237,7 +259,26 @@ link={http://arxiv.org/abs/1709.07158}
   booktitle = {Proc. of Intl. Conf. on Robotics and Automation (ICRA)},
   year = {2013},
   owner = {niko},
-  timestamp = {2012.09.20}
+  timestamp = {2012.09.20},
+  abstract = {SLAM algorithms that can infer a correct map despite
+the presence of outliers have recently attracted increasing
+attention. In the context of SLAM, outlier constraints are typically
+caused by a failed place recognition due to perceptional
+aliasing. If not handled correctly, they can have catastrophic
+effects on the inferred map. Since robust robotic mapping and
+SLAM are among the key requirements for autonomous longterm
+operation, inference methods that can cope with such data
+association failures are a hot topic in current research. Our
+paper compares three very recently published approaches to
+robust pose graph SLAM, namely switchable constraints, maxmixture
+models and the RRR algorithm. All three methods were
+developed as extensions to existing factor graph-based SLAM
+back-ends and aim at improving the overall system’s robustness
+to false positive loop closure constraints. Due to the novelty of
+the three proposed algorithms, no direct comparison has been
+conducted so far.},
+thumb={suenderhauf13icra.png},
+link={/assets/papers/ICRA13-comparisonRobustSLAM.pdf}
 }
 
 
@@ -270,7 +311,24 @@ link={http://arxiv.org/abs/1709.07158}
   booktitle = {Proc. of IEEE Intelligent Vehicles Symposium (IV)},
   year = {2012},
   owner = {niko},
-  timestamp = {2012.05.11}
+  timestamp = {2012.05.11},
+  abstract={Our paper adapts recent advances in the SLAM
+(Simultaneous Localization and Mapping) literature to the
+problem of multipath mitigation and proposes a novel approach
+to successfully localize a vehicle despite a significant
+number of multipath observations. We show that GNSS-based
+localization problems can be modelled as factor graphs and
+solved using efficient nonlinear least squares methods that
+exploit the sparsity inherent in the problem formulation. Using
+a recently developed novel approach for robust optimization,
+satellite observations that are subject to multipath errors can be
+successfully identified and rejected during the optimization process.
+We demonstrate the feasibility of the proposed approach
+on a real-world urban dataset and compare it to an existing
+method of multipath detection.},
+thumb={suenderhauf12iv.png},
+link={/assets/papers/IV12-multipathMitigation.pdf}
+
 }
 
 @INPROCEEDINGS{Suenderhauf12,
@@ -279,7 +337,18 @@ link={http://arxiv.org/abs/1709.07158}
   booktitle = {Proc. of IEEE Intl. Conf. on Robotics and Automation (ICRA)},
   year = {2012},
   owner = {niko},
-  timestamp = {2011.12.15}
+  timestamp = {2011.12.15},
+  thumb = {suenderhauf12icra.png},
+  abstract = {We propose a novel formulation that allows the back-end
+to change parts of the topological structure of the graph
+during the optimization process. The back-end can thereby
+discard loop closures and converge towards correct solutions
+even in the presence of false positive loop closures. This largely
+increases the overall robustness of the SLAM system and closes
+a gap between the sensor-driven front-end and the back-end
+optimizers. We demonstrate the approach and present results
+both on large scale synthetic and real-world dataset},
+link={/assets/papers/ICRA12-robustSLAM.pdf}
 }
 
 @INPROCEEDINGS{Lange13,
@@ -338,7 +407,24 @@ link={http://arxiv.org/abs/1709.07158}
   year = {2012},
   address = {Vilamoura, Portugal},
   owner = {niko},
-  timestamp = {2012.08.20}
+  timestamp = {2012.08.20},
+  thumb={suenderhauf12iros.png},
+  abstract={Current SLAM back-ends are based on least
+squares optimization and thus are not robust against outliers
+like data association errors and false positive loop closure
+detections. Our paper presents and evaluates a robust back-end
+formulation for SLAM using switchable constraints. Instead
+of proposing yet another appearance-based data association
+technique, our system is able to recognize and reject outliers
+during the optimization. This is achieved by making
+the topology of the underlying factor graph representation
+subject to the optimization instead of keeping it fixed. The
+evaluation shows that the approach can deal with up to 1000
+false positive loop closure constraints on various datasets. This
+largely increases the robustness of the overall SLAM system
+and closes a gap between the sensor-driven front-end and the
+back-end optimizers.},
+link={/assets/papers/IROS12-switchableConstraints.pdf}
 }
 @INPROCEEDINGS{Suenderhauf12a,
   author = {Niko S{\"u}nderhauf and Peter Protzel},
@@ -413,7 +499,8 @@ link={http://arxiv.org/abs/1709.07158}
   booktitle = {Proc. of Intl. Conf. on Robotics and Automation (ICRA)},
   year = {2006},
   owner = {niko},
-  timestamp = {2012.09.24}
+  timestamp = {2012.09.24},
+  link={/assets/papers/icra06-roboking.pdf}
 }
 
 
@@ -442,7 +529,8 @@ link={http://arxiv.org/abs/1709.07158}
   year = {2005},
   doi = {10.1109/ROBOT.2005.1570774},
   owner = {niko},
-  timestamp = {2012.09.25}
+  timestamp = {2012.09.25},
+  link={/assets/papers/icra05-roboking.pdf}
 }
 
 @INPROCEEDINGS{Suenderhauf05,

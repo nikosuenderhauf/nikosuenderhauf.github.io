@@ -2,7 +2,6 @@
 layout: page
 title: Visual Place Recognition in Changing Environments
 description:
-img: /assets/img/projects/spacebot/Teamfoto.png
 ---
 
 

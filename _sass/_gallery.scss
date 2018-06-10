@@ -31,6 +31,10 @@ figcaption {
     box-sizing:border-box;
     padding: $img-spacing;
 }
+
+.right {
+  float: right;
+}
 .one {
     width:33.33%;
 }
@@ -63,4 +67,8 @@ figcaption {
 
 .pad10 {
   padding: 10px;
+}
+
+.pad20 {
+  padding: 20px;
 }

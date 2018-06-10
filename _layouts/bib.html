@@ -31,7 +31,7 @@
             {% endif %}
           {% endif %}
         {% else %}
-          and
+
           {% if author.last == site.scholar.last_name %}
             <em>{{author.first}} {{author.last}}</em>.
         {% else %}
@@ -47,12 +47,14 @@
 
     <span class="periodical">
     {% if entry.type == "article" %}
-      <em>{{entry.journal}}</em>
+      <em>{{entry.journal}},</em>
     {% elsif entry.type == "inproceedings" %}
-      <em>In {{entry.booktitle}}</em>
+      <em>In {{entry.booktitle}},</em>
+    {% elsif entry.type == "phdthesis" %}
+      <em>PhD Thesis. {{entry.school}}</em>
     {% endif %}
     {% if entry.year %}
-      {{entry.year}}
+      {{entry.year}}.
     {% endif %}
     </span>
   {% endif %}
@@ -62,7 +64,7 @@
   {% endif %}
 
   {% if entry.thumb %}
-  <img class="paper_thumb" src="/assets/paper-thumbnails/{{entry.thumb}} "/>
+  <img class="paper_thumb" src="/assets/paper-thumbnails/{{entry.thumb}}"/>
   {% endif %}
   {% if entry.abstract %}
   <span class="abstract">

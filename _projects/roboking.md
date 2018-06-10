@@ -2,7 +2,6 @@
 layout: page
 title: RoboKing
 description: A nationwide robotics competition for high school students.
-img: /assets/img/projects/spacebot/Teamfoto.png
 ---
 
 <img class="col half" src="/assets/img/projects/roboking/2.jpg"/>
@@ -14,8 +13,9 @@ The finals of each RoboKing would be held at CeBIT or Hannover Fair, the largest
 
 
 We described the contest in two publications:
-   * Sünderhauf, N., Krause, T., & Protzel, P. (2006). Bringing Robotics Closer to Students – A Threefold Approach.Proc. of IEEE International Conference on Robotics and Automation ICRA06, Orlando, USA, pp. 339-344.
-   * Sünderhauf, N., Krause, T. & Protzel, P. (2005). RoboKing – Bringing Robotics closer to Pupils. Proc. of IEEE International Conference on Robotics and Automation ICRA05, Barcelona, Spain, pp. 4265-4270.
+{% bibliography -f conferences -q @*[id=Suenderhauf06a]* %}
+{% bibliography -f conferences -q @*[id=Suenderhauf05a]* %}
+
 
 ### The Challenges Year by Year
 Every year, we created a different challenge for the participating students. This way even the more experienced teams had to start from scratch and design, construct, build, and program a new robot every year. This ensured the contests were exciting every single year.
