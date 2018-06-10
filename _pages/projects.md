@@ -19,7 +19,7 @@ Furthermore, we work towards making semantic perception robust enough to be used
 
 
 ### Visual Place Recognition in Changing Environments (ongoing since 2013)
-<img class="col one" src="/assets/img/projects/placeRec.png"/>
+<a href="placerecognition"><img class="col one" src="/assets/img/projects/placeRec.png"/></a>
 An autonomous robot that operates on our campus should be able to recognize different places when it comes back to them after some time. This is important to support reliable navigation and localisation and therefore enable the robot to perform a useful task.
 
 The problem of visual place recognition gets challenging if the visual appearance of these places changed in the meantime. This usually happens due to changes in the lighting conditions (think day vs. night or early morning vs. late afternoon), shadows, different weather conditions, or even different seasons.
@@ -29,8 +29,8 @@ We develop algorithms for vision-based place recognition that can deal with thes
 
 ### The DLR SpaceBot Cup (2013)
 <div class="img_row">
-<img class="col one" src="/assets/img/projects/spacebot/robot.png"/>
-<img class="col two" src="/assets/img/projects/spacebot/alle_Roboter.png"/>
+<a href="spacebotcup"><img class="col one" src="/assets/img/projects/spacebot/robot.png"/></a>
+<a href="spacebotcup"><img class="col two" src="/assets/img/projects/spacebot/alle_Roboter.png"/></a>
 </div>
 <div class="col three caption">
       (Left) Our two robots, Phobos and Deimos, in the rugged Mars-like terrain after the contest. (Right) The robots of all teams after the competition.
@@ -46,17 +46,17 @@ We relied on ROS as the software infrastructure. Despite (or because of) faults,
 
 
 ### Switchable Constraints for Robust SLAM (2011 – 2013)
-<img class="col one" src="/assets/img/projects/manhattan.png"/>
+<a href="switchableConstraints"><img class="col one" src="/assets/img/projects/manhattan.png"/></a>
 Current state of the art solutions of the SLAM problem are based on efﬁcient sparse optimization techniques and represent the problem as probabilistic constraint graphs. The optimizer, the so called back-end of the system, relies heavily on the topological correctness of the graph structure and is not robust against misplaced constraint edges. Especially edges representing false positive loop closures will lead to the divergence of current solvers.
 
 We propose to augment the original optimization problem by a new set of hidden variables. These switch variables allow the optimizer to estimate the optimal graph topology and the optimal covariance for each potential outlier constraint. Despite the increased number of variables, the sparse structure of the problem is maintained, which allows efficient calculations. [Read more …](switchableConstraints)
 
 
 ### Multipath Mitigation for GNSS-based Vehicle Localization (2012 – 2013)
-<img class="col one" src="/assets/img/projects/3Sats.png"/>
+<a href="gnss"><img class="col one" src="/assets/img/projects/3Sats.png"/></a>
 A common challenge for vehicle localization based on global navigation satellite systems (GNSS) is the multipath problem when high buildings block the direct line of sight to one or several satellites. The blocked signals may still reach the receiver on the ground via one or several reflections on building structures or the ground. Since the signal path is longer for the reflected signal, ranging errors occur that can either prolongate the observed pseudorange or, due to correlation effects, shorten it. This leads to severely biased position estimates.
 
-We work on methods for mitigation of such effects and apply approaches of robust estimation using graphical models.  Read more …
+We work on methods for mitigation of such effects and apply approaches of robust estimation using graphical models.  [Read more …](gnss)
 
 ### Application of Biologically Inspired Methods for Autonomous Navigation and SLAM (2010)
 
