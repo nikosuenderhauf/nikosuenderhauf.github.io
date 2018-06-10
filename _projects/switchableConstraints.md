@@ -64,6 +64,6 @@ Please see the publications below for further details.
    {% bibliography -f conferences -q @*[id=Suenderhauf12]* %}
    {% bibliography -f misc -q @*[id=Suenderhauf12b]* %}
 
-We successfully applied our approach to robust optimization to the problem of multipath and NLOS mitigation in satellite-based localization:
+We successfully applied our approach to robust optimization to the problem of [multipath and NLOS mitigation in satellite-based localization](/projects/gnss):
   {% bibliography -f conferences -q @*[id=Suenderhauf13c]* %}
   {% bibliography -f conferences -q @*[id=Suenderhauf12c]* %}
