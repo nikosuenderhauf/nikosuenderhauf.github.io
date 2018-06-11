@@ -13,7 +13,6 @@ This problem occurs for instance in urban areas with high buildings: Although th
 <img class="col one" src="/assets/img/projects/gnss/multipath.png"/>
 <img class="col one" src="/assets/img/projects/gnss/nlos.png"/>
 <img class="col one" src="/assets/img/projects/gnss/3Sats-outlier.png"/>
-
 </div>
 <div class="col three caption">
 Multipath and non-line-of-sight effects severely impede the quality of satellite-based localisation in urban environments.
