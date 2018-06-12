@@ -89,7 +89,10 @@ link={http://arxiv.org/abs/1709.07158}
   title={{Meaningful Maps With Object-Oriented Semantic Mapping}},
   author={S\"underhauf, Niko and Pham, Trung T. Pham and Latif, Yasir and Milford, Michael},
   booktitle={Proc. of IEEE International Conference on Intelligent Robots and Systems (IROS)},
-  year={2017}
+  year={2017},
+  link={https://ieeexplore.ieee.org/abstract/document/8206392/},
+  abstract={For intelligent robots to interact in meaningful ways with their environment, they must understand both the geometric and semantic properties of the scene surrounding them. The majority of research to date has addressed these mapping challenges separately, focusing on either geometric or semantic mapping. In this paper we address the problem of building environmental maps that include both semantically meaningful, object-level entities and point- or mesh-based geometrical representations. We simultaneously build geometric point cloud models of previously unseen instances of known object classes and create a map that contains these object models as central entities. Our system leverages sparse, feature-based RGB-D SLAM, image-based deep-learning object detection and 3D unsupervised segmentation.},
+  thumb={suenderhauf17maps.png}
 }
 
 
@@ -98,6 +101,9 @@ link={http://arxiv.org/abs/1709.07158}
   author={J\"urgen Leitner and Adam W Tow and Jake E Dean and Niko S\"underhauf and Joseph W Durham and Matthew Cooper and Markus Eich and Christopher Lehnert and Ruben Mangels and Christopher McCool and Peter Kujala and Lachlan Nicholson and Trung Pham and James Sergeant and Fangyi Zhang and Ben Upcroft and Peter Corke},
   year={2017},
   booktitle = {{Proc. of IEEE International Conference on Robotics and Automation (ICRA)}},
+  abstract={Robotic challenges like the Amazon Picking Challenge (APC) or the DARPA Challenges are an established and important way to drive scientific progress. They make research comparable on a well-defined benchmark with equal test conditions for all participants. However, such challenge events occur only occasionally, are limited to a small number of contestants, and the test conditions are very difficult to replicate after the main event. We present a new physical benchmark challenge for robotic picking: the ACRV Picking Benchmark. Designed to be reproducible, it consists of a set of 42 common objects, a widely available shelf, and exact guidelines for object arrangement using stencils. A well-defined evaluation protocol enables the comparison of complete robotic systems - including perception and manipulation - instead of sub-systems only. Our paper also describes and reports results achieved by an open baseline system based on a Baxter robot.},
+  link={https://ieeexplore.ieee.org/abstract/document/7989545/},
+  thumb={leitner17picking.png}
 }
 
 @inproceedings{Chen17,
@@ -105,6 +111,10 @@ link={http://arxiv.org/abs/1709.07158}
   author={Zetao Chen and Adam Jacobson and Niko S\"underhauf and Ben Upcroft and Lingqiao Liu and Chunhua Shen and Ian Reid and Michael Milford},
   year={2017},
   booktitle = {{Proc. of IEEE International Conference on Robotics and Automation (ICRA)}},
+  abstract={In this paper, we train, at large scale, two CNN architectures for the specific place recognition task and employ a multi-scale feature encoding method to generate condition- and viewpoint-invariant features. To enable this training to occur, we have developed a massive Specific PlacEs Dataset (SPED) with hundreds of examples of place appearance change at thousands of different places, as opposed to the semantic place type datasets currently available. This new dataset enables us to set up a training regime that interprets place recognition as a classification problem. We comprehensively evaluate our trained networks on several challenging benchmark place recognition datasets and demonstrate that they achieve an average 10% increase in performance over other place recognition algorithms and pre-trained CNNs. },
+  link={http://ieeexplore.ieee.org/abstract/document/7989366/},
+  thumb={chen17placerec.png}
+
 }
 
 @inproceedings{Tow16,
@@ -112,6 +122,9 @@ link={http://arxiv.org/abs/1709.07158}
   author={Adam W Tow and Sareh Shirazi and J\"urgen Leitner and Niko S\"underhauf and Michael Milford and Ben Upcroft},
   year={2016},
   booktitle = {{Proc. of Australasian Conference on Robotics and Automation (ACRA)}},
+  link={http://eprints.qut.edu.au/104307/},
+  abstract={In this paper, we present an analysis of the robustness of Deep Q Networks to various types of perceptual noise (changing brightness, Gaussian blur, salt and pepper, distractors). We present a benchmark example that involves playing the game Breakout though a webcam and screen environment, like humans do. We present a simple training approach to improve the performance maintained when transferring a DQN agent trained in simulation to the real world. We also evaluate DQN agents trained under a variety of simulation environments to report for the first time how DQNs cope with perceptual noise, common to real world robotic applications.},
+  thumb={tow16dqn.png}
 }
 
 
@@ -129,6 +142,9 @@ link={http://arxiv.org/abs/1709.07158}
 	author={John Robert Skinner and Sourav Garg and Niko S{\"u}nderhauf and Peter Corke and Ben Upcroft and Michael J Milford},
 	year={2016},
 	booktitle = {{Proc. of IEEE International Conference on Intelligent Robots and Systems (IROS)}},
+  link={https://ieeexplore.ieee.org/abstract/document/7759425/},
+  abstract={For machine learning applications a critical bottleneck is the limited amount of real world image data that can be captured and labelled for both training and testing purposes. In this paper we investigate the use of a photo-realistic simulation tool to address these challenges, in three specific domains: robust place recognition, visual SLAM and object recognition. For the first two problems we generate images from a complex 3D environment with systematically varying camera paths, camera viewpoints and lighting conditions. For the first time we are able to systematically characterise the performance of these algorithms as paths and lighting conditions change. In particular, we are able to systematically generate varying camera viewpoint datasets that would be difficult or impossible to generate in the real world. We also compare algorithm results for a camera in a real environment and a simulated camera in a simulation model of that real environment. Finally, for the object recognition domain, we generate labelled image data and characterise the viewpoint dependency of a current convolution neural network in performing object recognition. Together these results provide a multi-domain demonstration of the beneficial properties of using simulation to characterise and analyse a wide range of robotic vision algorithms.},
+  thumb={skinner16sim.png}
 }
 
 
@@ -136,7 +152,10 @@ link={http://arxiv.org/abs/1709.07158}
   title={{LunaRoo: Designing a Hopping Lunar Science Payload.}},
   author={J{\"u}rgen Leitner and Will Chamberlain and Donald G. Dansereau and Matthew Dunbabin and Markus Eich and Thierry Peynot and Jon Roberts and Raymond Russell and Niko S{\"u}nderhauf},
   booktitle={Proc. of IEEE Aerospace Conference},
-  year={2016}
+  year={2016},
+  link={http://ieeexplore.ieee.org/abstract/document/7500760/},
+  abstract={We describe a hopping science payload solution designed to exploit the Moon's lower gravity to leap up to 20m above the surface. The entire solar-powered robot is compact enough to fit within a 10cm cube, whilst providing unique observation and mission capabilities by creating imagery during the hop. The LunaRoo concept is a proposed payload to fly onboard a Google Lunar XPrize entry. Its compact form is specifically designed for lunar exploration and science mission within the constraints given by PTScientists. The core features of LunaRoo are its method of locomotion - hopping like a kangaroo - and its imaging system capable of unique over-the-horizon perception. The payload will serve as a proof of concept, highlighting the benefits of alternative mobility solutions, in particular enabling observation and exploration of terrain not traversable by wheeled robots. in addition providing data for beyond line-of-sight planning and communications for surface assets, extending overall mission capabilities.},
+  thumb={leitner16luna.png}
 }
 
 
@@ -168,7 +187,10 @@ link={http://arxiv.org/abs/1709.07158}
   journal = {{Proc. of IEEE International Conference on Robotics and Automation (ICRA)}},
   year = {2016},
   owner = {niko},
-  timestamp = {2015.06.05}
+  timestamp = {2015.06.05},
+  link={http://ieeexplore.ieee.org/abstract/document/7487796/},
+  thumb={suenderhauf16mapping.png},
+  abstract={In this paper we focus on the challenging problem of place categorization and semantic mapping on a robot without environment-specific training. Motivated by their ongoing success in various visual recognition tasks, we build our system upon a state-of-the-art convolutional network. We overcome its closed-set limitations by complementing the network with a series of one-vs-all classifiers that can learn to recognize new semantic classes online. Prior domain knowledge is incorporated by embedding the classification system into a Bayesian filter framework that also ensures temporal coherence. We evaluate the classification accuracy of the system on a robot that maps a variety of places on our campus in real-time. We show how semantic information can boost robotic object detection performance and how the semantic map can be used to modulate the robot's behaviour during navigation tasks. The system is made available to the community as a ROS module.}
 }
 
 
