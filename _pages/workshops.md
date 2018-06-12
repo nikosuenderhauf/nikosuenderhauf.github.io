@@ -37,6 +37,17 @@ This workshop (led by [Feras Dayoub](http://www.google.com/url?q=http%3A%2F%2Fst
     Our workshop at ICRA 2018 during the invited talk of John Leonard (MIT).
 </div>
 
+---
+[**Learning for Localization and Mapping**](https://sites.google.com/site/learningforslam/home) (IROS 2017)
+
+The goal of this workshop was to present and discuss developments in learning-based approaches for localization and mapping systems. 
+
+Invited speakers: Wolfram Burgard (University of Freiburg), Jana Kosecka (George Mason University), Stefan Leutenegger (Imperial College London), Simon Lynen (Google), Marc Pollefeys (Microsoft).
+
+Organised with
+Cesar Cadena and Igor Gilitschenski (both ETH Zurich), John Leonard and Sudeep Pillai (both MIT), and Fabio Ramos (University of Sydney)
+
+
 
 ---
 [**New Frontiers for Deep Learning in Robotics**](http://juxi.net/workshop/deep-learning-rss-2017/) (RSS 2017)
