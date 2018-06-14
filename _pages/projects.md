@@ -10,22 +10,35 @@ enable_katex: true
 ---
 
 
-### Robotic Scene Understanding and Semantic Mapping (ongoing since 2014)
+### Scene Understanding and Semantic SLAM
 Making a robot understand what it sees is one of the most fascinating goals in my current research.
-
 Our ongoing research in scene understanding will help to provide answers to a robot’s questions like „What are these objects I can see in front of me?“ (object detection and recognition), „What can I do with these objects?“ (affordance detection), „Am I in an office, a kitchen, or a living room? What can I expect to find here?“ (semantic mapping, holistic scene understanding.
 
-Furthermore, we work towards making semantic perception robust enough to be used on autonomous robots. To achieve this goal, we analyse the key differences between robotic vision and computer vision (where great breakthroughs have happened since 2013 with the advent of convolutional networks), and adapt learning procedures and network architectures accordingly. This is ongoing work, stay tuned for updates.
+Furthermore, we work towards making semantic perception robust enough to be used on autonomous robots. To achieve this goal, we analyse the key differences between robotic vision and computer vision (where great breakthroughs have happened since 2013 with the advent of convolutional networks), and adapt learning procedures and network architectures accordingly. [Read more …](sceneunderstanding)
+
+### Learning to Navigate in Realistic Environments
+[Read more …](learningtonavigate)
+
+### Robotic Vision Evaluation and Benchmarking
+We develop a set of new benchmark challenges for robotic vision that evaluate scene understanding, uncertainty estimation, continuous learning for domain adaptation, continuous learning to incorporate previuosly unseen classes,
+active learning, and active vision.
+We combine the variety and complexity of real-world data with the flexibility of synthetic graphics and physics engines. Expect the challenges to go live around November 2018.
+[Read more …](http://www.roboticvisionchallenge.org)
 
 
-### Visual Place Recognition in Changing Environments (ongoing since 2013)
+### Visual Place Recognition in Changing Environments
 <a href="placerecognition"><img class="col one" src="/assets/img/projects/placeRec.png"/></a>
 An autonomous robot that operates on our campus should be able to recognize different places when it comes back to them after some time. This is important to support reliable navigation and localisation and therefore enable the robot to perform a useful task.
 
 The problem of visual place recognition gets challenging if the visual appearance of these places changed in the meantime. This usually happens due to changes in the lighting conditions (think day vs. night or early morning vs. late afternoon), shadows, different weather conditions, or even different seasons.
 
+<a name="past projects"></a>
+
 We develop algorithms for vision-based place recognition that can deal with these changes in visual appearance. [Read more …](placerecognition)
 
+---
+
+## Past Projects
 
 ### The DLR SpaceBot Cup (2013)
 <div class="img_row">
