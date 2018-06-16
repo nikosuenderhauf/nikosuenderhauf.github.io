@@ -12,15 +12,21 @@ enable_katex: true
 
 ### Scene Understanding and Semantic SLAM
 Making a robot understand what it sees is one of the most fascinating goals in my current research.
-Our ongoing research in scene understanding will help to provide answers to a robot’s questions like „What are these objects I can see in front of me?“ (object detection and recognition), „What can I do with these objects?“ (affordance detection), „Am I in an office, a kitchen, or a living room? What can I expect to find here?“ (semantic mapping, holistic scene understanding.
+To this end, we develop novel methods for _Semantic Mapping_ and [Semantic SLAM](www.semanticslam.ai) by combining object detection with simultaneous localisation and mapping (SLAM) techniques. We furthermore work on Bayesian Deep Learning for object detection, to better understand the uncertainty of a deep network's predictions and integrate deep learning into robotics in a probabilistic way. [Read more …](sceneunderstanding)
 
-Furthermore, we work towards making semantic perception robust enough to be used on autonomous robots. To achieve this goal, we analyse the key differences between robotic vision and computer vision (where great breakthroughs have happened since 2013 with the advent of convolutional networks), and adapt learning procedures and network architectures accordingly. [Read more …](sceneunderstanding)
+
+<!-- Our ongoing research in scene understanding will help to provide answers to a robot’s questions like „What are these objects I can see in front of me?“ (object detection and recognition), „What can I do with these objects?“ (affordance detection), „Am I in an office, a kitchen, or a living room? What can I expect to find here?“ (semantic mapping, holistic scene understanding.
+
+Furthermore, we work towards making semantic perception robust enough to be used on autonomous robots. To achieve this goal, we analyse the key differences between robotic vision and computer vision (where great breakthroughs have happened since 2013 with the advent of convolutional networks), and adapt learning procedures and network architectures accordingly.  -->
+
 
 ### Learning to Navigate in Realistic Environments
 [Read more …](learningtonavigate)
 
 ### Robotic Vision Evaluation and Benchmarking
-We develop a set of new benchmark challenges for robotic vision that evaluate scene understanding, uncertainty estimation, continuous learning for domain adaptation, continuous learning to incorporate previuosly unseen classes,
+Big benchmark competitions like [ILSVRC](http://www.image-net.org/challenges/LSVRC/) or [COCO](http://cocodataset.org) fuelled much of the progress in computer vision and deep learning over the past years. We aim to recreate this success for robotic vision.
+
+To this end, we develop a set of new benchmark challenges for robotic vision that evaluate scene understanding, uncertainty estimation, continuous learning for domain adaptation, continuous learning to incorporate previuosly unseen classes,
 active learning, and active vision.
 We combine the variety and complexity of real-world data with the flexibility of synthetic graphics and physics engines. Expect the challenges to go live around November 2018.
 [Read more …](http://www.roboticvisionchallenge.org)
