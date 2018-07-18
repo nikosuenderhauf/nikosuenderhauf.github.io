@@ -11,8 +11,9 @@ enable_katex: true
 
 
 ### Scene Understanding and Semantic SLAM
+<a href="sceneunderstanding"><img class="col one" src="/assets/img/projects/quadricSLAM.png"/></a>
 Making a robot understand what it sees is one of the most fascinating goals in my current research.
-To this end, we develop novel methods for _Semantic Mapping_ and [Semantic SLAM](www.semanticslam.ai) by combining object detection with simultaneous localisation and mapping (SLAM) techniques. We furthermore work on Bayesian Deep Learning for object detection, to better understand the uncertainty of a deep network's predictions and integrate deep learning into robotics in a probabilistic way. [Read more …](sceneunderstanding)
+To this end, we develop novel methods for _Semantic Mapping_ and [Semantic SLAM](http://www.semanticslam.ai) by combining object detection with simultaneous localisation and mapping (SLAM) techniques. We furthermore work on Bayesian Deep Learning for object detection, to better understand the uncertainty of a deep network's predictions and integrate deep learning into robotics in a probabilistic way. [Read more …](sceneunderstanding)
 
 
 <!-- Our ongoing research in scene understanding will help to provide answers to a robot’s questions like „What are these objects I can see in front of me?“ (object detection and recognition), „What can I do with these objects?“ (affordance detection), „Am I in an office, a kitchen, or a living room? What can I expect to find here?“ (semantic mapping, holistic scene understanding.

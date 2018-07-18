@@ -17,7 +17,7 @@ After two more years as a postdoc in Chemnitz I joined the Robotics and Autonomo
 I joined the faculty at QUT in 2017 as a Lecturer (roughly equivalent to a tenured Assistant Professor position in the US system)  and have been promoted to [Senior Lecturer](https://en.wikipedia.org/wiki/Senior_lecturer) in 2018. I was appointed Chief Investigator of the Australian Centre for Robotic Vision in 2018.
 
 I conduct research in robotic vision, at the intersection of robotics, computer vision, and machine learning. My research interests are focus on scene understanding, [semantic SLAM](http://www.semanticslam.ai), and new ways to incorporate semantics into reinforcement learning. I furthermore lead a project on [new benchmarking challenges in robotic vision](http://www.roboticvisionchallenge.org).
-I regularly organise [workshops](workshops) at robotics and computer vision conferences, such as RSS, CVPR, and ICRA.
+I regularly organise [workshops](../workshops) at robotics and computer vision conferences, such as RSS, CVPR, and ICRA.
 
 #### Teaching and Unit Coordination Experience
 

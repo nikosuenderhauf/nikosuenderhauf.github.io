@@ -18,11 +18,17 @@ I am very active in organising workshops at robotics and computer vision confere
 
 [**New Benchmarks, Metrics, and Competitions for Robotic Learning**](https://sites.google.com/view/rss2018-robotic-learning/home) (RSS 2018)
 
+ Similar in scope and topic to the CVPR workshop, here we discussed new benchmarks, competitions, and performance metrics that address the specific challenges arising when deploying (deep) learning in robotics.
 
 ---
 
 [**Real-World Challenges and New Benchmarks for Deep Learning in Robotic Vision**](https://sites.google.com/view/cvpr2018-robotic-vision) (CVPR 2018)
 
+In this workshop we discussed crucial challenges arising when deploying deep learning methods in real-world robotic applications, and a set of future large scale robotic vision benchmarks to address the critical challenges for robotic perception that are not yet covered by existing computer vision and robotics benchmarks, such as performance in open-set conditions, incremental learning with low-shot techniques, Bayesian optimisation, active learning, and active vision.
+
+<div class="img_row">
+<img class="col three" src="/assets/img/workshops/2018-cvpr.jpg">
+</div>
 
 ---
 
@@ -40,7 +46,7 @@ This workshop (led by [Feras Dayoub](http://www.google.com/url?q=http%3A%2F%2Fst
 ---
 [**Learning for Localization and Mapping**](https://sites.google.com/site/learningforslam/home) (IROS 2017)
 
-The goal of this workshop was to present and discuss developments in learning-based approaches for localization and mapping systems. 
+The goal of this workshop was to present and discuss developments in learning-based approaches for localization and mapping systems.
 
 Invited speakers: Wolfram Burgard (University of Freiburg), Jana Kosecka (George Mason University), Stefan Leutenegger (Imperial College London), Simon Lynen (Google), Marc Pollefeys (Microsoft).
 
