@@ -8,6 +8,7 @@ workshops: [2018, 2017,2015,2014,2013,2012,2005]
 journals: [2018, 2017, 2015, 2010]
 special_issues: [2018]
 misc: [2012, 2006, 2007]
+arxiv: [2018]
 ---
 
 {% for y in page.years %}
@@ -29,6 +30,11 @@ misc: [2012, 2006, 2007]
   {% if page.workshops contains y %}
   <strong>Workshop Publications</strong>
   {% bibliography -f workshops -q @*[year={{y}}]* %}
+  {% endif %}
+
+  {% if page.arxiv contains y %}
+  <strong>arXiv Preprints</strong>
+  {% bibliography -f arxiv -q @*[year={{y}}]* %}
   {% endif %}
 
   {% if page.misc contains y %}
