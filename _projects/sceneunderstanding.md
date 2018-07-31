@@ -20,6 +20,7 @@ A robot that uses this point cloud map – for instance for navigation – can u
 **Semantic SLAM** goes one step further. Semantic SLAM uses objects as the central entities in the map (instead of primitives such as points). The objects carry semantic meaning, such as class labels or affordances. This
 
 ### Semantic SLAM and Semantic Mapping
+{% bibliography -f journals -q @*[id=nicholson18quadricslam]* %}
 {% bibliography -f workshops -q @*[id=nicholson18quadricslam]* %}
 {% bibliography -f conferences -q @*[id=Suenderhauf17a]* %}
 {% bibliography -f conferences -q @*[id=Suenderhauf16]* %}
