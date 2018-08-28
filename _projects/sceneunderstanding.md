@@ -44,4 +44,5 @@ A robot that uses this point cloud map – for instance for navigation – can u
 
 ### Scene Understanding: Hazard Detection
 {% bibliography -f journals -q @*[id=McMahon17]* %}
+{% bibliography -f conferences -q @*[id=McMahon17a]* %}
 {% bibliography -f conferences -q @*[id=McMahon15b]* %}
