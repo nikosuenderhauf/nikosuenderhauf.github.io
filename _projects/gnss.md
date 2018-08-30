@@ -33,5 +33,6 @@ We provide an introduction to factor graphs and how the GNSS-based localization 
 
 ### Publications
   {% bibliography -f conferences -q @*[id=Suenderhauf13c]* %}
+  {% bibliography -f conferences -q @*[id=Suenderhauf13]* %}
   {% bibliography -f conferences -q @*[id=Suenderhauf12c]* %}
   {% bibliography -f misc -q @*[id=Suenderhauf12b]* %}
