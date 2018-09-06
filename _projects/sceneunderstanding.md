@@ -4,7 +4,10 @@ title: Scene Understanding and Semantic SLAM
 description:
 ---
 
-The problem of Simultaneous Localization and Mapping (SLAM) describes the process of a robot building a map of its unknown environment, and at the same time using this still incomplete map to determine the robot’s position, and to navigate.
+Making a robot understand what it sees is one of the most fascinating goals in my current research.
+To this end, we develop novel methods for _Semantic Mapping_ and [Semantic SLAM](http://www.semanticslam.ai) by combining object detection with simultaneous localisation and mapping (SLAM) techniques. We furthermore work on [Bayesian Deep Learning](uncertainty) for object detection, to better understand the uncertainty of a deep network's predictions and integrate deep learning into robotics in a probabilistic way.
+
+<!-- The problem of Simultaneous Localization and Mapping (SLAM) describes the process of a robot building a map of its unknown environment, and at the same time using this still incomplete map to determine the robot’s position, and to navigate.
 
 SLAM is not unlike what seafarers in the past had to do when they explored the coast of a new continent for the first time.
 
@@ -17,9 +20,14 @@ A robot that uses this point cloud map – for instance for navigation – can u
 **Semantic Mapping** enriches the geometric map by semantic information. We can see below how some points in the map got identified as belonging to an object of a certain type. We illustrate this by assigning different colors to different object types, e.g. light blue for monitors and dark blue for keyboards.
 
 
-**Semantic SLAM** goes one step further. Semantic SLAM uses objects as the central entities in the map (instead of primitives such as points). The objects carry semantic meaning, such as class labels or affordances. This
+**Semantic SLAM** goes one step further. Semantic SLAM uses objects as the central entities in the map (instead of primitives such as points). The objects carry semantic meaning, such as class labels or affordances. This -->
+
 
 ### Semantic SLAM and Semantic Mapping
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/w1-INFCpc20" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</center>
+
 {% bibliography -f journals -q @*[id=nicholson18quadricslam]* %}
 {% bibliography -f workshops -q @*[id=nicholson18quadricslam]* %}
 {% bibliography -f conferences -q @*[id=Suenderhauf17a]* %}
@@ -28,12 +36,6 @@ A robot that uses this point cloud map – for instance for navigation – can u
 
 ---
 
-### Bayesian Deep Learning, and Uncertainty in Object Detection
-{% bibliography -f conferences -q @*[id=Miller18]* %}
-{% bibliography -f workshops -q @*[id=Miller17a]* %}
-{% bibliography -f workshops -q @*[id=Dayoub17]* %}
-
----
 
 ### Scene Understanding
 {% bibliography -f conferences -q @*[id=Trung18]* %}

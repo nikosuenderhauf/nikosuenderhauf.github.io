@@ -13,12 +13,23 @@ enable_katex: true
 ### Scene Understanding and Semantic SLAM
 <a href="sceneunderstanding"><img class="col one" src="/assets/img/projects/quadricSLAM.png"/></a>
 Making a robot understand what it sees is one of the most fascinating goals in my current research.
-To this end, we develop novel methods for _Semantic Mapping_ and [Semantic SLAM](http://www.semanticslam.ai) by combining object detection with simultaneous localisation and mapping (SLAM) techniques. We furthermore work on Bayesian Deep Learning for object detection, to better understand the uncertainty of a deep network's predictions and integrate deep learning into robotics in a probabilistic way. [Read more …](sceneunderstanding)
+To this end, we develop novel methods for _Semantic Mapping_ and [Semantic SLAM](http://www.semanticslam.ai) by combining object detection with simultaneous localisation and mapping (SLAM) techniques. We furthermore work on [Bayesian Deep Learning](uncertainty) for object detection, to better understand the uncertainty of a deep network's predictions and integrate deep learning into robotics in a probabilistic way. [Read more …](sceneunderstanding)
 
 
 <!-- Our ongoing research in scene understanding will help to provide answers to a robot’s questions like „What are these objects I can see in front of me?“ (object detection and recognition), „What can I do with these objects?“ (affordance detection), „Am I in an office, a kitchen, or a living room? What can I expect to find here?“ (semantic mapping, holistic scene understanding.
 
 Furthermore, we work towards making semantic perception robust enough to be used on autonomous robots. To achieve this goal, we analyse the key differences between robotic vision and computer vision (where great breakthroughs have happened since 2013 with the advent of convolutional networks), and adapt learning procedures and network architectures accordingly.  -->
+
+### Bayesian Deep Learning and Uncertainty for Object Detection
+In order to fully integrate deep
+learning into robotics, it is important that deep learning systems
+can reliably estimate the uncertainty in their predictions.
+This would allow robots to treat a deep neural network
+like any other sensor, and use the established Bayesian
+techniques to fuse the network’s predictions
+with prior knowledge or other sensor measurements, or to
+accumulate information over time.
+We focus on Bayesian Deep Learning approaches for the specific use case of object detection on a robot in open-set conditions. [Read more …](uncertainty)
 
 
 ### Learning to Navigate in Realistic Environments
