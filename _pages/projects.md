@@ -21,6 +21,7 @@ To this end, we develop novel methods for _Semantic Mapping_ and [Semantic SLAM]
 Furthermore, we work towards making semantic perception robust enough to be used on autonomous robots. To achieve this goal, we analyse the key differences between robotic vision and computer vision (where great breakthroughs have happened since 2013 with the advent of convolutional networks), and adapt learning procedures and network architectures accordingly.  -->
 
 ### Bayesian Deep Learning and Uncertainty for Object Detection
+<a href="uncertainty"><img class="col one" src="/assets/img/projects/uncertainty.png"/></a>
 In order to fully integrate deep
 learning into robotics, it is important that deep learning systems
 can reliably estimate the uncertainty in their predictions.
@@ -32,7 +33,7 @@ accumulate information over time.
 We focus on Bayesian Deep Learning approaches for the specific use case of object detection on a robot in open-set conditions. [Read more …](uncertainty)
 
 
-### Learning to Navigate in Realistic Environments
+### Reinforcement Learning for Complex Tasks and Robot Navigation
 [Read more …](learningtonavigate)
 
 ### Robotic Vision Evaluation and Benchmarking
