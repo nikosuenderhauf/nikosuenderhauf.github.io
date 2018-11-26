@@ -24,6 +24,12 @@ A robot that uses this point cloud map – for instance for navigation – can u
 
 
 ### Semantic SLAM and Semantic Mapping
+We work on novel approaches to SLAM (Simultaneous Localization and Mapping) that create semantically meaningful maps by combining geometric and semantic information.
+
+We believe such semantically enriched maps will help robots understand our complex world and will ultimately increase the range and sophistication of interactions that robots can have in domestic and industrial deployment scenarios.
+
+Read more on our dedicated project website [semanticslam.ai](http://www.semanticslam.ai).
+
 <center>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/w1-INFCpc20" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </center>
