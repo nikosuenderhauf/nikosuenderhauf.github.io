@@ -64,7 +64,7 @@
   {% endif %}
 
   {% if entry.thumb %}
-  <img class="paper_thumb" src="/assets/paper-thumbnails/{{entry.thumb}}"/>
+  <a href="{{ entry.link }}" target="_blank"><img class="paper_thumb" src="/assets/paper-thumbnails/{{entry.thumb}}"/></a>
   {% endif %}
   {% if entry.abstract %}
   <span class="abstract">

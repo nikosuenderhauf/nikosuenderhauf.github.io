@@ -35,6 +35,7 @@ Read more on our dedicated project website [semanticslam.ai](http://www.semantic
 </center>
 
 {% bibliography -f journals -q @*[id=nicholson18quadricslam]* %}
+{% bibliography -f arxiv -q @*[id=Jablonsky18geometric]* %}
 {% bibliography -f workshops -q @*[id=nicholson18quadricslam]* %}
 {% bibliography -f conferences -q @*[id=Suenderhauf17a]* %}
 {% bibliography -f conferences -q @*[id=Suenderhauf16]* %}

@@ -1,2 +1,37 @@
 ---
 ---
+
+
+@article{Miller18sampling,
+  title={{Evaluating Merging Strategies for Sampling-based Uncertainty Techniques in Object Detection}},
+  author={Dimity Miller and Feras Dayoub and Michael Milford and Niko S\"underhauf},
+  year={2018},
+  journal = {{arXiv preprint}},
+  abstract = {There has been a recent emergence of sampling-based techniques for estimating epistemic uncertainty in deep neural networks. While these methods can be applied to classification or semantic segmentation tasks by simply averaging samples, this is not the case for object detection, where detection sample bounding boxes must be accurately associated and merged. A weak merging strategy can significantly degrade the performance of the detector and yield an unreliable uncertainty measure. This paper provides the first in-depth investigation of the effect of different association and merging strategies. We compare different combinations of three spatial and two semantic affinity measures with four clustering methods for MC Dropout with a Single Shot Multi-Box Detector. Our results show that the correct choice of affinity-clustering combinations can greatly improve the effectiveness of the classification and spatial uncertainty estimation and the resulting object detection performance. We base our evaluation on a new mix of datasets that emulate near open-set conditions (semantically similar unknown classes), distant open-set conditions (semantically dissimilar unknown classes) and the common closed-set conditions (only known classes).},
+link={https://arxiv.org/abs/1809.06006},
+thumb={miller18sampling.png},
+arxiv={1809.06006}
+}
+
+@article{Jablonsky18geometric,
+  title={{An Orientation Factor for Object-Oriented SLAM}},
+  author={Natalie Jablonsky and Michael Milford and Niko S\"underhauf},
+  year={2018},
+  journal = {{arXiv preprint}},
+  abstract = {Current approaches to object-oriented SLAM lack the ability to incorporate prior knowledge of the scene geometry, such as the expected global orientation of objects. We overcome this limitation by proposing a geometric factor that constrains the global orientation of objects in the map, depending on the objects’ semantics. This new geometric factor is a first example of how semantics can inform and improve geometry in object-oriented SLAM. We implement the geometric factor for the recently proposed QuadricSLAM that represents landmarks as dual quadrics. The factor probabilistically models the quadrics’ major axes to be either perpendicular to or aligned with the direction of gravity, depending on their semantic class. Our experiments on simulated and real-world datasets show that using the proposed factors to incorporate prior knowledge improves both the trajectory and landmark quality.},
+link={https://arxiv.org/abs/1809.06977},
+thumb={jablonsky18geometric.png},
+arxiv={1809.06977},
+html={http://semanticslam.ai/geometricfactors.html}
+}
+
+@article{Lee18zeroshot,
+  title={{Zero-shot Sim-to-Real Transfer with Modular Priors}},
+  author={Robert Lee and Serena Mou and Vibhavari Dasagi and Jake Bruce and Jürgen Leitner and Niko S\"underhauf},
+  year={2018},
+  journal = {{arXiv preprint}},
+  abstract = {Current end-to-end Reinforcement Learning (RL) approaches are severely limited by restrictively large search spaces and are prone to overfitting to their training environment. This is because in end-to-end RL perception, decision-making and low-level control are all being learned jointly from very sparse reward signals, with little capability of incorporating prior knowledge or existing algorithms. In this work, we propose a novel framework that effectively decouples RL for high-level decision making from low-level perception and control. This allows us to transfer a learned policy from a highly abstract simulation to a real robot without requiring any transfer learning. We therefore coin our approach zero-shot sim-to-real transfer. We successfully demonstrate our approach on the robot manipulation task of object sorting. A key component of our approach is a deep sets encoder that enables us to reinforcement learn the high-level policy based on the variable-length output of a pre-trained object detector, instead of learning from raw pixels. We show that this method can learn effective policies within mere minutes of highly simplified simulation. The learned policies can be directly deployed on a robot without further training, and generalize to variations of the task unseen during training.},
+link={https://arxiv.org/abs/1809.07480},
+thumb={lee18zeroshot.png},
+arxiv={1809.07480}
+}
