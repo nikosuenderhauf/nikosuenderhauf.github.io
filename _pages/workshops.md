@@ -14,15 +14,23 @@ I am very active in organising workshops at robotics and computer vision confere
 
 ---
 
+[**Robotic Vision Probabilistic Object Detection Challenge**](https://nikosuenderhauf.github.io/roboticvisionchallenges/cvpr2019) (**CVPR 2019**)
 
 
-[**New Benchmarks, Metrics, and Competitions for Robotic Learning**](https://sites.google.com/view/rss2018-robotic-learning/home) (RSS 2018)
+---
+
+[**Deep Learning for Semantic Visual Navigation**](https://sites.google.com/view/sem-vis-nav) (**CVPR 2019**)
+Organised with colleagues from Google AI (Alexander Toshav, Anelia Angelova) and Imperial College London (Ronald Clark, Andrew Davison).
+
+---
+
+[**New Benchmarks, Metrics, and Competitions for Robotic Learning**](https://sites.google.com/view/rss2018-robotic-learning/home) (**RSS 2018**)
 
  Similar in scope and topic to the CVPR workshop, here we discussed new benchmarks, competitions, and performance metrics that address the specific challenges arising when deploying (deep) learning in robotics.
 
 ---
 
-[**Real-World Challenges and New Benchmarks for Deep Learning in Robotic Vision**](https://sites.google.com/view/cvpr2018-robotic-vision) (CVPR 2018)
+[**Real-World Challenges and New Benchmarks for Deep Learning in Robotic Vision**](https://sites.google.com/view/cvpr2018-robotic-vision) (**CVPR 2018**)
 
 In this workshop we discussed crucial challenges arising when deploying deep learning methods in real-world robotic applications, and a set of future large scale robotic vision benchmarks to address the critical challenges for robotic perception that are not yet covered by existing computer vision and robotics benchmarks, such as performance in open-set conditions, incremental learning with low-shot techniques, Bayesian optimisation, active learning, and active vision.
 
@@ -32,7 +40,7 @@ In this workshop we discussed crucial challenges arising when deploying deep lea
 
 ---
 
-[**Long-term autonomy and deployment of intelligent robots in the real-world**](http://longtermautonomy.eu/) (ICRA 2018)
+[**Long-term autonomy and deployment of intelligent robots in the real-world**](http://longtermautonomy.eu/) (**ICRA 2018**)
 
 This workshop (led by [Feras Dayoub](http://www.google.com/url?q=http%3A%2F%2Fstaff.qut.edu.au%2Fstaff%2Fdayoub%2F&sa=D&sntz=1&usg=AFQjCNE-tlKEvYVgIqZ5312cYTJILFal0g)) discussed the challenges of autonomous robots that have to reliably operate for long  periods of time while having to demonstrate a high level of robustness and fault tolerance.
 
