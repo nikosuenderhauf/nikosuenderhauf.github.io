@@ -21,7 +21,7 @@ I regularly organise [workshops](../workshops) at robotics and computer vision c
 
 #### Teaching and Unit Coordination Experience
 
-* 2018: **EGH419 -- Mechatronics Design 3**, (4th year unit, Bachelor's course at QUT), Unit Coordinator and Lecturer
+* 2018 & 2019: **EGH419 -- Mechatronics Design 3**, (4th year unit, Bachelor's course at QUT), Unit Coordinator and Lecturer
 * 2017 & 2018: **EGB339 -- Introduction to Robotics**, (3rd year unit, Bachelor's course at QUT), Unit Coordinator and Lecturer
 * 2012 & 2013: **Autonomous Systems**,  (Masters's course at Chemnitz University of Technology, Germany) Lecturer
 * 2012 &  2013: **Simulation and Software Laboratory**, (Bachelor's course at Chemnitz University of Technology, Germany), Lecturer
@@ -29,7 +29,7 @@ I regularly organise [workshops](../workshops) at robotics and computer vision c
 
 #### Reviews and Community Service
 
-I am **Associate Editor** for the IEEE [Robotics and Automation Letters journal](http://www.ieee-ras.org/publications/ra-l) (RA-L), and for the IEEE [International Conference on Robotics and Automation](http://www.icra2018.org) (ICRA). I have been serving regularly as a **reviewer** for the major journals (IJRR, TRO, RAS, IJFR) and major conferences (RSS, CoRL, ICRA, IROS, FSR, Intelligent Vehicles Symposium) in our field for many years.
+Since 2015 I have been **Associate Editor** for the IEEE [Robotics and Automation Letters journal](http://www.ieee-ras.org/publications/ra-l) (RA-L), and served as an AE for the IEEE [International Conference on Robotics and Automation](http://www.icra2018.org) (ICRA) in 2017/18. I have been serving regularly as a **reviewer** for the major journals (IJRR, TRO, RAS, IJFR) and major conferences (RSS, CoRL, ICRA, IROS, FSR, Intelligent Vehicles Symposium) in our field for many years.
 
 I served as an **Assessor** for the Australian Research Council (ARC) and provided expert reviews on a total of four proposals for the ARC's Discovery Programme 2016 and 2017.
 
@@ -38,7 +38,8 @@ I was coordinating **guest editor** for a special issue of the International Jou
 #### Attended Conferences, Workshops, and Summer Schools
 
 | **Year** | **Conferences and Venue** |
-| 2018 | ICRA (Brisbane), CVPR (Salt Lake City), RSS (Pittsburgh)
+| 2019 | ICRA (Montreal), CVPR (Long Beach)
+| 2018 | ICRA (Brisbane), CVPR (Salt Lake City), RSS (Pittsburgh), CoRL (Zürich)
 | 2017 | RSS (Cambridge, USA), CVPR (Honolulu), Dagstuhl Seminar on Deep Learning for Computer Vision (Dagstuhl), CoRL (Mountain View),  NIPS (Long Beach) |
 | 2016 | RSS (Ann Arbor), NIPS (Barcelona) |
 | 2015 | ICRA (Seattle), CVPR (Boston), RSS (Rome), Dagstuhl Seminar on Autonomous Systems and Drones (Dagstuhl) |
