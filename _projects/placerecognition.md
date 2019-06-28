@@ -30,6 +30,8 @@ In two papers published at RSS and IROS 2015 we explored how Convolutional Netwo
 
 
 #### Publications
+ {% bibliography -f journals -q @*[id=garg2019semantic]* %}
+ {% bibliography -f conferences -q @*[id=garg2019look]* %}
  {% bibliography -f conferences -q @*[id=garg2018lost]* %}
  {% bibliography -f conferences -q @*[id=Garg18]* %}
  {% bibliography -f conferences -q @*[id=Suenderhauf15a]* %}

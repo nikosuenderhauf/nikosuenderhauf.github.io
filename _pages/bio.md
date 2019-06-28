@@ -22,7 +22,7 @@ I regularly organise [workshops](../workshops) at robotics and computer vision c
 #### Teaching and Unit Coordination Experience
 
 * 2018 & 2019: **EGH419 -- Mechatronics Design 3**, (4th year unit, Bachelor's course at QUT), Unit Coordinator and Lecturer
-* 2017 & 2018: **EGB339 -- Introduction to Robotics**, (3rd year unit, Bachelor's course at QUT), Unit Coordinator and Lecturer
+* 2017 - 2019: **EGB339 -- Introduction to Robotics**, (3rd year unit, Bachelor's course at QUT), Unit Coordinator and Lecturer
 * 2012 & 2013: **Autonomous Systems**,  (Masters's course at Chemnitz University of Technology, Germany) Lecturer
 * 2012 &  2013: **Simulation and Software Laboratory**, (Bachelor's course at Chemnitz University of Technology, Germany), Lecturer
 * 2006 -- 2013: **Mobile Robotics**, (Bachelor's course at Chemnitz University of Technology, Germany), Associate Lecturer, Guest Lecturer
@@ -38,7 +38,7 @@ I was coordinating **guest editor** for a special issue of the International Jou
 #### Attended Conferences, Workshops, and Summer Schools
 
 | **Year** | **Conferences and Venue** |
-| 2019 | ICRA (Montreal), CVPR (Long Beach)
+| 2019 | ICRA (Montreal), CVPR (Long Beach), RSS (Freiburg)
 | 2018 | ICRA (Brisbane), CVPR (Salt Lake City), RSS (Pittsburgh), CoRL (Zürich)
 | 2017 | RSS (Cambridge, USA), CVPR (Honolulu), Dagstuhl Seminar on Deep Learning for Computer Vision (Dagstuhl), CoRL (Mountain View),  NIPS (Long Beach) |
 | 2016 | RSS (Ann Arbor), NIPS (Barcelona) |

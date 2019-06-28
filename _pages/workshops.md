@@ -11,22 +11,39 @@ enable_katex: true
 
 I am very active in organising workshops at robotics and computer vision conferences.
 
+---
+
+[**The Importance of Uncertainty in Deep Learning for Robotics**](https://nikosuenderhauf.github.io/roboticvisionchallenges/iros2019) (**IROS 2019**)
+
+In this workshop we will discuss the importance of uncertainty in deep learning for robotic applications. In addition, the workshop will host the 2nd Probabilistic Object Detection challenge, a new challenge that evaluates the ability of visual object detectors to accurately quantify their spatial and semantic uncertainty.
+
+The workshop will provide tutorial-style talks that cover the state-of-the-art of uncertainty quantification in deep learning, specifically Bayesian and non-Bayesian approaches, spanning perception, world-modeling, decision making, and actions. Invited expert speakers will discuss the importance of uncertainty in deep learning for robotic perception, but also action.
+
 
 ---
 
 [**Robotic Vision Probabilistic Object Detection Challenge**](https://nikosuenderhauf.github.io/roboticvisionchallenges/cvpr2019) (**CVPR 2019**)
 
+This workshop brought together the participants of the first Robotic Vision Challenge on [Probabilistic Object Detection](http://www.roboticvisionchallenge.org), a new competition targeting both the computer vision and robotics communities. The workshop focussed on outcomes of the competition in the morning session, featuring talks by the four best scoring teams. After that we welcomed our invited speakers in the afternoon. Organised with Feras Dayoub and other colleagues from the Australian Centre for Robotic Vision, and Anelia Angelova from Google AI.
 
+<div class="img_row">
+<img class="col three" src="/assets/img/workshops/2019-cvpr-probabilistic.jpg">
+</div>
 ---
 
 [**Deep Learning for Semantic Visual Navigation**](https://sites.google.com/view/sem-vis-nav) (**CVPR 2019**)
-Organised with colleagues from Google AI (Alexander Toshav, Anelia Angelova) and Imperial College London (Ronald Clark, Andrew Davison).
+
+We discussed ideas to advance visual navigation by combining recent developments in deep and reinforcement learning. A special focus was on approaches that incorporate more semantic information into navigation, and combine visual input with other modalities such as language. Organised with colleagues from Google AI (Alexander Toshav, Anelia Angelova) and Imperial College London (Ronald Clark, Andrew Davison).
+
+<div class="img_row">
+<img class="col three" src="/assets/img/workshops/2019-cvpr-semnav.jpg">
+</div>
 
 ---
 
 [**New Benchmarks, Metrics, and Competitions for Robotic Learning**](https://sites.google.com/view/rss2018-robotic-learning/home) (**RSS 2018**)
 
- Similar in scope and topic to the CVPR workshop, here we discussed new benchmarks, competitions, and performance metrics that address the specific challenges arising when deploying (deep) learning in robotics.
+Similar in scope and topic to the CVPR workshop, here we discussed new benchmarks, competitions, and performance metrics that address the specific challenges arising when deploying (deep) learning in robotics.
 
 ---
 

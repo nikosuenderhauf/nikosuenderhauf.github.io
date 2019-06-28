@@ -27,7 +27,10 @@ Our work focusses on Bayesian Deep Learning approaches for the specific use case
 
 ### Publications
 
-{% bibliography -f arxiv -q @*[id=Miller18sampling]* %}
+{% bibliography -f arxiv -q @*[id=hall2018probability]* %}
+{% bibliography -f workshops -q @*[id=miller2019benchmarking]* %}
+{% bibliography -f conferences -q @*[id=Miller19sampling]* %}
+{% bibliography -f conferences -q @*[id=rahman2019traffic]* %}
 {% bibliography -f conferences -q @*[id=Miller18]* %}
 {% bibliography -f workshops -q @*[id=Miller17a]* %}
 {% bibliography -f workshops -q @*[id=Dayoub17]* %}
