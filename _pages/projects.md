@@ -33,15 +33,16 @@ accumulate information over time.
 We focus on Bayesian Deep Learning approaches for the specific use case of object detection on a robot in open-set conditions. [Read more …](uncertainty)
 
 
-### Reinforcement Learning for Complex Tasks and Robot Navigation
-[Read more …](learningtonavigate)
+### Reinforcement Learning for Robot Navigation and Complex Task Execution
+<a href="learningtonavigate"><img class="col one" src="/assets/img/projects/navigate.png"/></a>
+How can robots best learn to navigate in challenging environments and execute complex tasks, such as tidying up an apartment or assist humans in their everyday domestic chores? Often, hand-written architectures are based on complicated state machines that become intractable to design and maintain with growing task complexity. I am interested in developing learning-based approaches are effective and efficient, and scale better to complicated tasks. [Read more …](learningtonavigate)
 
 ### Robotic Vision Evaluation and Benchmarking
 Big benchmark competitions like [ILSVRC](http://www.image-net.org/challenges/LSVRC/) or [COCO](http://cocodataset.org) fuelled much of the progress in computer vision and deep learning over the past years. We aim to recreate this success for robotic vision.
 
-To this end, we develop a set of new benchmark challenges for robotic vision that evaluate scene understanding, uncertainty estimation, continuous learning for domain adaptation, continuous learning to incorporate previuosly unseen classes,
+To this end, we develop a set of new benchmark challenges for robotic vision that evaluate probabilistic object detection, scene understanding, uncertainty estimation, continuous learning for domain adaptation, continuous learning to incorporate previuosly unseen classes,
 active learning, and active vision.
-We combine the variety and complexity of real-world data with the flexibility of synthetic graphics and physics engines. Expect the challenges to go live around November 2018.
+We combine the variety and complexity of real-world data with the flexibility of synthetic graphics and physics engines.
 [Read more …](http://www.roboticvisionchallenge.org)
 
 
