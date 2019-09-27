@@ -8,6 +8,7 @@ description:
 ### Learning to Navigate
 
 {% bibliography -f arxiv -q @*[id=suenderhauf19keys]* %}
+{% bibliography -f arxiv -q @*[id=rana19navigation]* %}
 {% bibliography -f conferences -q @*[id=Bruce18navigation]* %}
 {% bibliography -f workshops -q @*[id=Bruce17]* %}
 {% bibliography -f conferences -q @*[id=anderson2017vision]* %}
