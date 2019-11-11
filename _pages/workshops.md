@@ -15,10 +15,12 @@ I am very active in organising workshops at robotics and computer vision confere
 
 [**The Importance of Uncertainty in Deep Learning for Robotics**](https://nikosuenderhauf.github.io/roboticvisionchallenges/iros2019) (**IROS 2019**)
 
-In this workshop we will discuss the importance of uncertainty in deep learning for robotic applications. In addition, the workshop will host the 2nd Probabilistic Object Detection challenge, a new challenge that evaluates the ability of visual object detectors to accurately quantify their spatial and semantic uncertainty.
+In this workshop we discussed the importance of uncertainty in deep learning for robotic applications. The workshop will provided tutorial-style talks that coverd the state-of-the-art of uncertainty quantification in deep learning, specifically Bayesian and non-Bayesian approaches, spanning perception, world-modeling, decision making, and actions. Invited expert speakers discussed the importance of uncertainty in deep learning for robotic perception, but also action.
 
-The workshop will provide tutorial-style talks that cover the state-of-the-art of uncertainty quantification in deep learning, specifically Bayesian and non-Bayesian approaches, spanning perception, world-modeling, decision making, and actions. Invited expert speakers will discuss the importance of uncertainty in deep learning for robotic perception, but also action.
 
+<div class="img_row">
+<img class="col three" src="/assets/img/workshops/2019-iros.jpg">
+</div>
 
 ---
 
