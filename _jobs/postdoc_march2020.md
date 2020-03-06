@@ -14,6 +14,7 @@ I am looking to fill this position **immediately**. Please contact me if you are
 
 
 ### About the Position
+<img class="col one" src="/assets/img/jobs/campus-1.jpg"/>
 We are looking for a creative and enthusiastic Research Fellow to contribute decisively to our Visual Learning and Understanding research program. You will be a key member of the QUT Centre for Robotics and will work closely with academics, other research fellows, engineers, and our PhD students.
 
 You should be excited to do pioneering research and work on novel ways a robot can reliably interpret its environment and build an internal representation of its surroundings in order to decide on its actions. You are driven to investigate how machine learning for visual perception can be made safe, trustworthy, and reliable; how robots can understand and represent the geometry, semantics, and functionality of their surroundings and the task-relevant objects therein; and how robots can use this internal representation and learn to decide or plan their next actions in order to accomplish a useful task in a safe way. You are willing to explore the applicability of your research in a variety of robotic application domains including domestic robotics, healthcare, retail, logistics, autonomous driving, agriculture, but also in adjacent domains such as augmented/mixed reality.
@@ -72,7 +73,7 @@ Key responsibilities include:
 ### Type of Appointment
 This appointment will be offered on a fixed term, full-time basis for (3) **three years**.
 
-Location: Queensland University of Technology, Gardens Point campus, Brisbane, Australia.
+Location: Queensland University of Technology (QUT), Gardens Point campus, Brisbane, Australia.
 
 
 ### Remuneration and Benefits
