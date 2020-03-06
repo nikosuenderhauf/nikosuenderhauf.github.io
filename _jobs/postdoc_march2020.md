@@ -18,7 +18,7 @@ We are looking for a creative and enthusiastic Research Fellow to contribute dec
 
 You should be excited to do pioneering research and work on novel ways a robot can reliably interpret its environment and build an internal representation of its surroundings in order to decide on its actions. You are driven to investigate how machine learning for visual perception can be made safe, trustworthy, and reliable; how robots can understand and represent the geometry, semantics, and functionality of their surroundings and the task-relevant objects therein; and how robots can use this internal representation and learn to decide or plan their next actions in order to accomplish a useful task in a safe way. You are willing to explore the applicability of your research in a variety of robotic application domains including domestic robotics, healthcare, retail, logistics, autonomous driving, agriculture, but also in adjacent domains such as augmented/mixed reality.
 
-During your undergraduate degree or in your previous roles as researcher and PhD student, you have demonstrated expertise and understanding of the foundations of robotics, such as coordinate frames and transforms, navigation, localisation, mapping, SLAM, kinematics, motion models, and control. You are familiar with the mathematical concepts underpinning those foundations, including statistics and probabilistic methods. You have deep knowledge in computer vision, including current approaches to visual object detection, semantic segmentation, instance segmentation and machine learning. You understand the mathematical and statistical foundations of deep learning.
+During your undergraduate degree or in your previous roles as researcher and PhD student, you have demonstrated expertise and understanding of the foundations of robotics, such as coordinate frames and transforms, navigation, localisation, mapping, SLAM, kinematics, motion models, and control. You are familiar with the mathematical concepts underpinning those foundations, including statistics and probabilistic methods. You have deep knowledge in computer vision (including current approaches to visual object detection, semantic segmentation, and instance segmentation) and general machine learning, as well as a good understanding of reinforcement learning. You understand the mathematical and statistical foundations of deep learning.
 
 You are a prolific user of Python and deep learning frameworks such as PyTorch, and regularly work and develop in Linux. Ideally, you have a working knowledge of C/C++ and ROS. You understand current approaches to visual object detection, semantic segmentation, instance segmentation, and how to use them.
 
@@ -69,8 +69,14 @@ Key responsibilities include:
  * Demonstrated knowledge and expertise in the foundations of robotics, computer vision, machine learning. Demonstrated proficiency in Python and experience with ROS, deep learning frameworks such as PyTorch, Linux.
 
 
+### Type of Appointment
+This appointment will be offered on a fixed term, full-time basis for (3) **three years**.
+
+Location: Queensland University of Technology, Gardens Point campus, Brisbane, Australia.
+
+
 ### Remuneration and Benefits
-This Research Fellow position is classified as Academic Level B (LEVB) which has an annual remuneration of $97,375 AUD to $115,886 AUD, plus 17% superannuation, plus 17.5% recreation leave loading.
+This Research Fellow position is classified as Academic Level B (LEVB) which has an annual remuneration of **$97,375 AUD to $115,886 AUD, plus 17% superannuation, plus 17.5% recreation leave loading**.
 
 QUT is a high quality and flexible organisation that is proud of its excellent employment conditions which include but are not limited to:
  * Reduced working year scheme
