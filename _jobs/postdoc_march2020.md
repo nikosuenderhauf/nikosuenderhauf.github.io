@@ -1,10 +1,10 @@
 ---
 layout: page
-title: open positions
-description: I advertise open positions for postdocs or PhD students on this page.
+title: Postdoctoral Research Fellow
+description:
 ---
 
-## Postdoctoral Research Fellow
+<!-- ## Postdoctoral Research Fellow -->
 This position is with the QUT Centre for Robotics (QCR) and will work closely with me in the Visual Learning and Understanding research program.
 
 **Position advertised: 6 March 2020**.
