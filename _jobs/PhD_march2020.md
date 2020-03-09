@@ -6,11 +6,13 @@ description: first advertised on 6 March 2020
 
 The QUT Centre for Robotics located in Brisbane, Australia, has openings for fully-funded PhDs for immediate start in the following research areas:
 
-#### 1) Perception and localisation
-This program addresses the fundamental problem of how a robot or autonomous vehicle uses perception to create maps and calculate and track its location in the world. Research questions include addressing how the appearance of a place changes in relation as a function of time, season, weather, viewpoint and environment type; how understanding context and semantics can enhance performance; how lifelong reliability can be achieved as the world continually changes; the relationship to neurological structures and behavioural mechanisms used in animal and human navigation; and how new perception technologies can be applied to this problem.
+#### 1) Visual learning and understanding
+**This is the program I am leading in the centre if you are interested in working with me on semantic SLAM, scene understanding, reinforcement learning from semantic maps, reliable deep learning or uncertainty techniques for deep learning, please contact me directly.**
 
-#### 2) Visual learning and understanding
 This program investigates the fundamental problem of how a robot can learn to reliably interpret its environment, and build an internal representation of its surroundings in order to decide on its actions. The program addresses research questions such as how machine learning for visual perception can be made safe, trustworthy, and reliable; how robots can understand and represent the geometry, semantics, and functionality of their surroundings and the task-relevant objects therein; and how robots can use this internal representation and learn to decide or plan their next actions in order to accomplish a useful task in a safe way.
+
+#### 2) Perception and localisation
+This program addresses the fundamental problem of how a robot or autonomous vehicle uses perception to create maps and calculate and track its location in the world. Research questions include addressing how the appearance of a place changes in relation as a function of time, season, weather, viewpoint and environment type; how understanding context and semantics can enhance performance; how lifelong reliability can be achieved as the world continually changes; the relationship to neurological structures and behavioural mechanisms used in animal and human navigation; and how new perception technologies can be applied to this problem.
 
 #### 3) Decision and control
 This program investigates how to reliably make autonomous decisions and control for robots in the presence of uncertainty through the advancement of model-based filtering, estimation, detection, decision and planning techniques for robotic systems. Research questions include how to design robotic systems capable of achieving specified performance outcomes in the presence of uncertainty, how to detect anomalous system conditions in weak measurement environments, and how to characterise and managed network systems.
