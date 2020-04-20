@@ -7,10 +7,11 @@ description:
 <!-- ## Postdoctoral Research Fellow -->
 This position is with the QUT Centre for Robotics (QCR) and will work closely with me in the Visual Learning and Understanding research program.
 
-**Position advertised: 6 March 2020**.
+<!-- **Position advertised: 6 March 2020**. -->
 
-I am looking to fill this position **immediately**. Please contact me if you are interested.
+<!-- I am looking to fill this position **immediately**. Please contact me if you are interested. -->
 
+**This position has been filled and is no longer available.**
 
 
 ### About the Position

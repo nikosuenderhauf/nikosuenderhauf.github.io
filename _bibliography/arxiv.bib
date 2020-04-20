@@ -1,6 +1,44 @@
 ---
 ---
 
+
+
+@article{rana2020multiplicative,
+  title={{Multiplicative Controller Fusion: A Hybrid Navigation Strategy For Deployment in Unknown Environments}},
+  author={Rana, Krishan and Dasagi, Vibhavari and Talbot, Ben and Milford, Michael and S{\"u}nderhauf, Niko},
+  journal={arXiv preprint arXiv:2003.05117},
+  year={2020},
+  abstract={Learning long-horizon tasks on real robot hardware can be intractable, and transferring a learned policy from simulation to reality is still extremely challenging. We present a novel approach to model-free reinforcement learning that can leverage existing sub-optimal solutions as an algorithmic prior during training and deployment. During training, our gated fusion approach enables the prior to guide the initial stages of exploration, increasing sample-efficiency and enabling learning from sparse long-horizon reward signals. Importantly, the policy can learn to improve beyond the performance of the sub-optimal prior since the prior's influence is annealed gradually. During deployment, the policy's uncertainty provides a reliable strategy for transferring a simulation-trained policy to the real world by falling back to the prior controller in uncertain states. We show the efficacy of our Multiplicative Controller Fusion approach on the task of robot navigation and demonstrate safe transfer from simulation to the real world without any fine tuning. },
+  arxiv={2003.05117},
+  link={https://arxiv.org/abs/2003.05117},
+  thumb={rana2020multiplicative.png},
+  html={https://sites.google.com/view/mcf-nav/home}
+}
+
+
+@article{miller2020cac,
+  title={{Class Anchor Clustering: a Distance-based Loss for Training Open Set Classifiers}},
+  author={Dimity Miller and Niko S\"underhauf and Michael Milford and Feras Dayoub},
+  journal={arXiv preprint arXiv:2004.02434},
+  year={2020},
+  abstract={Existing open set classifiers distinguish between known and unknown inputs by measuring distance in a network's logit space, assuming that known inputs cluster closer to the training data than unknown inputs. However, this approach is typically applied post-hoc to networks trained with cross-entropy loss, which neither guarantees nor encourages the hoped-for clustering behaviour. To overcome this limitation, we introduce Class Anchor Clustering (CAC) loss. CAC is an entirely distance-based loss that explicitly encourages training data to form tight clusters techniques on the challenging TinyImageNet dataset, achieving a 2.4% performance increase in AUROC. },
+  link={https://arxiv.org/abs/2004.02434},
+  arxiv={2004.02434},
+  thumb={miller2020cac.png},
+}
+
+@article{corke2020can,
+  title={{What can robotics research learn from computer vision research?}},
+  author={Corke, Peter and Dayoub, Feras and Hall, David and Skinner, John and S{\"u}nderhauf, Niko},
+  journal={arXiv preprint arXiv:2001.02366},
+  year={2020},
+  arxiv={2001.02366},
+  link={https://arxiv.org/abs/2001.02366},
+  thumb={corke2020research.png},
+  abstract={The computer vision and robotics research communities are each strong. However progress in computer vision has become turbo-charged in recent years due to big data, GPU computing, novel learning algorithms and a very effective research methodology. By comparison, progress in robotics seems slower. It is true that robotics came later to exploring the potential of learning -- the advantages over the well-established body of knowledge in dynamics, kinematics, planning and control is still being debated, although reinforcement learning seems to offer real potential. However, the rapid development of computer vision compared to robotics cannot be only attributed to the former's adoption of deep learning. In this paper, we argue that the gains in computer vision are due to research methodology -- evaluation under strict constraints versus experiments; bold numbers versus videos.}
+}
+
+
 @article{suenderhauf19keys,
   title={{Where are the Keys? -- Learning Object-Centric Navigation Policies on Semantic Maps with Graph Convolutional Networks}},
   author={S{\"u}nderhauf, Niko},
