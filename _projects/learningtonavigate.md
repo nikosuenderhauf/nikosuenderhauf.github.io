@@ -6,12 +6,13 @@ description:
 
 
 <!-- ### Learning to Navigate -->
-
+{% bibliography -f conferences -q @*[id=rana2020multiplicative]* %}
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/X99cFN2UyTI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
 {% bibliography -f conferences -q @*[id=rana19navigation]* %}
 <center>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/uhHzbGVPYj4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
-
-{% bibliography -f arxiv -q @*[id=rana2020multiplicative]* %}
 {% bibliography -f arxiv -q @*[id=suenderhauf19keys]* %}
 {% bibliography -f conferences -q @*[id=Dasagi19transfer]* %}
 {% bibliography -f conferences -q @*[id=Bruce18navigation]* %}
