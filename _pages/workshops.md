@@ -13,6 +13,21 @@ I am very active in organising workshops at robotics and computer vision confere
 
 ---
 
+[**Good Citizens of Robotics Research**](https://sites.google.com/view/rss20-gcr) (**RSS 2020**)
+This workshop provided a forum for discussions and commentary on topics about research, dissemination, and community, by taking inspiration from Computer Vision research and [this excellent CVPR workshop](https://www.cc.gatech.edu/~parikh/citizenofcvpr/). We discussed important questions like: How to incentivize and do good systems research? How to best disseminate results, code, and hardware? How to be a fair reviewer? How to be a good area chair? How to support a caring and inclusive community? How to bridge the gap between academia and industry and the role of ethics in their interplay? and in general how to go about being a good citizen of robotics research.
+
+---
+
+[**Beyond mAP: Reassessing the Evaluation of Object Detectors**](https://nikosuenderhauf.github.io/roboticvisionchallenges/eccv2020.html)  (**ECCV 2020**)
+This workshop assessed current evaluation procedures for object detection, highlights their shortcomings and opens discussion for possible improvements.
+
+---
+
+[**Reliable Deployment of Machine Learning for Long-Term Autonomy**](https://sites.google.com/view/icra2020ltaws/) (**IROS 2020**)
+This workshop focused on the problem of long-term autonomy for mobile robots and the challenge of building a reliabile machine learning components in the robotic system that can handle bad sensory data, shifts to abnormal operational conditions, misclassification and detections.
+
+---
+
 [**The Importance of Uncertainty in Deep Learning for Robotics**](https://nikosuenderhauf.github.io/roboticvisionchallenges/iros2019) (**IROS 2019**)
 
 In this workshop we discussed the importance of uncertainty in deep learning for robotic applications. The workshop will provided tutorial-style talks that coverd the state-of-the-art of uncertainty quantification in deep learning, specifically Bayesian and non-Bayesian approaches, spanning perception, world-modeling, decision making, and actions. Invited expert speakers discussed the importance of uncertainty in deep learning for robotic perception, but also action.

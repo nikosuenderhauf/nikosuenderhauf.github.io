@@ -25,8 +25,6 @@ I also lectured at the [2019 IEEE Summer School on Robot Vision](http://robotvis
 
 ### University Courses
 
-#### EGB339 -- Introduction to Robotics
-
-
-
-#### EGH419 -- Mechatronics Design 3
+ * EGB339 -- Introduction to Robotics
+ * EGH419 -- Mechatronics Design 3
+ * EGH444 -- Digital Signals and Image Processing

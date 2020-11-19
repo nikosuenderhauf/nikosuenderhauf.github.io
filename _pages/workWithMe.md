@@ -23,7 +23,7 @@ I am happy to advise PhD students interested in the following **topics**:
  * scene Understanding
  * robot learning for navigation and interaction
 
-
+Please also refer to the [QUT Centre for Robotics website for PhD applicants](https://research.qut.edu.au/qcr/engagement/study-with-us/).
 
 ---
 
@@ -44,12 +44,12 @@ I can offer a position for the Visual Learning and Understanding program I lead 
 
 I am looking for a PhD student to work specifically on the topic of applying **reinforcement learning for complex tasks on semantic object-based maps**. This position is supported by an Amazon Research Award 2020 and builds on some of my [previous research](projects/learningtonavigate/) in this area. Please contact me with your CV and a research proposal. -->
 
-
+<!--
 #### Positions with the QUT Centre for Robotics (available from March 2020)
 
 The QUT Centre for Robotics is offering [fully-funded PhD positions](PhD_march2020) in multiple research areas, available immediately (6 March 2020).
 
-<a href="PhD_march2020"><img class="col three" src="/assets/img/jobs/phd_ad.jpg"/></a>
+<a href="PhD_march2020"><img class="col three" src="/assets/img/jobs/phd_ad.jpg"/></a> -->
 
 <!--
 ### QUT Centre for Robotics is hiring
