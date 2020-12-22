@@ -11,7 +11,11 @@ enable_katex: true
 
 ### PhD Students
 
-You want to do a PhD in robotics? Great! If you are interested in the topics listed below, please contact me via email and include:
+
+
+You want to do a PhD in robotics? Great! If you are interested in the topics listed below, please refer to the [QUT Centre for Robotics website for PhD applicants](https://research.qut.edu.au/qcr/engagement/study-with-us/).
+
+You can contact me via email and include:
  * your CV
  * academic transcript
  * a one page description of your research interests.
@@ -23,7 +27,6 @@ I am happy to advise PhD students interested in the following **topics**:
  * scene Understanding
  * robot learning for navigation and interaction
 
-Please also refer to the [QUT Centre for Robotics website for PhD applicants](https://research.qut.edu.au/qcr/engagement/study-with-us/).
 
 ---
 

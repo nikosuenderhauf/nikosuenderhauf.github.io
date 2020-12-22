@@ -2,6 +2,70 @@
 ---
 
 
+
+@article{rahman2020monitoring,
+  title={{Online Monitoring of Object Detection Performance Post-Deployment}},
+  author={Rahman, Quazi Marufur and S\"underhauf, Niko and Dayoub, Feras},
+  journal={arXiv preprint arXiv:2011.07750},
+  year={2020},
+  arxiv={2011.07750},
+  link={https://arxiv.org/abs/2011.07750},
+  thumb={rahman2020monitoring.png},
+  abstract={Post-deployment, an object detector is expected to operate at a similar level of performance that was reported on its testing dataset. However, when deployed onboard mobile robots that operate under varying and complex environmental conditions, the detector's performance can fluctuate and occasionally degrade severely without warning. Undetected, this can lead the robot to take unsafe and risky actions based on low-quality and unreliable object detections. We address this problem and introduce a cascaded neural network that monitors the performance of the object detector by predicting the quality of its mean average precision (mAP) on a sliding window of the input frames.},
+}
+
+
+@article{hall2020challenge,
+  title={{The Robotic Vision Scene Understanding Challenge}},
+  author={Hall, David  and Talbot, Ben and  Bista, Suman Raj and Zhang, Haoyang and Smith, Rohan and Dayoub, Feras and S\"underhauf, Niko},
+  journal={arXiv preprint arXiv:2009.05246},
+  year={2020},
+  arxiv={2009.05246},
+  link={https://arxiv.org/abs/2009.05246},
+  thumb={hall2020challenge.png},
+  abstract={Being able to explore an environment and understand the location and type of all objects therein is important for indoor robotic platforms that must interact closely with humans. However, it is difficult to evaluate progress in this area due to a lack of standardized testing which is limited due to the need for active robot agency and perfect object ground-truth. To help provide a standard for testing scene understanding systems, we present a new robot vision scene understanding challenge using simulation to enable repeatable experiments with active robot agency. We provide two challenging task types, three difficulty levels, five simulated environments and a new evaluation measure for evaluating 3D cuboid object maps.},
+  html={https://nikosuenderhauf.github.io/roboticvisionchallenges/scene-understanding}
+}
+
+
+@article{zhang2020varifocal,
+  title={{VarifocalNet: An IoU-aware Dense Object Detector}},
+  author={Zhang, Haoyang and Wang, Ying and Dayoub, Feras and S\"underhauf, Niko},
+  journal={arXiv preprint arXiv:2008.13367},
+  year={2020},
+  arxiv={2008.13367},
+  link={https://arxiv.org/abs/2008.13367},
+  thumb={zhang2020varifocal.png},
+  abstract={Accurately ranking a huge number of candidate detections is a key to the high-performance dense object detector. In this paper, we propose to learn IoU-aware classification scores (IACS) that simultaneously represent the object presence confidence and localization accuracy, to produce a more accurate rank of detections in dense object detectors. In particular, we design a new loss function, named Varifocal Loss, for training a dense object detector to predict the IACS, and a new efficient star-shaped bounding box feature representation for estimating the IACS and refining coarse bounding boxes. Extensive experiments on MS COCO benchmark show that our VFNet consistently surpasses the strong baseline by 2.0 AP with different backbones and our best model with Res2Net-101-DCN reaches a single-model single-scale AP of 51.3 on COCO test-dev, achieving the state-of-the-art among various object detectors.},
+  html={https://github.com/hyz-xmaster/VarifocalNet}
+}
+
+
+
+@article{talbot2020benchbot,
+  title={{Benchbot: Evaluating robotics research in photorealistic 3d simulation and on real robots}},
+  author={Talbot, Ben and Hall, David and Zhang, Haoyang and  Bista, Suman Raj and Smith, Rohan and Dayoub, Feras and S\"underhauf, Niko},
+  journal={arXiv preprint arXiv:2008.00635},
+  year={2020},
+  arxiv={2008.00635},
+  link={https://arxiv.org/abs/2008.00635},
+  thumb={talbot2020benchbot.png},
+  abstract={We introduce BenchBot, a novel software suite for benchmarking the performance of robotics research across both photorealistic 3D simulations and real robot platforms. BenchBot provides a simple interface to the sensorimotor capabilities of a robot when solving robotics research problems; an interface that is consistent regardless of whether the target platform is simulated or a real robot. In this paper we outline the BenchBot system architecture, and explore the parallels between its user-centric design and an ideal research development process devoid of tangential robot engineering challenges.},
+  html={http://www.benchbot.org}
+}
+
+@article{rahman2020performance,
+  title={{Performance Monitoring of Object Detection During Deployment}},
+  author={Rahman, Quazi Marufur and S\"underhauf, Niko and Dayoub, Feras},
+  journal={arXiv preprint arXiv:2009.08650},
+  year={2020},
+  arxiv={2009.08650},
+  link={https://arxiv.org/abs/2009.08650},
+  thumb={rahman2020performance.png},
+  abstract={Performance monitoring of object detection is crucial for safety-critical applications such as autonomous vehicles that operate under varying and complex environmental conditions. Currently, object detectors are evaluated using summary metrics based on a single dataset that is assumed to be representative of all future deployment conditions. In practice, this assumption does not hold, and the performance fluctuates as a function of the deployment conditions. To address this issue, we propose an introspection approach to performance monitoring during deployment without the need for ground truth data. We do so by predicting when the per-frame mean average precision drops below a critical threshold using the detector's internal features.},
+}
+
+
 @article{corke2020can,
   title={{What can robotics research learn from computer vision research?}},
   author={Corke, Peter and Dayoub, Feras and Hall, David and Skinner, John and S{\"u}nderhauf, Niko},
