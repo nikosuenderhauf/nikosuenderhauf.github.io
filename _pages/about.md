@@ -7,7 +7,7 @@ description: Associate Professor, Chief Investigator, Computer Scientist <br><a 
 
 profile:
   align: right
-  image: niko_bw.jpg
+  image: niko2021.png
   <!-- address: >
     <p>S-1120</p>
     <p>Gardens Point Campus</p>
@@ -18,7 +18,7 @@ news: true
 social: true
 ---
 
-I am an Associate Professor and Chief Investigator of the [QUT Centre for Robotics](https://research.qut.edu.au/qcr/) where I lead the Visual Understanding and Learning Program. I am furthermore Chief Investigator of the [Australian Centre for Robotic Vision](http://www.roboticvision.org) at Queensland University of Technology ([QUT](http://www.qut.edu.au)) in [Brisbane](http://www.lensaloft.com.au/Interactive_tour/BrisbaneDusk/Brisbane.html), Australia.
+I am an Associate Professor and Chief Investigator of the [QUT Centre for Robotics](https://research.qut.edu.au/qcr/) at Queensland University of Technology ([QUT](http://www.qut.edu.au)) in [Brisbane](http://www.lensaloft.com.au/Interactive_tour/BrisbaneDusk/Brisbane.html), Australia, where I lead the Visual Understanding and Learning Program. I am furthermore Deputy Director (Research) for the newly established ARC Research Hub in Intelligent Robotic Systems for Real-Time Asset Management (starting in 2022). I was Chief Investigator of the [Australian Centre for Robotic Vision](http://www.roboticvision.org) 2017-2020.
 
 I conduct [research](projects) in robotic vision, at the intersection of robotics, computer vision, and machine learning. My research interests focus on scene understanding, object-based [semantic SLAM](http://www.semanticslam.ai), robotic learning for navigation and interaction, uncertainty and reliability of deep learning in open set conditions. I furthermore lead a project on [new benchmarking challenges in robotic vision](http://www.roboticvisionchallenge.org).
 
