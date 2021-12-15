@@ -1,6 +1,19 @@
 ---
 ---
 
+
+@article{rahman2021fsnet,
+  title={{FSNet: A Failure Detection Framework for Semantic Segmentation}},
+  author={Rahman, Quazi Marufur and S\"underhauf, Niko and Corke, Peter and Dayoub, Feras},
+  journal={arXiv preprint arXiv:2108.08748},
+  year={2021},
+  arxiv={2108.08748},
+  link={https://arxiv.org/abs/2108.08748},
+  thumb={rahman2021fsnet.png},
+  abstract={Semantic segmentation is an important task that helps autonomous vehicles understand their surroundings and navigate safely. However, during deployment, even the most mature segmentation models are vulnerable to various external factors that can degrade the segmentation performance with potentially catastrophic consequences for the vehicle and its surroundings. To address this issue, we propose a failure detection framework to identify pixel-level misclassification. We do so by exploiting internal features of the segmentation model and training it simultaneously with a failure detection network. During deployment, the failure detector flags areas in the image where the segmentation model has failed to segment correctly.},
+}
+
+
 @article{rana2021BCF,
   title={Bayesian Controller Fusion: Leveraging Control Priors in Deep Reinforcement Learning for Robotics},
   author={Krishan Rana and Vibhavari Dasagi and Jesse Haviland and Ben Talbot and Michael Milford and Niko S{\"u}nderhauf},
@@ -18,26 +31,7 @@
 }
 
 
-@article{miller2021gmmdet,
-  title={Uncertainty for Identifying Open-Set Errors in Visual Object Detection},
-  author={Miller, Dimity and S{\"u}nderhauf, Niko and Milford, Michael and Dayoub, Feras},
-  journal={arXiv preprint arXiv:2104.01328},
-  abstract={We propose GMM-Det, a real-time method for extracting
-epistemic uncertainty from object detectors to identify and reject open-set errors. GMM-Det trains the detector to produce a
-structured logit space that is modelled with class-specific Gaussian Mixture Models. At test time, open-set errors are identified
-by their low log-probability under all Gaussian Mixture Models.
-We test two common detector architectures, Faster R-CNN and
-RetinaNet, across three varied datasets spanning robotics and
-computer vision. Our results show that GMM-Det consistently
-outperforms existing uncertainty techniques for identifying and
-rejecting open-set detections, especially at the low-error-rate
-operating point required for safety-critical applications. GMMDet maintains object detection performance, and introduces
-only minimal computational overhead.},
-  year={2021},
-  arxiv={2104.01328},
-  thumb={miller21GMMDet.png},
-  link={http://arxiv.org/abs/2104.01328}
-}
+
 
 @article{zhang2020swa,
   title={Swa Object Detection},

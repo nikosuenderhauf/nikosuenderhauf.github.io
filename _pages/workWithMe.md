@@ -11,8 +11,6 @@ enable_katex: true
 
 ### PhD Students
 
-
-
 You want to do a PhD in robotics? Great! If you are interested in the topics listed below, please refer to the [QUT Centre for Robotics website for PhD applicants](https://research.qut.edu.au/qcr/engagement/study-with-us/).
 
 You can contact me via email and include:
@@ -27,6 +25,18 @@ I am happy to advise PhD students interested in the following **topics**:
  * scene Understanding
  * robot learning for navigation and interaction
 
+
+
+### PhD and Postdoc Positions with the ARC Industrial Transformation Research Hub in Intelligent Robotics for Real-Time Assest Management
+
+This research hub aims to transform the way assets and infrastructure are managed by developing new capabilities for intelligent robotic systems for inspection, monitoring, and maintenance.
+
+This 5-year Research Hub is funded by the Australian Research Council (ARC) and 11 partners from industry. It is a joint project led the University of Sydney, with QUT and the Australian National University (ANU) in Canberra.
+
+The hub expects to generate new knowledge in robotics and associated fields including sensing, planning, data processing, and machine learning using interdisciplinary approaches and tight collaboration between academia and industry. The expected outcomes are robots with the ability to autonomously collect data for integration into a digital twin that provides a real-time representation of the true state of a physical asset. The benefits include both improved asset management and establishing Australia as a leading manufacturer of advanced robotic systems. 
+
+Starting in 2022, we will have **several fully-funded PhD positions** available at QUT and our partner universities in Sydney and Canberra. We will also hire **multiple excellent Postdoctoral Resarch Fellows**. 
+More information will be available in early 2022.
 
 ---
 

@@ -1,3 +1,26 @@
+
+@article{miller2021gmmdet,
+  title={Uncertainty for Identifying Open-Set Errors in Visual Object Detection},
+  author={Miller, Dimity and S{\"u}nderhauf, Niko and Milford, Michael and Dayoub, Feras},  
+  abstract={We propose GMM-Det, a real-time method for extracting
+epistemic uncertainty from object detectors to identify and reject open-set errors. GMM-Det trains the detector to produce a
+structured logit space that is modelled with class-specific Gaussian Mixture Models. At test time, open-set errors are identified
+by their low log-probability under all Gaussian Mixture Models.
+We test two common detector architectures, Faster R-CNN and
+RetinaNet, across three varied datasets spanning robotics and
+computer vision. Our results show that GMM-Det consistently
+outperforms existing uncertainty techniques for identifying and
+rejecting open-set detections, especially at the low-error-rate
+operating point required for safety-critical applications. GMMDet maintains object detection performance, and introduces
+only minimal computational overhead.},
+  year={2021},
+  journal={{IEEE Robotics and Automation Letters (RA-L)}},
+  link={https://doi.org/10.1109/LRA.2021.3123374},
+  arxiv={2104.01328},
+  thumb={miller21GMMDet.png},
+  link={http://arxiv.org/abs/2104.01328}
+}
+
 @article{garg2021semantics,
   title={Semantics for robotic mapping, perception and interaction: A survey},
   author={Garg, Sourav and S{\"u}nderhauf, Niko and Dayoub, Feras and Morrison, Douglas and Cosgun, Akansel and Carneiro, Gustavo and Wu, Qi and Chin, Tat-Jun and Reid, Ian and Gould, Stephen and others},
