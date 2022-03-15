@@ -2,17 +2,36 @@
 ---
 
 
-@article{rahman2021fsnet,
-  title={{FSNet: A Failure Detection Framework for Semantic Segmentation}},
-  author={Rahman, Quazi Marufur and S\"underhauf, Niko and Corke, Peter and Dayoub, Feras},
-  journal={arXiv preprint arXiv:2108.08748},
-  year={2021},
-  arxiv={2108.08748},
-  link={https://arxiv.org/abs/2108.08748},
-  thumb={rahman2021fsnet.png},
-  abstract={Semantic segmentation is an important task that helps autonomous vehicles understand their surroundings and navigate safely. However, during deployment, even the most mature segmentation models are vulnerable to various external factors that can degrade the segmentation performance with potentially catastrophic consequences for the vehicle and its surroundings. To address this issue, we propose a failure detection framework to identify pixel-level misclassification. We do so by exploiting internal features of the segmentation model and training it simultaneously with a failure detection network. During deployment, the failure detector flags areas in the image where the segmentation model has failed to segment correctly.},
+@article{rana2021zero,
+  title={Zero-Shot Uncertainty-Aware Deployment of Simulation Trained Policies on Real-World Robots},
+  author={Rana, Krishan and Dasagi, Vibhavari and Haviland, Jesse and Talbot, Ben and Milford, MIchael and S{\"u}nderhauf, Niko},
+  journal={arXiv preprint arXiv:2112.05299},
+  arxiv={2112.05299},
+  year={2022},
+  abstract={While deep reinforcement learning (RL) agents have demonstrated incredible potential in attaining dexterous behaviours for robotics, they tend to make errors when deployed in the real world due to mismatches between the training and execution environments. In contrast, the classical robotics community have developed a range of controllers that can safely operate across most states in the real world given their explicit derivation. These controllers however lack the dexterity required for complex tasks given limitations in analytical modelling and approximations. In this paper, we propose Bayesian Controller Fusion (BCF), a novel uncertainty-aware deployment strategy that combines the strengths of deep RL policies and traditional handcrafted controllers.},
+  link={https://arxiv.org/abs/2112.05299},
+  thumb={rana2021zero.png}
 }
 
+
+
+@article{wilson2021hyperdimensional,
+  title={Hyperdimensional Feature Fusion for Out-Of-Distribution Detection},
+  author={Wilson, Samuel and S{\"u}nderhauf, Niko and Dayoub, Feras},
+  journal={arXiv preprint arXiv:2112.05341},
+  year={2021},
+  arxiv={2112.05341},
+  abstract={We introduce powerful ideas from Hyperdimensional Com-
+puting into the challenging field of Out-of-Distribution (OOD) detection.
+In contrast to most existing works that perform OOD detection based on
+only a single layer of a neural network, we use similarity-preserving semi-
+orthogonal projection matrices to project the feature maps from multiple
+layers into a common vector space. By repeatedly applying the bundling
+operation ⊕, we create expressive class-specific descriptor vectors for all
+in-distribution classes. },
+  thumb={wilson2021hyperdimensional.png},
+  link={https://arxiv.org/abs/2112.05341}
+}
 
 @article{rana2021BCF,
   title={Bayesian Controller Fusion: Leveraging Control Priors in Deep Reinforcement Learning for Robotics},

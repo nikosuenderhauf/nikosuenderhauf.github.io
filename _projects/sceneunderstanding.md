@@ -34,7 +34,7 @@ Read more on our dedicated project website [semanticslam.ai](http://www.semantic
 <iframe width="560" height="315" src="https://www.youtube.com/embed/w1-INFCpc20" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </center>
 
-
+{% bibliography -f journals -q @*[id=hall2022benchbot]* %}
 {% bibliography -f arxiv -q @*[id=hall2020challenge]* %}
 {% bibliography -f arxiv -q @*[id=talbot2020benchbot]* %}
 {% bibliography -f conferences -q @*[id=bista2021mapping]* %}
