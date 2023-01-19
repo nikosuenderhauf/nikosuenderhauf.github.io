@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Scene Understanding and Semantic SLAM
+title: Scene Understanding, Semantic SLAM, Implicit Representations
 description:
 ---
 
@@ -34,6 +34,10 @@ Read more on our dedicated project website [semanticslam.ai](http://www.semantic
 <iframe width="560" height="315" src="https://www.youtube.com/embed/w1-INFCpc20" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </center>
 
+
+{% bibliography -f conferences -q @*[id=suenderhauf2022nerf]* %}
+{% bibliography -f arxiv -q @*[id=abouchakra2022particle]* %}
+{% bibliography -f arxiv -q @*[id=abouchakra2022implicit]* %}
 {% bibliography -f journals -q @*[id=hall2022benchbot]* %}
 {% bibliography -f arxiv -q @*[id=hall2020challenge]* %}
 {% bibliography -f arxiv -q @*[id=talbot2020benchbot]* %}

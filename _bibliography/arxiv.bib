@@ -1,36 +1,69 @@
 ---
 ---
 
-
-@article{rana2021zero,
-  title={Zero-Shot Uncertainty-Aware Deployment of Simulation Trained Policies on Real-World Robots},
-  author={Rana, Krishan and Dasagi, Vibhavari and Haviland, Jesse and Talbot, Ben and Milford, MIchael and S{\"u}nderhauf, Niko},
-  journal={arXiv preprint arXiv:2112.05299},
-  arxiv={2112.05299},
+@article{abouchakra2022particle,
+  title={{ParticleNeRF: Particle Based Encoding for Online Neural Radiance Fields in Dynamic Scenes}},
+  author={Jad Abou-Chakra and Feras Dayoub and Niko S{\"u}nderhauf},
+  journal={arXiv preprint arXiv:2211.04041},
   year={2022},
-  abstract={While deep reinforcement learning (RL) agents have demonstrated incredible potential in attaining dexterous behaviours for robotics, they tend to make errors when deployed in the real world due to mismatches between the training and execution environments. In contrast, the classical robotics community have developed a range of controllers that can safely operate across most states in the real world given their explicit derivation. These controllers however lack the dexterity required for complex tasks given limitations in analytical modelling and approximations. In this paper, we propose Bayesian Controller Fusion (BCF), a novel uncertainty-aware deployment strategy that combines the strengths of deep RL policies and traditional handcrafted controllers.},
-  link={https://arxiv.org/abs/2112.05299},
-  thumb={rana2021zero.png}
+  arxiv={2211.04041},
+  link={https://arxiv.org/abs/2211.04041},
+  abstract={Neural Radiance Fields (NeRFs) learn implicit representations of - typically static - environments from images. Our paper extends NeRFs to handle dynamic scenes in an online fashion. We propose ParticleNeRF that adapts to changes in the geometry of the environment as they occur, learning a new up-to-date representation every 350ms. ParticleNeRF can represent the current state of dynamic environments with much higher fidelity compared to other NeRF frameworks.},
+  html={https://sites.google.com/view/particlenerf},
+  thumb={abouchakra2022particle.png}
+}
+
+@article{deitke2022retro,
+  title={Retrospectives on the Embodied AI Workshop},
+  author={Deitke, Matt and Batra, Dhruv and Bisk, Yonatan and Campari, Tommaso and Chang, Angel X and Chaplot, Devendra Singh and Chen, Changan and D'Arpino, Claudia P{\'e}rez and Ehsani, Kiana and Farhadi, Ali and others},
+  journal={arXiv preprint arXiv:2210.06849},
+  year={2022},
+  arxiv={2210.06849},
+  abstract={We present a retrospective on the state of Embodied AI
+research. Our analysis focuses on 13 challenges presented
+at the Embodied AI Workshop at CVPR. These challenges
+are grouped into three themes: (1) visual navigation, (2) rearrangement, and (3) embodied vision-and-language. We
+discuss the dominant datasets within each theme, evaluation metrics for the challenges, and the performance of stateof-the-art models. We highlight commonalities between top
+approaches to the challenges and identify potential future
+directions for Embodied AI research.},
+  thumb={deitke2022retro.png},
+  link={http://arxiv.org/abs/2210.06849}
 }
 
 
+@article{wilson2022safe,
+  title={SAFE: Sensitivity-Aware Features for Out-of-Distribution Object Detection},
+  author={Wilson, Samuel and Fischer, Tobias and Dayoub, Feras and Miller, Dimity and S{\"u}nderhauf, Niko},
+  journal={arXiv preprint arXiv:2208.13930},
+  year={2022},
+  abstract={ SAFE (Sensitivity-Aware
+FEatures), leverages the innate sensitivity of residual networks to detect OOD samples. Key to our method, we build
+on foundational theory from image classification to identify that shortcut convolutional layers followed immediately
+by batch normalisation are uniquely powerful at detecting
+OOD samples. SAFE circumvents the need for realistic OOD
+training data, expensive generative models and retraining
+of the base object detector by training a 3-layer multilayer
+perceptron (MLP) on the surrogate task of distinguishing
+noise-perturbed and clean in-distribution object detections,
+using only the concatenated features from the identified most
+sensitive layers. We show that this MLP can identify OOD
+object detections more reliably than previous approaches,
+achieving a new state-of-the-art on multiple benchmarks},
+thumb={wilson2022safe.png},
+link={https://arxiv.org/abs/2208.13930},
+arxiv={2208.13930},
+}
 
-@article{wilson2021hyperdimensional,
-  title={Hyperdimensional Feature Fusion for Out-Of-Distribution Detection},
-  author={Wilson, Samuel and S{\"u}nderhauf, Niko and Dayoub, Feras},
-  journal={arXiv preprint arXiv:2112.05341},
-  year={2021},
-  arxiv={2112.05341},
-  abstract={We introduce powerful ideas from Hyperdimensional Com-
-puting into the challenging field of Out-of-Distribution (OOD) detection.
-In contrast to most existing works that perform OOD detection based on
-only a single layer of a neural network, we use similarity-preserving semi-
-orthogonal projection matrices to project the feature maps from multiple
-layers into a common vector space. By repeatedly applying the bundling
-operation ⊕, we create expressive class-specific descriptor vectors for all
-in-distribution classes. },
-  thumb={wilson2021hyperdimensional.png},
-  link={https://arxiv.org/abs/2112.05341}
+
+@article{abouchakra2022implicit,
+  title={Implicit Object Mapping With Noisy Data},
+  author={Abou-Chakra, Jad and Dayoub, Feras and S{\"u}nderhauf, Niko},
+  journal={arXiv preprint arXiv:2204.10516},
+  year={2022},
+  arxiv={2204.10516},
+  link={https://arxiv.org/abs/2204.10516},
+  thumb={abouchakra2022implicit.png},
+  abstract={This paper uses the outputs of an object-based SLAM system to bound objects in the scene with coarse primitives and - in concert with instance masks - identify obstructions in the training images. Objects are therefore automatically bounded, and non-relevant geometry is excluded from the NeRF representation. The method's performance is benchmarked under ideal conditions and tested against errors in the poses and instance masks. Our results show that object-based NeRFs are robust to pose variations but sensitive to the quality of the instance masks.}
 }
 
 @article{rana2021BCF,
@@ -48,8 +81,6 @@ in-distribution classes. },
   html={https://krishanrana.github.io/bcf},
   thumb={rana21bcf.png}
 }
-
-
 
 
 @article{zhang2020swa,

@@ -1,6 +1,82 @@
 ---
 ---
 
+
+@inproceedings{suenderhauf2022nerf,
+  title={Density-aware NeRF Ensembles: Quantifying Predictive Uncertainty in Neural Radiance Fields},
+  author={S{\"u}nderhauf, Niko and Abou-Chakra, Jad and Miller, Dimity},
+  arxiv={2209.08718},
+  booktitle={{IEEE Conference on Robotics and Automation (ICRA)}},
+  year={2023},
+  abstract={
+  We show that ensembling effectively quantifies
+model uncertainty in Neural Radiance Fields (NeRFs) if a
+density-aware epistemic uncertainty term is considered. The
+naive ensembles investigated in prior work simply average
+rendered RGB images to quantify the model uncertainty caused
+by conflicting explanations of the observed scene. In contrast,
+we additionally consider the termination probabilities along
+individual rays to identify epistemic model uncertainty due to
+a lack of knowledge about the parts of a scene unobserved
+during training. We achieve new state-of-the-art performance
+across established uncertainty quantification benchmarks for
+NeRFs, outperforming methods that require complex changes
+to the NeRF architecture and training regime. We furthermore
+demonstrate that NeRF uncertainty can be utilised for next-best
+view selection and model refinement.
+  },
+  thumb={suenderhauf2022nerf.png},
+  link={https://arxiv.org/abs/2209.08718},
+}
+
+
+@inproceedings{wilson2021hyperdimensional,
+  title={Hyperdimensional Feature Fusion for Out-Of-Distribution Detection},
+  author={Wilson, Samuel and Fischer, Tobias and S{\"u}nderhauf, Niko and Dayoub, Feras},
+  booktitle={{IEEE Winter Conference on Applications of Computer Vision (WACV)}},
+  year={2023},
+  arxiv={2112.05341},
+  abstract={We introduce powerful ideas from Hyperdimensional
+Computing into the challenging field of Out-of-Distribution
+(OOD) detection. In contrast to most existing works that perform OOD detection based on only a single layer of a neural
+network, we use similarity-preserving semi-orthogonal projection matrices to project the feature maps from multiple
+layers into a common vector space. By repeatedly applying the bundling operation ⊕, we create expressive classspecific descriptor vectors for all in-distribution classes.},
+  thumb={wilson2021hyperdimensional.png},
+  link={https://openaccess.thecvf.com/content/WACV2023/papers/Wilson_Hyperdimensional_Feature_Fusion_for_Out-of-Distribution_Detection_WACV_2023_paper.pdf}
+}
+
+@inproceedings{rana22reskill,
+  title={Residual Skill Policies: Learning an Adaptable Skill-based Action Space for Reinforcement Learning for Robotics},
+  author={Rana, Krishan and Xu, Ming and Tidd, Brendan and Milford, Michael, and S{\"u}nderhauf, Niko},
+  booktitle={{Conference on Robot Learning (CoRL)}},
+  year={2022},
+  arxiv={2211.02231},
+  abstract={Skill-based reinforcement learning (RL) has emerged as a promising strategy to
+leverage prior knowledge for accelerated robot learning. We firstly
+propose accelerating exploration in the skill space using state-conditioned generative models to directly bias the high-level agent towards only sampling skills
+relevant to a given state based on prior experience. Next, we propose a low-level
+residual policy for fine-grained skill adaptation enabling downstream RL agents
+to adapt to unseen task variations. Finally, we validate our approach across four
+challenging manipulation tasks that differ from those used to build the skill space,
+demonstrating our ability to learn across task variations while significantly accelerating exploration, outperforming prior works.},
+  thumb={rana2022reskill.png},
+  link={https://openaccess.thecvf.com/content/WACV2023/papers/Wilson_Hyperdimensional_Feature_Fusion_for_Out-of-Distribution_Detection_WACV_2023_paper.pdf},
+  html={https://krishanrana.github.io/reskill}
+}
+
+
+
+@inproceedings{ruetz2022forest,
+  title={Forest Traversability Mapping (FTM): Traversability estimation using 3D voxel-based Normal Distributed Transform to enable forest navigation},
+  author={Ruetz, Fabio and Borges, Paulo and Suenderhauf, Niko and Hern{\'a}ndez, Emili and Peynot, Thierry},
+  booktitle={2022 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+  year={2022},
+  abstract={Autonomous navigation in dense vegetation remains an open challenge and is an area of major interest for the research community. In this paper we propose a novel traversability estimation method, the Forest Traversability Map, that gives autonomous ground vehicles the ability to navigate in harsh forests or densely vegetated environments. The method estimates travers ability in unstructured environments dominated by vegetation, void of any dominant human structures, gravel or dirt roads, with higher accuracy than the state of the art.},
+  thumb={ruetz2022forest.png},
+  link={http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9981401}
+}
+
+
 @inproceedings{zhang2020varifocal,
   title={{VarifocalNet: An IoU-aware Dense Object Detector}},
   author={Zhang, Haoyang and Wang, Ying and Dayoub, Feras and S\"underhauf, Niko},

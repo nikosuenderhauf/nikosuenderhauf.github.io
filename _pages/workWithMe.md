@@ -9,11 +9,11 @@ enable_katex: true
 
 ---
 
-### PhD Students
+## PhD Students
 
 You want to do a PhD in robotics? Great! If you are interested in the topics listed below, please refer to the [QUT Centre for Robotics website for PhD applicants](https://research.qut.edu.au/qcr/engagement/study-with-us/).
 
-You can contact me via email and include:
+You can [contact me via email](https://www.qut.edu.au/about/our-people/academic-profiles/niko.suenderhauf) and include:
  * your CV
  * academic transcript
  * a one page description of your research interests.
@@ -21,22 +21,59 @@ You can contact me via email and include:
 Please understand that due to the high volume of PhD applications I receive, I might not be able to respond to your email. This is especially the case if you did not attach the documents listed above, or if your research interests are not aligned with mine. I will be in touch if I think you would be a good fit to our lab.
 
 I am happy to advise PhD students interested in the following **topics**:
- * semantic SLAM, object-based SLAM
- * scene Understanding
  * robot learning for navigation and interaction
+ * large-scale mapping with implicit representations (e.g. NeRFs)
+ * semantic SLAM, object-based SLAM, scene understanding
+ * combination of large language models, robot learning, and robotic mapping / scene understanding
+ 
+ 
 
 
 
-### PhD and Postdoc Positions with the ARC Industrial Transformation Research Hub in Intelligent Robotics for Real-Time Assest Management
+## PhD and Postdoc Positions with the ARIAM Hub
 
-This research hub aims to transform the way assets and infrastructure are managed by developing new capabilities for intelligent robotic systems for inspection, monitoring, and maintenance.
+<img class="col one" src="/assets/img/projects/ariam-logo.png"/>
+The [Australian Robotic Inspection and Asset Management Hub](https://ariamhub.com/) (ARIAM)
+will transform the way assets and infrastructure are managed by developing new capabilities for intelligent robotic systems for inspection, monitoring, and maintenance.
 
-This 5-year Research Hub is funded by the Australian Research Council (ARC) and 11 partners from industry. It is a joint project led the University of Sydney, with QUT and the Australian National University (ANU) in Canberra.
+This 5-year Research Hub is a joint project between the [University of Sydney](https://www.sydney.edu.au/), [QUT](https://www.qcr.ai), and [ANU](https://www.anu.edu.au/). It is funded by the Australian Research Council and 11 partners from industry. 
 
 The hub expects to generate new knowledge in robotics and associated fields including sensing, planning, data processing, and machine learning using interdisciplinary approaches and tight collaboration between academia and industry. The expected outcomes are robots with the ability to autonomously collect data for integration into a digital twin that provides a real-time representation of the true state of a physical asset. The benefits include both improved asset management and establishing Australia as a leading manufacturer of advanced robotic systems. 
 
-Starting in 2022, we will have **several fully-funded PhD positions** available at QUT and our partner universities in Sydney and Canberra. We will also hire **multiple excellent Postdoctoral Resarch Fellows**. 
-More information will be available in early 2022.
+Starting in 2023, we will have **several fully-funded PhD positions** available at QUT and our partner universities in Sydney and Canberra. We will also hire **multiple excellent Postdoctoral Resarch Fellows**. 
+
+
+
+### Mapping the World: Representing and Understanding the Environment through Multi-Modal Spatio-Temporal Implicit Scene Representations  
+ - Scholarship: $35,000 AUD per year, tax free
+ - 2 PhD positions available
+ - start date: from March 2023
+
+**Accurately mapping large-scale infrastructure assets (power poles, bridges, buildings, whole suburbs and cities) is still exceptionally challenging for robots.** 
+ 
+<img class="col one" src="/assets/img/projects/infrastructure.png"/>
+The problem becomes even harder when we ask robots to map structures with intricate geometry or when the appearance or the structure of the environment changes over time, for example due to corrosion or construction activity.
+
+The problem difficulty is increased even more when sensor data from a range of different sensors (e.g. lidars and cameras, but also more specialised hardware such as gas sensors) need to be integrated; and when the sensor data is gathered by multiple heterogeneous agents (e.g. robots, drones, or human-operated sensor platforms of different kinds).
+
+Extracting insights and knowledge from the created maps is another ongoing challenge, especially when the requested insights are of semantic or similar high-level nature, or not even fully known at the time of creating the representation.
+
+**This PhD project allows you to develop new algorithms that enable robots to better map, represent, and understand the world around them.**
+
+You can solve this problem in close collaboration with researchers from the [QUT Centre for Robotics](http://qcr.ai/), our Industry Partner [Emesent](https://www.emesent.com/), and researchers from the University of Sydney, the Australian National University, and the [Australian Robotic Inspection and Asset Management Hub (ARIAM)](http://https//ariamhub.com).
+
+ARIAM is a 5-year, $10 million research project with the University of Sydney, the QUT Centre for Robotics, the Australian National University, and over 10 industry partners. You will have the opportunity to work with researchers from the involved institutions and participate in a range of exciting professional development activities.
+
+You will also be part of the QUT Centre for Robotics, which offers a vibrant research culture with a variety of social and professional activities, ranging from PhD boardgame nights to short courses on professional skills such as presenting, academic writing, managing your time, preparing a CV, or preparing for job interviews.
+
+If you are interested, please contact me [contact me via email](https://www.qut.edu.au/about/our-people/academic-profiles/niko.suenderhauf) and include:
+ - your CV
+ - academic transcript
+ - a one page description of your research interests.
+
+
+
+
 
 ---
 
