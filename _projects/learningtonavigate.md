@@ -6,7 +6,9 @@ description:
 
 
 <!-- ### Learning to Navigate -->
+{% bibliography -f conferences -q @*[id=rana2022reskill]* %}
 {% bibliography -f arxiv -q @*[id=rana2021BCF]* %}
+{% bibliography -f workshops -q @*[id=rana2021zero]* %}
 {% bibliography -f conferences -q @*[id=rana2020multiplicative]* %}
 <center>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/X99cFN2UyTI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

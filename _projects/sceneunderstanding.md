@@ -23,21 +23,26 @@ A robot that uses this point cloud map – for instance for navigation – can u
 **Semantic SLAM** goes one step further. Semantic SLAM uses objects as the central entities in the map (instead of primitives such as points). The objects carry semantic meaning, such as class labels or affordances. This -->
 
 
+
+### Mapping with Implicit Representations and Neural Radiance Fields
+
+{% bibliography -f conferences -q @*[id=suenderhauf2022nerf]* %}
+{% bibliography -f arxiv -q @*[id=abouchakra2022particle]* %}
+{% bibliography -f arxiv -q @*[id=abouchakra2022implicit]* %}
+
+
 ### Semantic SLAM and Semantic Mapping
 We work on novel approaches to SLAM (Simultaneous Localization and Mapping) that create semantically meaningful maps by combining geometric and semantic information.
 
 We believe such semantically enriched maps will help robots understand our complex world and will ultimately increase the range and sophistication of interactions that robots can have in domestic and industrial deployment scenarios.
 
-Read more on our dedicated project website [semanticslam.ai](http://www.semanticslam.ai).
+<!-- Read more on our dedicated project website [semanticslam.ai](http://www.semanticslam.ai). -->
 
 <center>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/w1-INFCpc20" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </center>
 
-
-{% bibliography -f conferences -q @*[id=suenderhauf2022nerf]* %}
-{% bibliography -f arxiv -q @*[id=abouchakra2022particle]* %}
-{% bibliography -f arxiv -q @*[id=abouchakra2022implicit]* %}
+{% bibliography -f arxiv -q @*[id=deitke2022retro]* %}
 {% bibliography -f journals -q @*[id=hall2022benchbot]* %}
 {% bibliography -f arxiv -q @*[id=hall2020challenge]* %}
 {% bibliography -f arxiv -q @*[id=talbot2020benchbot]* %}

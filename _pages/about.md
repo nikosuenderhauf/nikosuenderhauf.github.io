@@ -3,7 +3,7 @@ layout: about
 permalink: /
 title: <strong>Niko</strong> Sünderhauf
 <!-- description: Chief Investigator - <a href='http://www.roboticvision.org'>Australian Centre for Robotic Vision</a> <br> Senior Lecturer - <a href='http://www.qut.edu.au'>Queensland University of Technology</a>, Brisbane, Australia -->
-description: Professor, Chief Investigator, Computer Scientist <br><a href='http://www.roboticvision.org'> – creating robots that see and understand the world – </a>
+description: Professor, Chief Investigator, Computer Scientist <br><a href='http://www.qcr.ai'> – creating robots that see and understand the world – </a>
 
 profile:
   align: right
