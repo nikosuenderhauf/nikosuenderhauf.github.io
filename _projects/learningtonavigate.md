@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Reinforcement Learning for Complex Tasks and Robot Navigation
+title: Robot Learning for Navigation and Complex Task Execution
 description:
 ---
 

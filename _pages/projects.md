@@ -10,7 +10,7 @@ enable_katex: true
 ---
 
 
-### Scene Understanding and Semantic SLAM
+### Scene Understanding, Semantic SLAM, and Implicit Representations
 <a href="sceneunderstanding"><img class="col one" src="/assets/img/projects/quadricSLAM.png"/></a>
 Making a robot understand what it sees is one of the most fascinating goals in my current research.
 To this end, we develop novel methods for _Semantic Mapping_ and [Semantic SLAM](http://www.semanticslam.ai) by combining object detection with simultaneous localisation and mapping (SLAM) techniques. We furthermore work on [Bayesian Deep Learning](uncertainty) for object detection, to better understand the uncertainty of a deep network's predictions and integrate deep learning into robotics in a probabilistic way. [Read more …](sceneunderstanding)
@@ -20,7 +20,12 @@ To this end, we develop novel methods for _Semantic Mapping_ and [Semantic SLAM]
 
 Furthermore, we work towards making semantic perception robust enough to be used on autonomous robots. To achieve this goal, we analyse the key differences between robotic vision and computer vision (where great breakthroughs have happened since 2013 with the advent of convolutional networks), and adapt learning procedures and network architectures accordingly.  -->
 
-### Bayesian Deep Learning and Uncertainty for Object Detection
+
+### Robot Learning for Navigation and Complex Task Execution
+<a href="learningtonavigate"><img class="col one" src="/assets/img/projects/navigate.png"/></a>
+How can robots best learn to navigate in challenging environments and execute complex tasks, such as tidying up an apartment or assist humans in their everyday domestic chores? Often, hand-written architectures are based on complicated state machines that become intractable to design and maintain with growing task complexity. I am interested in developing learning-based approaches are effective and efficient, and scale better to complicated tasks. [Read more …](learningtonavigate)
+
+### Uncertainty and Realiability of Deep Learning for Robotic Perception
 <a href="uncertainty"><img class="col one" src="/assets/img/projects/uncertainty.png"/></a>
 In order to fully integrate deep
 learning into robotics, it is important that deep learning systems
@@ -33,9 +38,6 @@ accumulate information over time.
 We focus on Bayesian Deep Learning approaches for the specific use case of object detection on a robot in open-set conditions. [Read more …](uncertainty)
 
 
-### Reinforcement Learning for Robot Navigation and Complex Task Execution
-<a href="learningtonavigate"><img class="col one" src="/assets/img/projects/navigate.png"/></a>
-How can robots best learn to navigate in challenging environments and execute complex tasks, such as tidying up an apartment or assist humans in their everyday domestic chores? Often, hand-written architectures are based on complicated state machines that become intractable to design and maintain with growing task complexity. I am interested in developing learning-based approaches are effective and efficient, and scale better to complicated tasks. [Read more …](learningtonavigate)
 
 ### Robotic Vision Evaluation and Benchmarking
 Big benchmark competitions like [ILSVRC](http://www.image-net.org/challenges/LSVRC/) or [COCO](http://cocodataset.org) fuelled much of the progress in computer vision and deep learning over the past years. We aim to recreate this success for robotic vision.

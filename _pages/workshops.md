@@ -13,6 +13,21 @@ I am very active in organising workshops at robotics and computer vision confere
 
 ---
 
+[**Behaviour Priors in Reinforcement Learning for Robotics**](https://sites.google.com/view/rlbp-icra2022/home) (**ICRA 2022**)
+The goal of this workshop was to discuss the role that behaviour priors could play in Reinforcement Learning for robotics. This includes the various ways in which we can learn/model these priors, methods to integrate their experience within the RL framework and their applicability to solving some of the key challenges faced by RL for real-world robotics.
+
+---
+
+[**Embodied AI Workshop**](https://embodied-ai.org/cvpr2022) (**CVPR 2022**)
+Similar to the 2021 edition of the worksop, the goal of this workshop was to share and discuss the current state of intelligent agents that can: see,talk, listen, act, and reason. The Embodied AI 2021 workshop was held virtually in conjunction with CVPR 2021. It featured a host of invited talks covering a variety of topics in Embodied AI, many exciting challenges, a poster session, and panel discussions. We contributed the [Robotic Vision Scene Understanding Challenge](http://cvpr2022.roboticvisionchallenge.org/)
+
+---
+
+[**Embodied AI Workshop**](https://embodied-ai.org/cvpr2021) (**CVPR 2021**)
+The goal of this workshop was to share and discuss the current state of intelligent agents that can: see,talk, listen, act, and reason. The Embodied AI 2021 workshop was held virtually in conjunction with CVPR 2021. It featured a host of invited talks covering a variety of topics in Embodied AI, many exciting challenges, a poster session, and panel discussions. We contributed the [Robotic Vision Scene Understanding Challenge](http://cvpr2021.roboticvisionchallenge.org/)
+
+---
+
 [**Good Citizens of Robotics Research**](https://sites.google.com/view/rss20-gcr) (**RSS 2020**)
 This workshop provided a forum for discussions and commentary on topics about research, dissemination, and community, by taking inspiration from Computer Vision research and [this excellent CVPR workshop](https://www.cc.gatech.edu/~parikh/citizenofcvpr/). We discussed important questions like: How to incentivize and do good systems research? How to best disseminate results, code, and hardware? How to be a fair reviewer? How to be a good area chair? How to support a caring and inclusive community? How to bridge the gap between academia and industry and the role of ethics in their interplay? and in general how to go about being a good citizen of robotics research.
 

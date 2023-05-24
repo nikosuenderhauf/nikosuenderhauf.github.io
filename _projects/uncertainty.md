@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Bayesian Deep Learning and Uncertainty in Object Detection
+title: Uncertainty and Realiability of Deep Learning for Robotic Perception
 description:
 ---
 

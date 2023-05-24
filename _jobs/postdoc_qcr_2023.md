@@ -9,7 +9,7 @@ This position is with the QUT Centre for Robotics (QCR) and will work closely wi
 
 <!-- **Position advertised: 6 March 2020**. -->
 
-I am looking to fill this position **immediately** (from April 2023). Please [contact me](https://research.qut.edu.au/qcr/people/niko-suenderhauf/) if you are interested.
+I am looking to fill this position **immediately** (from May 2023). Please [contact me](https://research.qut.edu.au/qcr/people/niko-suenderhauf/) if you are interested.
 
 <!-- **This position has been filled and is no longer available.** -->
 
@@ -27,15 +27,16 @@ We are looking for a creative and enthusiastic Research Fellow to contribute dec
 
 You are driven to investigate how robots can understand and represent the geometry, semantics, and functionality of their surroundings and the task-relevant objects therein; and how robots can use this internal representation and learn to decide or plan their next actions in order to accomplish a useful task in a safe way.
 
-You are excited to do research in:
- * new representations for large-scale semantic mapping and SLAM, e.g. using implicit representations such as NeRFs
- * robot learning combining natural language instructions and priors with the semantic representations of the scene
-
+You are excited to investigate:
+ * the potentials and limitations of new foundation models, large language models and vision-language models in the context of reliable robot learning and understanding
+ * new representations for a scene (ranging from individual objects to large-scale environments) including implicit representations and scene graphs, that support robotic planning, navigation, and manipulation
+ * robot learning combining natural language instructions, human demonstrations, and prior knowledge with the semantic representations of the scene
+ 
 You are willing to explore the applicability of your research in a variety of robotic application domains including service robotics, healthcare, environmental, retail, logistics, autonomous driving, agriculture, but also in adjacent domains such as augmented/mixed reality.
 
 During your previous roles as researcher and PhD student, you have demonstrated expertise and understanding of the foundations of robotics, such as coordinate frames and transforms, navigation, localisation, mapping, SLAM, kinematics, motion models, and control. You are familiar with the mathematical concepts underpinning those foundations, including statistics and probabilistic methods.
 
-You have deep knowledge in computer vision and general machine learning, as well as a good understanding of robot learning approaches comprising reinforcement learning and imitation learning. You understand the mathematical and statistical foundations of deep learning.
+You have deep knowledge in computer vision and machine learning, as well as a good understanding of robot learning approaches comprising reinforcement learning and imitation learning. You understand the mathematical and statistical foundations of deep learning. You are driven and excited to constantly learn to understand new techniques and keep up with a quickly evolving field.
 
 You are a prolific user of Python and deep learning frameworks such as PyTorch, and regularly work and develop in Linux. Ideally, you have a working knowledge of ROS. 
 
@@ -72,7 +73,7 @@ This program investigates the fundamental problem of how a robot can learn to re
 
 ### Key Responsibilities
 Key responsibilities include:
-* Lead and contribute to research in QCR’s Visual Learning and Understanding Program
+* Contribute to the research in QCR’s Visual Learning and Understanding Program
 * Work closely with a team of academics, research fellow, engineers, PhD students and undergraduates
 * Co-supervise PhD students and undergraduate students
 * Publish in high-quality conferences and journals in robotics, computer vision, machine learning
@@ -80,18 +81,18 @@ Key responsibilities include:
 * Implementing and administering University policy within the Faculty with respect to equitable access to education and workplace health and safety
 
 ### Selection Criteria
- * Completion of a doctoral qualification in engineering, computer science, or related discipline.
- * Experience in (or a willingness to take on) leadership of a research team within a high profile academic environment.
+ * Completion of a doctoral qualification in engineering, computer science, or related discipline. 
  * A well-formulated research agenda and the willingness or demonstrated capability to independently conduct high-quality research.
  * Demonstrated ability to publish research outcomes in top conferences or journals in robotics, computer vision, or machine learning.
  * Demonstrated knowledge and expertise in the foundations of robotics, computer vision, machine learning. Demonstrated proficiency in Python and experience with ROS, deep learning frameworks such as PyTorch, Linux.
+ * Excellent communiation skills.
 
 
 ### Type of Appointment
-This appointment will be offered on a fixed term, full-time basis for up to **two years** with a potential option for extension.
+This appointment will be offered on a fixed term, full-time basis for **12 months** with a potential option for extension.
 
 ### Remuneration and Benefits
-This Research Fellow position is classified as Academic Level B (LEVB) which has an annual remuneration of **$104,290 AUD to $123,858 AUD, plus 17% superannuation**.
+This Research Fellow position is classified as Academic Level B (LEVB) which has an annual salary of **$104,290 AUD to $123,858 AUD, plus 17% superannuation**.
 
 QUT is a high quality and flexible organisation that is proud of its excellent employment conditions which include but are not limited to:
  * Reduced working year scheme

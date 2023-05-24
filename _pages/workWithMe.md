@@ -10,7 +10,7 @@ enable_katex: true
 ---
 
 ### Postdoctoral Research Fellow
-I am offering a **2 year contract for a postdoc** to work with me in the Visual Learning and Understanding research program. Please read the [position description](postdoc_qcr_2023) (advertised: March 2023) and contact me if you are interested.
+I am offering a **12 month contract for a postdoc** to work with me in the Visual Learning and Understanding research program. Please read the [position description](postdoc_qcr_2023) (advertised: May 2023) and contact me if you are interested.
 
 
 ### PhD Students
