@@ -1,13 +1,29 @@
 ---
 layout: page
-title: Robot Learning for Navigation and Complex Task Execution
+title: Robot Learning 
 description:
 ---
+<img class="col three" src="/assets/img/projects/robot_learning_showcase.png"/>
 
+How can robots learn everyday tasks such as tidying up an apartment or assisting humans in their everyday domestic chores?
+
+With a fantastic team, I am interested in robotic learning for Manipulation, Complex Task Planning, and Navigation.
+
+We combine modern techniques such as imitation learning, LLMs, Vision-Language Models, and reinforcement learning with classical control and navigation, but also with a fresh take on [representing the environment with NeRFs or Gaussian Splatting](../sceneunderstanding).
+
+
+### Join us for your PhD!
+If you want to do a PhD with us in this area, read more information [here](../../jobs).
+
+### Publications
 
 <!-- ### Learning to Navigate -->
+{% bibliography -f conferences -q @*[id=padalkar2023open]* %}
+{% bibliography -f conferences -q @*[id=rana2023sayplan]* %}
+{% bibliography -f arxiv -q @*[id=ceola2023lhmanip]* %}
+{% bibliography -f workshops -q @*[id=rana2023contrastive]* %}
+{% bibliography -f journals -q @*[id=rana2021BCF]* %}
 {% bibliography -f conferences -q @*[id=rana2022reskill]* %}
-{% bibliography -f arxiv -q @*[id=rana2021BCF]* %}
 {% bibliography -f workshops -q @*[id=rana2021zero]* %}
 {% bibliography -f conferences -q @*[id=rana2020multiplicative]* %}
 <center>

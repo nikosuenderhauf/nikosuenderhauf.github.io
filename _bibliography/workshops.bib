@@ -1,4 +1,50 @@
 
+@inproceedings{abouchakra2023splatting,
+  title={Physically Embodied Gaussian Splatting: Embedding Physical Priors Into a Visual 3d World Model for Robotics},
+  author={Abou-Chakra, Jad and Rana, Krishan and Dayoub, Feras and S{\"u}nderhauf, Niko},
+  booktitle={Workshop for Neural Representation Learning for Robot Manipulation, Conference on Robot Learning (CoRL)},
+  year={2023},
+  thumb={abouchakra2023splatting.png},
+  link={https://embodied-gaussians.github.io/},
+  html={https://embodied-gaussians.github.io/},
+  abstract={Our dual Gaussian-Particle representation captures visual (Gaussians) and physical (particles) aspects of the world and enables forward prediction of robot interactions with the world.
+     A photometric loss between rendered Gaussians and observed images is computed (Gaussian Splatting) and converted into visual forces. These and other physical phenomena such as gravity, collisions, and mechanical forces are resolved by the always-active physics system and applied to the particles, which in turn influence the position of their associated Gaussians.},
+}
+
+
+@inproceedings{taras2023privacy,
+  title={The Need for Inherently Privacy-Preserving Vision in Trustworthy Autonomous Systems},
+  author={Taras, Adam K and Suenderhauf, Niko and Corke, Peter and Dansereau, Donald G},
+  booktitle={{ICRA Workshop on Multidisciplinary Approaches to Co-Creating Trustworthy Autonomous Systems}},
+  arxiv={2303.16408},
+  link={https://arxiv.org/pdf/2303.16408.pdf},
+  year={2023},
+  abstract={This paper is a call to action to consider privacy
+in the context of robotic vision. We propose a specific form
+privacy preservation in which no images are captured or could
+be reconstructed by an attacker even with full remote access.
+We present a set of principles by which such systems can be
+designed, and through a case study in localisation demonstrate
+in simulation a specific implementation that delivers an important robotic capability in an inherently privacy-preserving
+manner. This is a first step, and we hope to inspire future works
+that expand the range of applications open to sighted robotic
+systems.},
+  award={Best Poster Award},
+  thumb={taras2023privacy.png}
+}
+
+@inproceedings{rana2023contrastive,
+title={{Contrastive Language, Action, and State Pre-training for Robot Learning}},
+author={Krishan Rana and Andrew Melnik and Niko Suenderhauf},
+booktitle={ICRA Workshop on Pretraining for Robotics (PT4R)},
+year={2023},
+link={https://openreview.net/forum?id=sxKR6zhBDH},
+thumb={rana2023contrastive.png},
+arxiv={2304.10782},
+abstract={We introduce a method for unifying language, action, and state information in a shared embedding space to facilitate a range of downstream tasks in robot learning.  Our method, Contrastive Language, Action, and State Pre-training (CLASP), extends the CLIP formulation by incorporating distributional learning, capturing the inherent complexities and one-to-many relationships in behaviour-text alignment. By employing distributional outputs for both text and behaviour encoders, our model effectively associates diverse textual commands with a single behaviour and vice-versa. We demonstrate the utility of our method for the following downstream tasks: zero-shot text-behaviour retrieval, captioning unseen robot behaviours, and learning a behaviour prior for language-conditioned reinforcement learning.}
+}
+
+
 @inproceedings{rana2021zero,
   title={Zero-Shot Uncertainty-Aware Deployment of Simulation Trained Policies on Real-World Robots},
   author={Rana, Krishan and Dasagi, Vibhavari and Haviland, Jesse and Talbot, Ben and Milford, Michael and S{\"u}nderhauf, Niko},

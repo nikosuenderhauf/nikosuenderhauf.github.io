@@ -26,8 +26,9 @@ A robot that uses this point cloud map – for instance for navigation – can u
 
 ### Mapping with Implicit Representations and Neural Radiance Fields
 
+{% bibliography -f workshops -q @*[id=abouchakra2023splatting]* %}
+{% bibliography -f conferences -q @*[id=abouchakra2022particle]* %}
 {% bibliography -f conferences -q @*[id=suenderhauf2022nerf]* %}
-{% bibliography -f arxiv -q @*[id=abouchakra2022particle]* %}
 {% bibliography -f arxiv -q @*[id=abouchakra2022implicit]* %}
 
 
@@ -42,6 +43,7 @@ We believe such semantically enriched maps will help robots understand our compl
 <iframe width="560" height="315" src="https://www.youtube.com/embed/w1-INFCpc20" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </center>
 
+{% bibliography -f conferences -q @*[id=garg2023robohop]* %}
 {% bibliography -f arxiv -q @*[id=deitke2022retro]* %}
 {% bibliography -f journals -q @*[id=hall2022benchbot]* %}
 {% bibliography -f arxiv -q @*[id=hall2020challenge]* %}

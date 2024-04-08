@@ -9,15 +9,17 @@ enable_katex: true
 
 ---
 
-In my role as an educator at QUT, I enjoy teaching Introduction to Robotics (EGB339) and Mechatronics Design 3 (EGH419) to our undergraduate students in the Mechatronics degree.
-
-I also lectured at the [2019 IEEE Summer School on Robot Vision](http://robotvision2019.amtc.cl/) in Santiago, Chile and at the [Robotic Vision Summer School](https://www.roboticvision.org/rvss2019/) organised by the Australian Centre for Robotic Vision.
-
+In my role as an educator at QUT, I enjoy teaching undergraduates and postgraduates, e.g. through out Mechatronics degree or the Master's of Robotics and AI. Lecturing and organising international summer schools is another avenue to educate students from around the world.
 
 ### Summer Schools
 
-#### IEEE Summer School for Robotic Vision, Santiago de Chile, December 2019
+#### Robotic Vision Summer School
+I am General Chair (since 2022) for the [Robotic Vision Summer School](https://www.roboticvision.org/) and organise this event every year in February with an amazing team. Check out the website for more information.
 
+
+#### IEEE Summer School for Robotic Vision, Santiago de Chile
+
+I lectured at the [2019 IEEE Summer School on Robot Vision](http://robotvision2019.amtc.cl/) in Santiago in December 2019 and gave the following presentations:
  * [Deep Learning for Robotic Vision](/assets/presentations/SummerSchoolChile/Deep Learning for Robotic Vision.pdf)
  * [The Importance of Uncertainty for Deep Learning in Robotics](/assets/presentations/SummerSchoolChile/Uncertainty for Deep Learning in Robotics.pdf)
 
@@ -25,6 +27,11 @@ I also lectured at the [2019 IEEE Summer School on Robot Vision](http://robotvis
 
 ### University Courses
 
+I currently teach into the Master's of Robotics and AI, covering
+ * ENN583 -- Foundations of Robotic Vision
+ * ENN585 -- Advanced Machine Learning
+
+In the past, I taught our undergraduate students in the Mechatronics degree in the following units:
  * EGB339 -- Introduction to Robotics
  * EGH419 -- Mechatronics Design 3
  * EGH444 -- Digital Signals and Image Processing

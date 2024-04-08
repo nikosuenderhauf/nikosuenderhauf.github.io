@@ -6,24 +6,45 @@ description:
 
 **How can robots learn everyday tasks such as tidying up an apartment or assisting humans in their everyday domestic chores?**
 
-<img class="col one" src="/assets/img/projects/navigate.png"/>
-In this PhD project, you investigate different strategies for robots to learn everyday tasks. 
+<img class="col three" src="/assets/img/jobs/robot_learning_showcase.png"/>
 
-You apply techniques such as reinforcement learning and imitation learning in combination with large language models or vision-language models and investigate how to incorporate common sense knowledge, written task descriptions, human demonstrations and 3D scene understanding into the robotic learning process.
+I have multiple PhD projects available in the area of robotic learning, combining modern techniques such as imitation learning, LLMs, Vision-Language Models, and reinforcement learning with classical control and navigation, but also with a fresh take on representing the environment with NeRFs or Gaussian Splatting.
 
-You will become fluent in PyTorch, one of the most versatile and widely-used deep learning frameworks in industry. You get the chance to work with a mobile robot that is equipped with a versatile arm, and set up impressive demos and experiments.
+These PhD projects build on our previous work such as [SayPlan](https://sayplan.github.io/) (oral presentation at CoRL 2023) or [ParticleNeRF](https://sites.google.com/view/particlenerf) (best paper honourable mention at WACV 2024).
 
-This project is supported by funding from the Australian Research Council and is done in collaboration between QUT and the University of Adelaide. You will be embedded in a team that spans both universities and will have the opportunity to travel and be co-supervised by experts from both unis.
+
+### Research Questions / Topics 
+Research questions for the available topics include:
+
+ - How can robots learn tasks by observing humans, for example from a single demonstration or from the youtube videos? How can the kinematic chain of a human be mapped to the kinematics of a robot in the process?
+ - How can Large Language Models or Vision Language Models be used effectively to guide robot navigation and interaction with the world?
+ - What is the best way for robots to learn a library of skills that generalise and transfer to unseen objects?
+ - How can LLMs be used to compose such base skills into more and more complex tasks?
+ - How can an environment be represented to ease robot learning? Are modern mapping techniques based on NeRFs or Gaussian Splatting helpful?
+ - Can ad-hoc simulations of the environment be used as thought-experiments to guide interaction and manipulation of complex scenes, e.g. in clutter or manipulating mechanisms?
+ - How can robots improvise when they don’t succeed at first? How can they recover from failures and mistakes, and learn from it to do better next time?
+
+To answer these questions, you will work at the forefront of robotic learning and AI and become an expert in areas such as LLMs, VLMs,  imitation learning, reinforcement learning, NeRFs, Gaussian Splatting, and physics simulations.
+
+You would work with our amazing fleet of robots—both stationary and mobile—and our instrumented experimentation setup, which lets us train and evaluate robots for various chores. You’ll be part of an amazing team of researchers, postdocs and other PhD students at the Centre for Robotics. You will also become fluent in PyTorch, one of the most versatile and widely-used deep learning frameworks in industry.
+
+<!-- In this PhD project, you investigate different strategies for robots to learn everyday tasks. 
+
+You apply techniques such as reinforcement learning and imitation learning in combination with large language models or vision-language models and investigate how to incorporate common sense knowledge, written task descriptions, human demonstrations and 3D scene understanding into the robotic learning process. -->
+
+ <!-- You get the chance to work with a mobile robot that is equipped with a versatile arm, and set up impressive demos and experiments. -->
+
+<!-- This project is supported by funding from the Australian Research Council and is done in collaboration between QUT and the University of Adelaide. You will be embedded in a team that spans both universities and will have the opportunity to travel and be co-supervised by experts from both unis. -->
 
 Have a look at [similar research](../projects/learningtonavigate) I have been doing with my students, postdocs and colleagues.
 
 ### About the Position
 <img class="col one" src="/assets/img/jobs/campus-1.jpg"/>
-I am looking for a creative and enthusiastic PhD researcher to contribute to the Visual Learning and Understanding research program. You will be a member of the QUT Centre for Robotics and will work closely with academics, research fellows, engineers, and other PhD students.
+I am looking for creative and enthusiastic PhD researchers to contribute to the Visual Learning and Understanding research program. You will be a member of the QUT Centre for Robotics and will work closely with academics, research fellows, engineers, and other PhD students.
 
 **You should be excited to do pioneering research in Robotic Learning and Robotic Scene Understanding**
 
- - Scholarship: $32,500 AUD per year, tax free
+ - Scholarship: $33,637 AUD per year, tax free
  - $5,000 top-up scholarship available
  - multiple positions available
  - start date: immediately and ongoing

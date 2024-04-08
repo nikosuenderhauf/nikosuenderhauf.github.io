@@ -1,5 +1,33 @@
 
 
+@article{taras2024privacy,
+title = {Inherently privacy-preserving vision for trustworthy autonomous systems: Needs and solutions},
+journal = {Journal of Responsible Technology},
+volume = {17},
+year = {2024},
+link = {https://doi.org/10.1016/j.jrt.2024.100079},
+author = {Adam K. Taras and Niko Sünderhauf and Peter Corke and Donald G. Dansereau},
+abstract = {This paper is a call to action to consider privacy in robotic vision. We propose a specific form of inherent privacy preservation in which no images are captured or could be reconstructed by an attacker, even with full remote access. We present a set of principles by which such systems could be designed, employing data-destroying operations and obfuscation in the optical and analogue domains. These cameras never see a full scene. Our localisation case study demonstrates in simulation four implementations that all fulfil this task. The design space of such systems is vast despite the constraints of optical-analogue processing. We hope to inspire future works that expand the range of applications open to sighted robotic systems.},
+thumb={taras2024privacy.png},
+html={https://roboticimaging.org/Projects/Privacy/}
+}
+
+@article{rana2021BCF,
+  title={Bayesian Controller Fusion: Leveraging Control Priors in Deep Reinforcement Learning for Robotics},
+  author={Krishan Rana and Vibhavari Dasagi and Jesse Haviland and Ben Talbot and Michael Milford and Niko S{\"u}nderhauf},
+  journal={{The International Journal of Robotics Research (IJRR)}},
+  year={2023},
+  arxiv={2107.09822},
+  link={https://arxiv.org/abs/2107.09822},
+  abstract={We present Bayesian Controller Fusion (BCF): a hybrid control strategy that combines the strengths of traditional hand-crafted controllers and model-free deep reinforcement learning (RL). BCF thrives in the robotics domain, where reliable but suboptimal control priors exist for many tasks, but RL from scratch remains unsafe and data-inefficient. By fusing uncertainty-aware distributional outputs from each system, BCF arbitrates control between them, exploiting their respective strengths. 
+    As exploration is naturally guided by the prior in the early stages of training, BCF accelerates learning, while substantially improving beyond the performance of the control prior, as the policy gains more experience. 
+    More importantly, given the risk-aversity of the control prior, BCF ensures safe exploration \emph{and} deployment, where the control prior naturally dominates the action distribution in states unknown to the policy. 
+    We additionally show BCF's applicability to the zero-shot sim-to-real setting and its ability to deal with out-of-distribution states in the real-world. 
+    BCF is a promising approach for combining the complementary strengths of deep RL and traditional robotic control, surpassing what either can achieve independently.},
+  html={https://krishanrana.github.io/bcf},
+  thumb={rana21bcf.png}
+}
+
 
 @article{haviland2022holistic,
   title={A Holistic Approach to Reactive Mobile Manipulation},

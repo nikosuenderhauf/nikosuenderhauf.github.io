@@ -10,10 +10,17 @@ enable_katex: true
 ---
 
 
+### Robot Learning
+<a href="learningtonavigate"><img class="col one" src="/assets/img/projects/robot_learning_showcase.png"/></a>
+How can robots best learn to interact with the world, manipulate objects, and navigate in challenging environments, all to execute complex tasks, such as tidying up an apartment or assist humans in their everyday domestic chores? I am interested in developing learning-based approaches are effective and efficient, and scale to complicated long-horizon tasks. We combine modern techniques such as imitation learning, LLMs, Vision-Language Models, and reinforcement learning with classical control and navigation. [Read more …](learningtonavigate)
+
+
+
 ### Scene Understanding, Semantic SLAM, and Implicit Representations
-<a href="sceneunderstanding"><img class="col one" src="/assets/img/projects/quadricSLAM.png"/></a>
-Making a robot understand what it sees is one of the most fascinating goals in my current research.
-To this end, we develop novel methods for _Semantic Mapping_ and [Semantic SLAM](http://www.semanticslam.ai) by combining object detection with simultaneous localisation and mapping (SLAM) techniques. We furthermore work on [Bayesian Deep Learning](uncertainty) for object detection, to better understand the uncertainty of a deep network's predictions and integrate deep learning into robotics in a probabilistic way. [Read more …](sceneunderstanding)
+<a href="sceneunderstanding"><img class="col one" src="/assets/img/projects/scenegraph.png"/></a>
+Making a robot understand what it sees is a fascinating goal in my current research.
+In the past we developed novel methods for _Semantic_ Mapping and SLAM by combining object detection with simultaneous localisation and mapping (SLAM) techniques, representing the environment as a scene graph.
+More recently, we have investigated a fresh take on the problem and represent the environment with NeRFs or Gaussian Splatting. [Read more …](sceneunderstanding)
 
 
 <!-- Our ongoing research in scene understanding will help to provide answers to a robot’s questions like „What are these objects I can see in front of me?“ (object detection and recognition), „What can I do with these objects?“ (affordance detection), „Am I in an office, a kitchen, or a living room? What can I expect to find here?“ (semantic mapping, holistic scene understanding.
@@ -21,9 +28,6 @@ To this end, we develop novel methods for _Semantic Mapping_ and [Semantic SLAM]
 Furthermore, we work towards making semantic perception robust enough to be used on autonomous robots. To achieve this goal, we analyse the key differences between robotic vision and computer vision (where great breakthroughs have happened since 2013 with the advent of convolutional networks), and adapt learning procedures and network architectures accordingly.  -->
 
 
-### Robot Learning for Navigation and Complex Task Execution
-<a href="learningtonavigate"><img class="col one" src="/assets/img/projects/navigate.png"/></a>
-How can robots best learn to navigate in challenging environments and execute complex tasks, such as tidying up an apartment or assist humans in their everyday domestic chores? Often, hand-written architectures are based on complicated state machines that become intractable to design and maintain with growing task complexity. I am interested in developing learning-based approaches are effective and efficient, and scale better to complicated tasks. [Read more …](learningtonavigate)
 
 ### Uncertainty and Realiability of Deep Learning for Robotic Perception
 <a href="uncertainty"><img class="col one" src="/assets/img/projects/uncertainty.png"/></a>

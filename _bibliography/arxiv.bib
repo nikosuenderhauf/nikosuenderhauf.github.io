@@ -1,17 +1,34 @@
 ---
 ---
 
-@article{abouchakra2022particle,
-  title={{ParticleNeRF: Particle Based Encoding for Online Neural Radiance Fields in Dynamic Scenes}},
-  author={Jad Abou-Chakra and Feras Dayoub and Niko S{\"u}nderhauf},
-  journal={arXiv preprint arXiv:2211.04041},
-  year={2022},
-  arxiv={2211.04041},
-  link={https://arxiv.org/abs/2211.04041},
-  abstract={Neural Radiance Fields (NeRFs) learn implicit representations of - typically static - environments from images. Our paper extends NeRFs to handle dynamic scenes in an online fashion. We propose ParticleNeRF that adapts to changes in the geometry of the environment as they occur, learning a new up-to-date representation every 350ms. ParticleNeRF can represent the current state of dynamic environments with much higher fidelity compared to other NeRF frameworks.},
-  html={https://sites.google.com/view/particlenerf},
-  thumb={abouchakra2022particle.png}
+@article{miller2024open,
+  title={Open-Set Recognition in the Age of Vision-Language Models},
+  author={Miller, Dimity and S{\"u}nderhauf, Niko and Kenna, Alex and Mason, Keita},
+  journal={arXiv preprint arXiv:2403.16528},
+  year={2024},
+  arxiv={2403.16528},
+  link={https://arxiv.org/abs/2403.16528},
+  abstract={Are vision-language models (VLMs) open-set models because they are trained on internet-scale datasets? We answer this question with a clear no – VLMs introduce closed-set assumptions via their finite query set, making them vulnerable to open-set conditions. We systematically evaluate VLMs for open-set recognition and find they frequently misclassify objects not contained in their query set, leading to alarmingly low precision when tuned for high recall and vice versa. We show that naively increasing the size of the query set to contain more and more classes does not mitigate this problem, but instead causes diminishing task performance and open-set performance. We establish a revised definition of the open-set problem for the age of VLMs, define a new benchmark and evaluation protocol to facilitate standardised evaluation and research in this important area, and evaluate promising baseline approaches based on predictive uncertainty and dedicated negative embeddings on a range of VLM classifiers and object detectors.},
+  thumb={miller2024openset.png}
 }
+
+
+@article{ceola2023lhmanip,
+  title={LHManip: A Dataset for Long-Horizon Language-Grounded Manipulation Tasks in Cluttered Tabletop Environments},
+  author={Ceola, Federico and Natale, Lorenzo and S{\"u}nderhauf, Niko and Rana, Krishan},
+  arxiv={2312.12036},
+  journal={arXiv preprint arXiv:2312.12036},
+  year={2023},
+  html={https://github.com/fedeceola/LHManip},
+  thumb={ceola2023manip.png},
+  abstract={We present the Long-Horizon Manipulation (LHManip) dataset comprising 200
+episodes, demonstrating 20 different manipulation tasks via real robot teleoperation. The tasks entail multiple sub-tasks,
+including grasping, pushing, stacking and throwing objects in highly cluttered environments. Each task is paired with a
+natural language instruction and multi-camera viewpoints for point-cloud or NeRF reconstruction. In total, the dataset
+comprises 176,278 observation-action pairs which form part of the Open X-Embodiment dataset.},
+  link={https://arxiv.org/abs/2312.12036},
+}
+
 
 @article{deitke2022retro,
   title={Retrospectives on the Embodied AI Workshop},
@@ -31,28 +48,6 @@ directions for Embodied AI research.},
 }
 
 
-@article{wilson2022safe,
-  title={SAFE: Sensitivity-Aware Features for Out-of-Distribution Object Detection},
-  author={Wilson, Samuel and Fischer, Tobias and Dayoub, Feras and Miller, Dimity and S{\"u}nderhauf, Niko},
-  journal={arXiv preprint arXiv:2208.13930},
-  year={2022},
-  abstract={ SAFE (Sensitivity-Aware
-FEatures), leverages the innate sensitivity of residual networks to detect OOD samples. Key to our method, we build
-on foundational theory from image classification to identify that shortcut convolutional layers followed immediately
-by batch normalisation are uniquely powerful at detecting
-OOD samples. SAFE circumvents the need for realistic OOD
-training data, expensive generative models and retraining
-of the base object detector by training a 3-layer multilayer
-perceptron (MLP) on the surrogate task of distinguishing
-noise-perturbed and clean in-distribution object detections,
-using only the concatenated features from the identified most
-sensitive layers. We show that this MLP can identify OOD
-object detections more reliably than previous approaches,
-achieving a new state-of-the-art on multiple benchmarks},
-thumb={wilson2022safe.png},
-link={https://arxiv.org/abs/2208.13930},
-arxiv={2208.13930},
-}
 
 
 @article{abouchakra2022implicit,
@@ -66,21 +61,6 @@ arxiv={2208.13930},
   abstract={This paper uses the outputs of an object-based SLAM system to bound objects in the scene with coarse primitives and - in concert with instance masks - identify obstructions in the training images. Objects are therefore automatically bounded, and non-relevant geometry is excluded from the NeRF representation. The method's performance is benchmarked under ideal conditions and tested against errors in the poses and instance masks. Our results show that object-based NeRFs are robust to pose variations but sensitive to the quality of the instance masks.}
 }
 
-@article{rana2021BCF,
-  title={Bayesian Controller Fusion: Leveraging Control Priors in Deep Reinforcement Learning for Robotics},
-  author={Krishan Rana and Vibhavari Dasagi and Jesse Haviland and Ben Talbot and Michael Milford and Niko S{\"u}nderhauf},
-  journal={arXiv preprint arXiv:2107.09822},
-  year={2021},
-  arxiv={2107.09822},
-  link={https://arxiv.org/abs/2107.09822},
-  abstract={We present Bayesian Controller Fusion (BCF): a hybrid control strategy that combines the strengths of traditional hand-crafted controllers and model-free deep reinforcement learning (RL). BCF thrives in the robotics domain, where reliable but suboptimal control priors exist for many tasks, but RL from scratch remains unsafe and data-inefficient. By fusing uncertainty-aware distributional outputs from each system, BCF arbitrates control between them, exploiting their respective strengths. 
-    As exploration is naturally guided by the prior in the early stages of training, BCF accelerates learning, while substantially improving beyond the performance of the control prior, as the policy gains more experience. 
-    More importantly, given the risk-aversity of the control prior, BCF ensures safe exploration \emph{and} deployment, where the control prior naturally dominates the action distribution in states unknown to the policy. 
-    We additionally show BCF's applicability to the zero-shot sim-to-real setting and its ability to deal with out-of-distribution states in the real-world. 
-    BCF is a promising approach for combining the complementary strengths of deep RL and traditional robotic control, surpassing what either can achieve independently.},
-  html={https://krishanrana.github.io/bcf},
-  thumb={rana21bcf.png}
-}
 
 
 @article{zhang2020swa,

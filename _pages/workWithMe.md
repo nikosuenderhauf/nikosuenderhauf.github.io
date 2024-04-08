@@ -9,8 +9,8 @@ enable_katex: true
 
 ---
 
-### Postdoctoral Research Fellow
-I am offering a **12 month contract for a postdoc** to work with me in the Visual Learning and Understanding research program. Please read the [position description](postdoc_qcr_2023) (advertised: May 2023) and contact me if you are interested.
+<!-- ### Postdoctoral Research Fellow
+I am offering a **12 month contract for a postdoc** to work with me in the Visual Learning and Understanding research program. Please read the [position description](postdoc_qcr_2023) (advertised: May 2023) and contact me if you are interested. -->
 
 
 ### PhD Students
@@ -31,16 +31,17 @@ If you are interested in the topics listed below, and you have [checked your eli
 
 Please understand that due to the high volume of PhD applications I receive, I might not be able to respond to your email. This is especially the case if you did not attach the documents listed above, or if your research interests are not aligned with mine. I will be in touch if I think you would be a good fit to our lab.
 
+#### Topics
 I am looking for PhD students interested in the following **topics**:
- * [robot learning for complex everyday tasks, incorporating large language models, scene understanding, and prior knowledge](PhD_robot_learning)
+ * [robot learning for complex everyday tasks, incorporating imitation learning, large language models, scene understanding, and prior knowledge](PhD_robot_learning)
  * [semantic SLAM, object-based SLAM, scene understanding, with implicit representations (e.g. NeRFs)](PhD_scene_understanding)
- * [implicit representations for place recognition and localisation](PhD_implicit_placerec)
+ <!-- * [implicit representations for place recognition and localisation](PhD_implicit_placerec) -->
  <!-- * combination of large language models, robot learning, and robotic mapping / scene understanding -->
  
  
 
 
-
+<!-- 
 ### PhD and Postdoc Positions with the ARIAM Hub
 
 <img class="col one" src="/assets/img/projects/ariam-logo.png"/>
@@ -75,7 +76,11 @@ You can solve this problem in close collaboration with researchers from the [QUT
 
 ARIAM is a 5-year, $10 million research project with the University of Sydney, the QUT Centre for Robotics, the Australian National University, and over 10 industry partners. You will have the opportunity to work with researchers from the involved institutions and participate in a range of exciting professional development activities.
 
-You will also be part of the QUT Centre for Robotics, which offers a vibrant research culture with a variety of social and professional activities, ranging from PhD boardgame nights to short courses on professional skills such as presenting, academic writing, managing your time, preparing a CV, or preparing for job interviews.
+You will also be part of the QUT Centre for Robotics, which offers a vibrant research culture with a variety of social and professional activities, ranging from PhD boardgame nights to short courses on professional skills such as presenting, academic writing, managing your time, preparing a CV, or preparing for job interviews. -->
+
+
+
+
 
 
 
