@@ -4,8 +4,9 @@ title: Scene Understanding, Semantic SLAM, Implicit Representations
 description:
 ---
 
-Making a robot understand what it sees is one of the most fascinating goals in my current research.
-To this end, we develop novel methods for _Semantic Mapping_ and [Semantic SLAM](http://www.semanticslam.ai) by combining object detection with simultaneous localisation and mapping (SLAM) techniques. We furthermore work on [Bayesian Deep Learning](uncertainty) for object detection, to better understand the uncertainty of a deep network's predictions and integrate deep learning into robotics in a probabilistic way.
+Making a robot understand what it sees is a fascinating goal in my current research.
+In the past we developed novel methods for _Semantic_ Mapping and SLAM by combining object detection with simultaneous localisation and mapping (SLAM) techniques, representing the environment as a scene graph.
+More recently, we have investigated a fresh take on the problem and represent the environment with NeRFs or Gaussian Splatting.
 
 <!-- The problem of Simultaneous Localization and Mapping (SLAM) describes the process of a robot building a map of its unknown environment, and at the same time using this still incomplete map to determine the robot’s position, and to navigate.
 
@@ -22,6 +23,9 @@ A robot that uses this point cloud map – for instance for navigation – can u
 
 **Semantic SLAM** goes one step further. Semantic SLAM uses objects as the central entities in the map (instead of primitives such as points). The objects carry semantic meaning, such as class labels or affordances. This -->
 
+
+### Join us for your PhD!
+If you want to do a PhD with us in this area, read more information [here](../../jobs).
 
 
 ### Mapping with Implicit Representations and Neural Radiance Fields

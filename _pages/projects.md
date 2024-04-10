@@ -6,7 +6,6 @@ description: past and current research projects.
 
 social: true
 enable_katex: true
-
 ---
 
 
@@ -31,28 +30,16 @@ Furthermore, we work towards making semantic perception robust enough to be used
 
 ### Uncertainty and Realiability of Deep Learning for Robotic Perception
 <a href="uncertainty"><img class="col one" src="/assets/img/projects/uncertainty.png"/></a>
-In order to fully integrate deep
-learning into robotics, it is important that deep learning systems
-can reliably estimate the uncertainty in their predictions.
-This would allow robots to treat a deep neural network
-like any other sensor, and use the established Bayesian
-techniques to fuse the network’s predictions
-with prior knowledge or other sensor measurements, or to
-accumulate information over time.
-We focus on Bayesian Deep Learning approaches for the specific use case of object detection on a robot in open-set conditions. [Read more …](uncertainty)
+Despite the enormous progress of deep learning over the past decade, and the appearance of foundation models such as large language models or vision-language models in the past few years, questions about their reliability and robustnes remain. How do deep learning models react when presented with out-of-distribution data? How can they express the uncertainty in their predictions, and know when they don't know? Are recent foundation models immune to open-set or out-of-distribution conditions?
+These questions are of enormous importance if we want to apply deep learning (and AI in general) to safety-critical applications where mistakes could have catastrophic consequences. [Read more …](uncertainty)
 
 
+---
 
-### Robotic Vision Evaluation and Benchmarking
-Big benchmark competitions like [ILSVRC](http://www.image-net.org/challenges/LSVRC/) or [COCO](http://cocodataset.org) fuelled much of the progress in computer vision and deep learning over the past years. We aim to recreate this success for robotic vision.
-
-To this end, we develop a set of new benchmark challenges for robotic vision that evaluate probabilistic object detection, scene understanding, uncertainty estimation, continuous learning for domain adaptation, continuous learning to incorporate previuosly unseen classes,
-active learning, and active vision.
-We combine the variety and complexity of real-world data with the flexibility of synthetic graphics and physics engines.
-[Read more …](http://www.roboticvisionchallenge.org)
+## Past Research Directions
 
 
-### Visual Place Recognition in Changing Environments
+### Visual Place Recognition in Changing Environments (2011 – 2021)
 <a href="placerecognition"><img class="col one" src="/assets/img/projects/placeRec.png"/></a>
 An autonomous robot that operates on our campus should be able to recognize different places when it comes back to them after some time. This is important to support reliable navigation and localisation and therefore enable the robot to perform a useful task.
 
@@ -62,9 +49,14 @@ The problem of visual place recognition gets challenging if the visual appearanc
 
 We develop algorithms for vision-based place recognition that can deal with these changes in visual appearance. [Read more …](placerecognition)
 
----
 
-## Past Projects
+### Robotic Vision Evaluation and Benchmarking (2019 – 2023)
+Big benchmark competitions like [ILSVRC](http://www.image-net.org/challenges/LSVRC/) or [COCO](http://cocodataset.org) fuelled much of the progress in computer vision and deep learning over the past years. We aim to recreate this success for robotic vision.
+
+To this end, we develop a set of new benchmark challenges for robotic vision that evaluate probabilistic object detection, scene understanding, uncertainty estimation, continuous learning for domain adaptation, continuous learning to incorporate previuosly unseen classes,
+active learning, and active vision.
+We combine the variety and complexity of real-world data with the flexibility of synthetic graphics and physics engines.
+[Read more …](http://www.roboticvisionchallenge.org)
 
 ### The DLR SpaceBot Cup (2013)
 <div class="img_row">

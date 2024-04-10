@@ -1,6 +1,6 @@
 ---
 layout: page
-title: PhD Topic – Robotic Learning for and Complex Everyday Tasks 
+title: PhD Topic – Robotic Learning for Complex Everyday Tasks 
 description:
 ---
 
@@ -13,7 +13,15 @@ I have multiple PhD projects available in the area of robotic learning, combinin
 These PhD projects build on our previous work such as [SayPlan](https://sayplan.github.io/) (oral presentation at CoRL 2023) or [ParticleNeRF](https://sites.google.com/view/particlenerf) (best paper honourable mention at WACV 2024).
 
 
-### Research Questions / Topics 
+#### Apply now for your PhD with me in 2025!
+To work with me on one of the topics below, you have to apply for a scholarship through [QUT's scholarship round](https://www.qut.edu.au/research/study-with-us/how-to-apply). 
+If you are successful in obtaining a scholarship, you can start your PhD between January and June 2025.
+
+**Application deadlines**
+ - for international (i.e. non-Australian) students: 31 July 2024
+ - for domestic (i.e. Australian) students: 31 August 2024
+
+### Research Questions and Topics 
 Research questions for the available topics include:
 
  - How can robots learn tasks by observing humans, for example from a single demonstration or from the youtube videos? How can the kinematic chain of a human be mapped to the kinematics of a robot in the process?
@@ -24,7 +32,7 @@ Research questions for the available topics include:
  - Can ad-hoc simulations of the environment be used as thought-experiments to guide interaction and manipulation of complex scenes, e.g. in clutter or manipulating mechanisms?
  - How can robots improvise when they don’t succeed at first? How can they recover from failures and mistakes, and learn from it to do better next time?
 
-To answer these questions, you will work at the forefront of robotic learning and AI and become an expert in areas such as LLMs, VLMs,  imitation learning, reinforcement learning, NeRFs, Gaussian Splatting, and physics simulations.
+To answer these questions, you will work at the forefront of robotic learning and AI and become an expert in exciting research areas such as LLMs, VLMs, imitation learning, reinforcement learning, NeRFs, Gaussian Splatting, and physics simulations.
 
 You would work with our amazing fleet of robots—both stationary and mobile—and our instrumented experimentation setup, which lets us train and evaluate robots for various chores. You’ll be part of an amazing team of researchers, postdocs and other PhD students at the Centre for Robotics. You will also become fluent in PyTorch, one of the most versatile and widely-used deep learning frameworks in industry.
 
@@ -37,6 +45,9 @@ You apply techniques such as reinforcement learning and imitation learning in co
 <!-- This project is supported by funding from the Australian Research Council and is done in collaboration between QUT and the University of Adelaide. You will be embedded in a team that spans both universities and will have the opportunity to travel and be co-supervised by experts from both unis. -->
 
 Have a look at [similar research](../projects/learningtonavigate) I have been doing with my students, postdocs and colleagues.
+
+### Join the Team!
+As a PhD student, you would work closely with my wonderful current postdocs and students, e.g. [Dr Krishan Rana](https://krishanrana.github.io/), [Dr Jesse Haviland](https://jhavl.com/) or [Jad Abou-Chakra](https://jadchakra.github.io/). You would of course also be embedded in the vibrant [QUT Centre for Robotics](http://qcr.ai) and get a chance to collaborate with any of the 100+ researchers in our group.
 
 ### About the Position
 <img class="col one" src="/assets/img/jobs/campus-1.jpg"/>

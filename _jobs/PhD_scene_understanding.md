@@ -14,9 +14,22 @@ If you are interested in tightly combining modern deep learning and computer vis
 
 Have a look at [similar research](../projects/sceneunderstanding) I have been doing with my students, postdocs and colleagues.
 
+
+### Apply now for your PhD with me in 2025!
+To work with me on one of the topics below, you have to apply for a scholarship through [QUT's scholarship round](https://www.qut.edu.au/research/study-with-us/how-to-apply). 
+If you are successful in obtaining a scholarship, you can start your PhD between January and June 2025.
+
+**Application deadlines**
+ - for international (i.e. non-Australian) students: 31 July 2024
+ - for domestic (i.e. Australian) students: 31 August 2024
+
+### Join the Team!
+As a PhD student, you would work closely with my wonderful current postdocs and students, e.g. [Dr Krishan Rana](https://krishanrana.github.io/), [Dr Jesse Haviland](https://jhavl.com/) or [Jad Abou-Chakra](https://jadchakra.github.io/). You would of course also be embedded in the vibrant [QUT Centre for Robotics](http://qcr.ai) and get a chance to collaborate with any of the 100+ researchers in our group.
+
+
 ### About the Position
 <img class="col one" src="/assets/img/jobs/campus-1.jpg"/>
-We are looking for a creative and enthusiastic PhD researcher to contribute to the Visual Learning and Understanding research program. You will be a member of the QUT Centre for Robotics and will work closely with academics, research fellows, engineers, and other PhD students.
+I am looking for a creative and enthusiastic PhD researcher to contribute to the Visual Learning and Understanding research program. You will be a member of the QUT Centre for Robotics and will work closely with academics, research fellows, engineers, and other PhD students.
 
 **You should be excited to do pioneering research in Robotic Learning and Robotic Scene Understanding**
 

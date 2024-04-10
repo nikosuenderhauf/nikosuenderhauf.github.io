@@ -1,29 +1,19 @@
 ---
 layout: page
-title: Uncertainty and Realiability of Deep Learning for Robotic Perception
+title: Reliability of Deep Learning for Robotics
 description:
 ---
 
-In order to fully integrate deep
-learning into robotics, it is important that deep learning systems
-can reliably estimate the uncertainty in their predictions.
-This would allow robots to treat a deep neural network
-like any other sensor, and use the established Bayesian
-techniques to fuse the network’s predictions
-with prior knowledge or other sensor measurements, or to
-accumulate information over time.
 
-Deep learning systems, e.g. for classification or detection, typically return scores
-from their softmax layers that are proportional to the system’s
-confidence, but are not calibrated probabilities, and therefore
-not useable in a Bayesian sensor fusion framework.
+Despite the enormous progress of deep learning over the past decade, and the appearance of foundation models such as large language models or vision-language models in the past few years, questions about their reliability and robustnes remain. How do deep learning models react when presented with out-of-distribution data? How can they express the uncertainty in their predictions, and know when they don't know? Are recent foundation models immune to open-set or out-of-distribution conditions?
 
-Current approaches towards uncertainty estimation for
-deep learning are calibration techniques, or
-Bayesian deep learning with approximations such
-as Monte Carlo Dropout or ensemble methods.
+These questions are of enormous importance if we want to apply deep learning (and AI in general) to safety-critical applications where mistakes could have catastrophic consequences.
 
-Our work focusses on Bayesian Deep Learning approaches for the specific use case of object detection on a robot in open-set conditions.
+Our research tackles critical challenges like open-set recognition, out-of-distribution (OOD) detection, and failure identification in visual perception.
+
+### Join the Team!
+If you want to join our research efforts in these areas, please contact [Dr Dimity Miller](https://research.qut.edu.au/qcr/people/dimity-miller/) to apply for a PhD position.
+
 
 ### Publications
 
