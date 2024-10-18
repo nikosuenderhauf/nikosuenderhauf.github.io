@@ -28,8 +28,9 @@ A robot that uses this point cloud map – for instance for navigation – can u
 If you want to do a PhD with us in this area, read more information [here](../../jobs).
 
 
-### Mapping with Implicit Representations and Neural Radiance Fields
+### Representations with NeRFs and Gaussian Splatting
 
+{% bibliography -f conferences -q @*[id=abou-chakra2024physically]* %}
 {% bibliography -f workshops -q @*[id=abouchakra2023splatting]* %}
 {% bibliography -f conferences -q @*[id=abouchakra2022particle]* %}
 {% bibliography -f conferences -q @*[id=suenderhauf2022nerf]* %}

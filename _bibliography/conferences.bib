@@ -1,6 +1,31 @@
 ---
 ---
 
+@inproceedings{abou-chakra2024physically,
+        title={Physically Embodied Gaussian Splatting: A Realtime Correctable World Model for Robotics},
+        author={Jad Abou-Chakra and Krishan Rana and Feras Dayoub and Niko Suenderhauf},
+        booktitle={Conference on Robot Learning (CoRL)},
+        year={2024},
+        link={https://openreview.net/forum?id=AEq0onGrN2},
+        html={https://embodied-gaussians.github.io/},
+        abstract={We propose a novel dual "Gaussian-Particle" representation that models the physical world while (i) enabling predictive simulation of future states and (ii) allowing online correction from visual observations in a dynamic world. Our representation comprises particles that capture the geometrical aspect of objects in the world and can be used alongside a particle-based physics system to anticipate physically plausible future states. Attached to these particles are 3D Gaussians that render images from any viewpoint through a splatting process thus capturing the visual state. By comparing the predicted and observed images, our approach generates "visual forces" that correct the particle positions while respecting known physical constraints. By integrating predictive physical modeling with continuous visually-derived corrections, our unified representation reasons about the present and future while synchronizing with reality.},
+        arxiv={2406.10788},
+        award={Oral Presentation},
+        thumb={abou-chakra2024physically.png},
+        }
+
+@inproceedings{miller2024open,
+  title={Open-Set Recognition in the Age of Vision-Language Models},
+  author={Miller, Dimity and S{\"u}nderhauf, Niko and Kenna, Alex and Mason, Keita},
+  booktitle={European Conference on Computer Vision (ECCV)},
+  year={2024},
+  arxiv={2403.16528},
+  link={https://arxiv.org/abs/2403.16528},
+  abstract={Are vision-language models (VLMs) open-set models because they are trained on internet-scale datasets? We answer this question with a clear no – VLMs introduce closed-set assumptions via their finite query set, making them vulnerable to open-set conditions. We systematically evaluate VLMs for open-set recognition and find they frequently misclassify objects not contained in their query set, leading to alarmingly low precision when tuned for high recall and vice versa. We show that naively increasing the size of the query set to contain more and more classes does not mitigate this problem, but instead causes diminishing task performance and open-set performance. We establish a revised definition of the open-set problem for the age of VLMs, define a new benchmark and evaluation protocol to facilitate standardised evaluation and research in this important area, and evaluate promising baseline approaches based on predictive uncertainty and dedicated negative embeddings on a range of VLM classifiers and object detectors.},
+  thumb={miller2024openset.png},
+  code={https://github.com/dimitymiller/openset_vlms}
+}
+
 @inproceedings{padalkar2023open,
   title={Open X-Embodiment: Robotic Learning Datasets and RT-X Models},
   author={Open X-Embodiment Collaboration},
@@ -11,7 +36,7 @@
   thumb={openx2024.png},
   abstract={Conventionally, robotic learning methods train a separate model for every application, every robot, and even every environment. Can we instead train “generalist” X-robot policy that can be adapted efficiently to new robots, tasks, and environments? In this paper, we provide datasets in standardized data formats and models to make it possible to explore this possibility in the context of robotic manipulation, alongside experimental results that provide an example of effective X-robot policies. We assemble a dataset from 22 different robots collected through a collaboration between 21 institutions, demonstrating 527 skills (160266 tasks). We show that a high-capacity model trained on this data, which we call RT-X, exhibits positive transfer and improves the capabilities of multiple robots by leveraging experience from other platforms.},
   link={https://robotics-transformer-x.github.io/},
-  award={Finalist ICRA Best Paper Award in Robot Manipulation. Finalist ICRA Best Conference Paper.}
+  award={ICRA Best Conference Paper. ICRA Best Paper Award in Robot Manipulation.}
 }
 
 

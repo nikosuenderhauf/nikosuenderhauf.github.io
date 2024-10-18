@@ -12,7 +12,10 @@ enable_katex: true
 <!-- ### Postdoctoral Research Fellow
 I am offering a **12 month contract for a postdoc** to work with me in the Visual Learning and Understanding research program. Please read the [position description](postdoc_qcr_2023) (advertised: May 2023) and contact me if you are interested. -->
 
+### I currently have no open positions for postdocs or PhD students.
+Please check back in the future for new opportunities. The new round of PhD scholarships will be advertised in mid-2025 for a start in 2026.
 
+<!-- 
 ### Apply now for your PhD with me in 2025!
 To work with me on one of the topics below, you have to apply for a scholarship through [QUT's scholarship round](https://www.qut.edu.au/research/study-with-us/how-to-apply). 
 If you are successful in obtaining a scholarship, you can start your PhD between January and June 2025.
@@ -29,14 +32,14 @@ I am looking for PhD students interested in the following **topics**:
  <!-- * [implicit representations for place recognition and localisation](PhD_implicit_placerec) -->
  <!-- * combination of large language models, robot learning, and robotic mapping / scene understanding -->
  
- 
+<!--  
 You want to do a PhD in robotic learning or robotic vision? Great! A PhD is a challenging but rewarding journey where you will learn a lot and become an expert in a certain area. Along the way you will meet lots of fantastic people, make new friends, and create a network of contacts what will support you throughout your future career.
 
-First, you should [check that you are eligible](https://www.qut.edu.au/research/study-with-us/how-to-apply) to do a PhD at QUT.
+First, you should [check that you are eligible](https://www.qut.edu.au/research/study-with-us/how-to-apply) to do a PhD at QUT. -->
 
 <!-- If you are interested in the topics listed below, please refer to the [QUT Centre for Robotics website for PhD applicants](https://research.qut.edu.au/qcr/engagement/study-with-us/). -->
 
-
+<!-- 
 
 If you are interested in the topics listed below, and you have [checked your eligibility](https://www.qut.edu.au/research/study-with-us/how-to-apply), please [contact me via email](https://www.qut.edu.au/about/our-people/academic-profiles/niko.suenderhauf) and include:
  * your CV
@@ -44,7 +47,7 @@ If you are interested in the topics listed below, and you have [checked your eli
  * a one page description of your research interests, describing which topic you are interested, and why
  * a short summary about a previous research experience you are most proud of
 
-Please understand that due to the high volume of PhD applications I receive, I might not be able to respond to your email. This is especially the case if you did not attach the documents listed above, or if your research interests are not aligned with mine. I will be in touch if I think you would be a good fit to our lab.
+Please understand that due to the high volume of PhD applications I receive, I might not be able to respond to your email. This is especially the case if you did not attach the documents listed above, or if your research interests are not aligned with mine. I will be in touch if I think you would be a good fit to our lab. -->
 
 
 

@@ -17,7 +17,7 @@ If you want to join our research efforts in these areas, please contact [Dr Dimi
 
 ### Publications
 
-{% bibliography -f arxiv -q @*[id=miller2024open]* %}
+{% bibliography -f conferences -q @*[id=miller2024open]* %}
 {% bibliography -f conferences -q @*[id=wilson2023safe]* %}
 {% bibliography -f conferences -q @*[id=wilson2021hyperdimensional]* %}
 {% bibliography -f journals -q @*[id=miller2021gmmdet]* %}

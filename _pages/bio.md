@@ -42,7 +42,7 @@ I was coordinating **guest editor** for a special issue of the International Jou
 #### Attended Conferences, Workshops, and Summer Schools
 
 | **Year** | **Conferences and Venue** |
-| 2024 | RSS (Delft)
+| 2024 | RSS (Delft), ECCV (Milan)
 | 2023 | ICRA (London), CoRL (Atlanta)
 | 2022 | ICRA (Philadelphia), IROS (Kyoto)
 | 2019 | ICRA (Montreal), CVPR (Long Beach), RSS (Freiburg)
