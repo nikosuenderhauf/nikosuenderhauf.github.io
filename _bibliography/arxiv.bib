@@ -1,18 +1,67 @@
 ---
 ---
 
-
-@article{rana2024policy,
-  title={{Affordance-Centric Policy Learning: Sample Efficient and Generalisable Robot Policy Learning using Affordance-Centric Task Frames}},
-  author={Rana, Krishan and Abou-Chakra, Jad and Garg, Sourav and Lee, Robert and Reid, Ian and S{\"u}nderhauf, Niko},  
-  arxiv={2410.1212},
-  journal={arXiv preprint arXiv:2410.1212},
+@article{jayanga2024multi,
+  title={Multi-View Pose-Agnostic Change Localization with Zero Labels},
+  author={Jayanga Galappaththige, Chamuditha and Lai, Jason and Windrim, Lloyd and Dansereau, Donald and Suenderhauf, Niko and Miller, Dimity},
+  journal={arXiv preprint arXiv:2412.03911},  
+  arxiv={2412.03911},
+  link={https://arxiv.org/abs/2412.03911},
   year={2024},
-  link={https://arxiv.org/abs/2410.1212},
-  html={https://affordance-policy.github.io/},
-  abstract={ In this paper, we propose an affordance-centric policy-learning approach that centres and appropriately orients a task frame on these affordance regions allowing us to achieve both intra-category invariance -- where policies can generalise across different instances within the same object category -- and spatial invariance --- which enables consistent performance regardless of object placement in the environment. We propose a method to leverage existing generalist large vision models to extract and track these affordance frames, and demonstrate that our approach can learn manipulation tasks using behaviour cloning from as little as 10 demonstrations, with equivalent generalisation to an image-based policy trained on 305 demonstrations.},
-  thumb={rana2024policy.png}
+  abstract={We propose a novel label-free, pose-agnostic change detection method that integrates information from multiple viewpoints to construct a change-aware 3D Gaussian Splatting (3DGS) representation of the scene. With as few as 5 images of the post-change scene, our approach can learn additional change channels in a 3DGS and produce change masks that outperform single-view techniques. Our change-aware 3D scene representation additionally enables the generation of accurate change masks for unseen viewpoints. Experimental results demonstrate state-of-the-art performance in complex multi-object scenes, achieving a 1.7 and 1.6 improvement in Mean Intersection Over Union and F1 score respectively over other baselines. We also contribute a new real-world dataset to benchmark change detection in diverse challenging scenes in the presence of lighting variations.},
+  thumb={chamu2024multi.png}
 }
+
+@article{raine2024reducing,
+  title={Reducing Label Dependency for Underwater Scene Understanding: A Survey of Datasets, Techniques and Applications},
+  author={Raine, Scarlett and Maire, Frederic and Suenderhauf, Niko and Fischer, Tobias},
+  journal={arXiv preprint arXiv:2411.11287},
+  year={2024},
+  arxiv={2411.11287},
+  link={https://arxiv.org/abs/2411.11287},
+  thumb={raine2024reducing.png},
+  abstract={The complexity of underwater images, coupled with the specialist expertise needed to accurately identify species at the pixel level, makes the labeling process costly, time-consuming, and heavily dependent on domain experts. In recent years, some works have performed automated analysis of underwater imagery, and a smaller number of studies have focused on weakly supervised approaches which aim to reduce the expert-provided labelled data required. This survey focuses on approaches which reduce dependency on human expert input, while reviewing the prior and related approaches to position these works in the wider field of underwater perception. Further, we offer an overview of coastal ecosystems and the challenges of underwater imagery.}
+}
+
+@article{van2024open,
+  title={Open-Vocabulary Part-Based Grasping},
+  author={van Oort, Tjeard and Miller, Dimity and Browne, Will N and Marticorena, Nicolas and Haviland, Jesse and Suenderhauf, Niko},
+  journal={arXiv preprint arXiv:2406.05951},
+  year={2024},
+  arxiv={2406.05951},
+  link={https://arxiv.org/abs/2406.05951},
+  thumb={van2024open.png},
+  abstract={Many robotic applications require to grasp objects
+not arbitrarily but at a very specific object part. This is especially
+important for manipulation tasks beyond simple pick-and-place
+scenarios or in robot-human interactions, such as object handovers. We propose AnyPart, a practical system that combines
+open-vocabulary object detection, open-vocabulary part segmentation and 6DOF grasp pose prediction to infer a grasp pose on
+a specific part of an object in 800 milliseconds. We contribute
+two new datasets for the task of open-vocabulary part-based
+grasping, a hand-segmented dataset containing 1014 object-part
+segmentations, and a dataset of real-world scenarios gathered
+during our robot trials for individual objects and table-clearing
+tasks. We evaluate AnyPart on a mobile manipulator robot using
+a set of 28 common household objects over 360 grasping trials.
+AnyPart is capable of producing successful grasps 69.52 %, when
+ignoring robot-based grasp failures, AnyPart predicts a grasp
+location on the correct part 88.57% of the time.}
+}
+
+
+@article{marticorena2024rmmi,
+  title={RMMI: Enhanced Obstacle Avoidance for Reactive Mobile Manipulation using an Implicit Neural Map},
+  author={Marticorena, Nicolas and Fischer, Tobias and Haviland, Jesse and Suenderhauf, Niko},
+  journal={arXiv preprint arXiv:2408.16206},
+  year={2024},
+  arxiv={2408.16206},
+  link={https://arxiv.org/abs/2408.16206},
+  html={https://rmmi.github.io/},
+  thumb={marticorena2024rmmi.png},
+  abstract={We introduce a novel reactive control framework for mobile manipulators operating in complex, static environments. Our approach leverages a neural Signed Distance Field (SDF) to model intricate environment details and incorporates this representation as inequality constraints within a Quadratic Program (QP) to coordinate robot joint and base motion. A key contribution is the introduction of an active collision avoidance cost term that maximises the total robot distance to obstacles during the motion. We first evaluate our approach in a simulated reaching task, outperforming previous methods that rely on representing both the robot and the scene as a set of primitive geometries. Compared with the baseline, we improved the task success rate by 25% in total, which includes increases of 10% by using the active collision cost. We also demonstrate our approach on a real-world platform, showing its effectiveness in reaching target poses in cluttered and confined spaces using environment models built directly from sensor data}
+}
+
+
 
 @article{ceola2023lhmanip,
   title={LHManip: A Dataset for Long-Horizon Language-Grounded Manipulation Tasks in Cluttered Tabletop Environments},
