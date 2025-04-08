@@ -20,7 +20,7 @@ social: true
 
 I am a Professor at Queensland University of Technology ([QUT](http://www.qut.edu.au)) in [Brisbane](http://www.lensaloft.com.au/Interactive_tour/BrisbaneDusk/Brisbane.html) and Deputy Director of the [QUT Centre for Robotics](https://research.qut.edu.au/qcr/), where I lead the Visual Understanding and Learning Program. 
 
-I am also Deputy Director (Research) for the ARC Research Hub in [Intelligent Robotic Systems for Real-Time Asset Management](www.ariamhub.com) (2022-2027) and was Chief Investigator of the [Australian Centre for Robotic Vision](http://www.roboticvision.org) 2017-2020.
+I am also Deputy Director (Research) for the ARC Research Hub in [Intelligent Robotic Systems for Real-Time Asset Management](http://www.ariamhub.com) (2022-2027) and was Chief Investigator of the [Australian Centre for Robotic Vision](http://www.roboticvision.org) 2017-2020.
 
 I conduct [research](projects) in robotic vision and robot learning, at the intersection of robotics, computer vision, and machine learning. My research interests focus on [robotic learning](../_projects/learningtonavigate.md) for manipulation, interaction and navigation, [scene understanding](../_projects/sceneunderstanding.md), and the [reliability of deep learning](../_projects/uncertainty.md) for open-set and open-world conditions.
 

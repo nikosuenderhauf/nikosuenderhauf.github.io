@@ -17,7 +17,8 @@ If you want to do a PhD with us in this area, read more information [here](../..
 
 ### Publications
 
-{% bibliography -f arxiv -q @*[id=rana2024policy]* %}
+{% bibliography -f arxiv -q @*[id=rana2025imle]* %}
+{% bibliography -f workshops -q @*[id=rana2024policy]* %}
 {% bibliography -f conferences -q @*[id=abou-chakra2024physically]* %}
 {% bibliography -f conferences -q @*[id=padalkar2023open]* %}
 {% bibliography -f conferences -q @*[id=rana2023sayplan]* %}
