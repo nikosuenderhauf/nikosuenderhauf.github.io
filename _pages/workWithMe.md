@@ -9,11 +9,13 @@ enable_katex: true
 
 ---
 
-<!-- ### Postdoctoral Research Fellow
-I am offering a **12 month contract for a postdoc** to work with me in the Visual Learning and Understanding research program. Please read the [position description](postdoc_qcr_2023) (advertised: May 2023) and contact me if you are interested. -->
+### Postdoctoral Research Fellow
+I am offering a **24 month contract for a postdoc** to work with me on Robot Learning. Please read the [position description](postdoc_2025) (advertised: September 2025) and contact me if you are interested.
 
 ### I currently have no open positions for postdocs or PhD students.
-Please check back in the future for new opportunities. The new round of PhD scholarships will be advertised in mid-2025 for a start in 2026.
+Please check back in the future for new opportunities. 
+
+A new round of PhD scholarships at QUT will be advertised in mid-2026 for a start in 2027.
 
 <!-- 
 ### Apply now for your PhD with me in 2025!

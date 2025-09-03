@@ -1,6 +1,44 @@
 ---
 ---
 
+@inproceedings{rana2025policy,
+  title={{Learning from 10 Demos: Generalisable and Sample-Efficient Policy Learning with Oriented Affordance Frames}},
+  author={Rana, Krishan and Abou-Chakra, Jad and Garg, Sourav and Lee, Robert and Reid, Ian and S{\"u}nderhauf, Niko},  
+  arxiv={2410.12124},
+  booktitle={Conference on Robot Learning (CoRL)},
+  year={2025},
+  link={https://arxiv.org/abs/2410.12124},
+  html={https://affordance-policy.github.io/},
+  abstract={We introduce oriented affordance frames, a structured representation for state and action spaces that improves spatial and intra-category generalisation and enables policies to be learned efficiently from only 10 demonstrations. More importantly, we show how this abstraction allows for compositional generalisation of independently trained sub-policies to solve long-horizon, multi-object tasks. To seamlessly transition between sub-policies, we introduce the notion of self-progress prediction, which we directly derive from the duration of the training demonstrations. We validate our method across three real-world tasks, each requiring multi-step, multi-object interactions. Despite the small dataset, our policies generalise robustly to unseen object appearances, geometries, and spatial arrangements, achieving high success rates without reliance on exhaustive training data.},
+  thumb={rana2024policy.png}
+}
+
+
+@inproceedings{rana2025imle,
+  title={IMLE Policy: Fast and Sample Efficient Visuomotor Policy Learning via Implicit Maximum Likelihood Estimation},
+  author={Rana, Krishan and Lee, Robert and Pershouse, David and Suenderhauf, Niko},
+  booktitle={{Robotics: Science and Systems (RSS)}},
+  thumb={rana2025imle.png},
+  link={https://arxiv.org/abs/2502.12371},
+  arxiv={2502.12371},
+  year={2025},
+  http={https://imle-policy.github.io/},
+  abstract={We introduce IMLE Policy, a novel behaviour cloning approach based on Implicit Maximum Likelihood Estimation (IMLE). IMLE Policy excels in low-data regimes, effectively learning from minimal demonstrations and requiring 38% less data on average to match the performance of baseline methods in learning complex multi-modal behaviours. Its simple generator-based architecture enables single-step action generation, improving inference speed by 97.3% compared to Diffusion Policy, while outperforming single-step Flow Matching.}
+}
+
+@inproceedings{marticorena2024rmmi,
+  title={RMMI: Enhanced Obstacle Avoidance for Reactive Mobile Manipulation using an Implicit Neural Map},
+  author={Marticorena, Nicolas and Fischer, Tobias and Haviland, Jesse and Suenderhauf, Niko},
+  booktitle={{International Conference on Intelligent Robots and Systems  (IROS)}},
+  year={2025},
+  arxiv={2408.16206},
+  link={https://arxiv.org/abs/2408.16206},
+  html={https://rmmi.github.io/},
+  thumb={marticorena2024rmmi.png},
+  abstract={We introduce a novel reactive control framework for mobile manipulators operating in complex, static environments. Our approach leverages a neural Signed Distance Field (SDF) to model intricate environment details and incorporates this representation as inequality constraints within a Quadratic Program (QP) to coordinate robot joint and base motion. A key contribution is the introduction of an active collision avoidance cost term that maximises the total robot distance to obstacles during the motion. We first evaluate our approach in a simulated reaching task, outperforming previous methods that rely on representing both the robot and the scene as a set of primitive geometries. Compared with the baseline, we improved the task success rate by 25% in total, which includes increases of 10% by using the active collision cost. We also demonstrate our approach on a real-world platform, showing its effectiveness in reaching target poses in cluttered and confined spaces using environment models built directly from sensor data}
+}
+
+
 @inproceedings{jayanga2024multi,
   title={Multi-View Pose-Agnostic Change Localization with Zero Labels},
   author={Jayanga Galappaththige, Chamuditha and Lai, Jason and Windrim, Lloyd and Dansereau, Donald and Suenderhauf, Niko and Miller, Dimity},

@@ -1,16 +1,16 @@
 ---
 ---
 
-@article{rana2025imle,
-  title={IMLE Policy: Fast and Sample Efficient Visuomotor Policy Learning via Implicit Maximum Likelihood Estimation},
-  author={Rana, Krishan and Lee, Robert and Pershouse, David and Suenderhauf, Niko},
-  journal={arXiv preprint arXiv:2502.12371},
-  thumb={rana2025imle.png},
-  link={https://arxiv.org/abs/2502.12371},
-  arxiv={2502.12371},
+@article{abou-chakra2025real,
+  title={Real-is-Sim: Bridging the Sim-to-Real Gap with a Dynamic Digital Twin for Real-World Robot Policy Evaluation},
+  author={Abou-Chakra, Jad and Sun, Lingfeng and Rana, Krishan and May, Brandon and Schmeckpeper, Karl and Minniti, Maria Vittoria and Herlant, Laura},
+  journal={arXiv preprint arXiv:2504.03597},
   year={2025},
-  http={https://imle-policy.github.io/},
-  abstract={We introduce IMLE Policy, a novel behaviour cloning approach based on Implicit Maximum Likelihood Estimation (IMLE). IMLE Policy excels in low-data regimes, effectively learning from minimal demonstrations and requiring 38% less data on average to match the performance of baseline methods in learning complex multi-modal behaviours. Its simple generator-based architecture enables single-step action generation, improving inference speed by 97.3% compared to Diffusion Policy, while outperforming single-step Flow Matching.}
+  arxiv={2504.03597},
+  link={https://arxiv.org/abs/2504.03597},
+  thumb={abou-chakra2025real.png},
+  abstract={We introduce real-is-sim, a new approach to integrating simulation into behavior cloning pipelines. In contrast to real-only methods, which lack the ability to safely test policies before deployment, and sim-to-real methods, which require complex adaptation to cross the sim-to-real gap, our framework allows policies to seamlessly switch between running on real hardware and running in parallelized virtual environments. At the center of real-is-sim is a dynamic digital twin, powered by the Embodied Gaussian simulator, that synchronizes with the real world at 60Hz. This twin acts as a mediator between the behavior cloning policy and the real robot. Policies are trained using representations derived from simulator states and always act on the simulated robot, never the real one. During deployment, the real robot simply follows the simulated robot's joint states, and the simulation is continuously corrected with real world measurements. This setup, where the simulator drives all policy execution and maintains real-time synchronization with the physical world, shifts the responsibility of crossing the sim-to-real gap to the digital twin's synchronization mechanisms, instead of the policy itself.},
+  html={https://real-is-sim.github.io/}
 }
 
 @article{raine2024reducing,
@@ -49,18 +49,6 @@ ignoring robot-based grasp failures, AnyPart predicts a grasp
 location on the correct part 88.57% of the time.}
 }
 
-
-@article{marticorena2024rmmi,
-  title={RMMI: Enhanced Obstacle Avoidance for Reactive Mobile Manipulation using an Implicit Neural Map},
-  author={Marticorena, Nicolas and Fischer, Tobias and Haviland, Jesse and Suenderhauf, Niko},
-  journal={arXiv preprint arXiv:2408.16206},
-  year={2024},
-  arxiv={2408.16206},
-  link={https://arxiv.org/abs/2408.16206},
-  html={https://rmmi.github.io/},
-  thumb={marticorena2024rmmi.png},
-  abstract={We introduce a novel reactive control framework for mobile manipulators operating in complex, static environments. Our approach leverages a neural Signed Distance Field (SDF) to model intricate environment details and incorporates this representation as inequality constraints within a Quadratic Program (QP) to coordinate robot joint and base motion. A key contribution is the introduction of an active collision avoidance cost term that maximises the total robot distance to obstacles during the motion. We first evaluate our approach in a simulated reaching task, outperforming previous methods that rely on representing both the robot and the scene as a set of primitive geometries. Compared with the baseline, we improved the task success rate by 25% in total, which includes increases of 10% by using the active collision cost. We also demonstrate our approach on a real-world platform, showing its effectiveness in reaching target poses in cluttered and confined spaces using environment models built directly from sensor data}
-}
 
 
 

@@ -30,6 +30,7 @@ If you want to do a PhD with us in this area, read more information [here](../..
 
 ### Representations with NeRFs and Gaussian Splatting
 
+{% bibliography -f arxiv -q @*[id=abou-chakra2025real]* %}
 {% bibliography -f conferences -q @*[id=jayanga2024multi]* %}
 {% bibliography -f conferences -q @*[id=abou-chakra2024physically]* %}
 {% bibliography -f workshops -q @*[id=abouchakra2023splatting]* %}
