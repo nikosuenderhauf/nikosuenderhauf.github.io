@@ -77,6 +77,8 @@ To apply, please email the following materials to 📧 niko.suenderhauf@qut.edu.
  * A short video introducing yourself, your previous work, and your research vision for the next two years
  * Your CV, including a full list of publications
  * A motivation letter and research plan (max 3 pages)
+ * A statement on how you meet the selection criteria above (max 2 pages)
+ * A statement on how you plan to meet the key responsibilities above (max 2 pages)
  * Contact details for 1–2 referees, or attach reference letters
 
 <!-- ## Postdoctoral Research Fellow -->
