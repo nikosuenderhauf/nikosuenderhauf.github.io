@@ -1,0 +1,1643 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Niko Sünderhauf | Reliability of Deep Learning for Robotics</title>
+  <meta name="description" content="">
+
+  <link rel="shortcut icon" href="https://nikosuenderhauf.github.io/assets/img/favicon.ico">
+
+  <link rel="stylesheet" href="https://nikosuenderhauf.github.io/assets/css/main.css">
+  <link rel="canonical" href="https://nikosuenderhauf.github.io/projects/uncertainty/">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    
+    <span class="site-title">
+        
+        <strong>Niko</strong> Sünderhauf
+    </span>
+    
+
+    <nav class="site-nav">
+      <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+      <div class="trigger">
+        <!-- About -->
+        <a class="page-link" href="https://nikosuenderhauf.github.io/">about</a>
+
+        <!-- Blog -->
+        <!-- <a class="page-link" href="https://nikosuenderhauf.github.io/blog/">blog</a> -->
+
+        <!-- Pages -->
+        
+          
+        
+          
+            <a class="page-link" href="https://nikosuenderhauf.github.io/cv/">bio</a>
+          
+        
+          
+        
+          
+        
+          
+            <a class="page-link" href="https://nikosuenderhauf.github.io/projects/">research</a>
+          
+        
+          
+            <a class="page-link" href="https://nikosuenderhauf.github.io/publications/">publications</a>
+          
+        
+          
+            <a class="page-link" href="https://nikosuenderhauf.github.io/teaching/">teaching</a>
+          
+        
+          
+            <a class="page-link" href="https://nikosuenderhauf.github.io/jobs/">recruiting</a>
+          
+        
+          
+            <a class="page-link" href="https://nikosuenderhauf.github.io/workshops/">workshops</a>
+          
+        
+          
+        
+          
+        
+
+        <!-- CV link -->
+        <!-- <a class="page-link" href="https://nikosuenderhauf.github.io/assets/pdf/CV.pdf">vitae</a> -->
+
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Reliability of Deep Learning for Robotics</h1>
+    <h5 class="post-description"></h5>
+  </header>
+
+  <article class="post-content Reliability of Deep Learning for Robotics clearfix">
+    <p>Despite the enormous progress of deep learning over the past decade, and the appearance of foundation models such as large language models or vision-language models in the past few years, questions about their reliability and robustnes remain. How do deep learning models react when presented with out-of-distribution data? How can they express the uncertainty in their predictions, and know when they don’t know? Are recent foundation models immune to open-set or out-of-distribution conditions?</p>
+
+<p>These questions are of enormous importance if we want to apply deep learning (and AI in general) to safety-critical applications where mistakes could have catastrophic consequences.</p>
+
+<p>Our research tackles critical challenges like open-set recognition, out-of-distribution (OOD) detection, and failure identification in visual perception.</p>
+
+<h3 id="join-the-team">Join the Team!</h3>
+<p>If you want to join our research efforts in these areas, please contact <a href="https://research.qut.edu.au/qcr/people/dimity-miller/">Dr Dimity Miller</a> to apply for a PhD position.</p>
+
+<h3 id="publications">Publications</h3>
+
+<ol class="bibliography"><li>
+
+<div id="miller2024open">
+  
+    
+    <a href="https://arxiv.org/abs/2403.16528" class="title" target="_blank">Open-Set Recognition in the Age of Vision-Language Models</a>
+    
+    <span class="author">
+      
+        
+          
+            
+              Dimity Miller,
+            
+          
+        
+      
+        
+          
+            Niko Sünderhauf,
+          
+        
+      
+        
+          
+            
+              Alex Kenna,
+            
+          
+        
+      
+        
+
+          
+            
+              Keita Mason.
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>In European Conference on Computer Vision (ECCV),</em>
+    
+    
+      2024.
+    
+    </span>
+  
+
+  
+
+  
+  <a href="https://arxiv.org/abs/2403.16528" target="_blank"><img class="paper_thumb" src="/assets/paper-thumbnails/miller2024openset.png" /></a>
+  
+  
+  <span class="abstract">
+    Are vision-language models (VLMs) open-set models because they are trained on internet-scale datasets? We answer this question with a clear no – VLMs introduce closed-set assumptions via their finite query set, making them vulnerable to open-set conditions. We systematically evaluate VLMs for open-set recognition and find they frequently misclassify objects not contained in their query set, leading to alarmingly low precision when tuned for high recall and vice versa. We show that naively increasing the size of the query set to contain more and more classes does not mitigate this problem, but instead causes diminishing task performance and open-set performance. We establish a revised definition of the open-set problem for the age of VLMs, define a new benchmark and evaluation protocol to facilitate standardised evaluation and research in this important area, and evaluate promising baseline approaches based on predictive uncertainty and dedicated negative embeddings on a range of VLM classifiers and object detectors.
+  </span>
+  
+
+  <span class="links">
+  <!-- 
+    [<a class="abstract">Abs</a>]
+   -->
+  
+    [<a href="http://arxiv.org/abs/2403.16528" target="_blank">arXiv</a>]
+  
+  
+  <!-- 
+    [<a href="https://arxiv.org/abs/2403.16528" target="_blank">PDF</a>]
+   -->
+  <!--  -->
+  
+  
+  
+  
+    [<a href="https://github.com/dimitymiller/openset_vlms" target="_blank">Code</a>]
+  
+  </span>
+
+
+
+  <!-- Hidden abstract block -->
+
+</div>
+</li></ol>
+<ol class="bibliography"><li>
+
+<div id="wilson2023safe">
+  
+    
+    <a href="https://arxiv.org/abs/2208.13930" class="title" target="_blank">SAFE: Sensitivity-Aware Features for Out-of-Distribution Object Detection</a>
+    
+    <span class="author">
+      
+        
+          
+            
+              Samuel Wilson,
+            
+          
+        
+      
+        
+          
+            
+              Tobias Fischer,
+            
+          
+        
+      
+        
+          
+            
+              Feras Dayoub,
+            
+          
+        
+      
+        
+          
+            
+              Dimity Miller,
+            
+          
+        
+      
+        
+
+          
+            Niko Sünderhauf.
+        
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>In Proceedings of the IEEE/CVF International Conference on Computer Vision,</em>
+    
+    
+      2023.
+    
+    </span>
+  
+
+  
+
+  
+  <a href="https://arxiv.org/abs/2208.13930" target="_blank"><img class="paper_thumb" src="/assets/paper-thumbnails/wilson2023safe.png" /></a>
+  
+  
+  <span class="abstract">
+     We address the problem of out-of-distribution (OOD)
+detection for the task of object detection. We show that
+residual convolutional layers with batch normalisation produce Sensitivity-Aware FEatures (SAFE) that are consistently powerful for distinguishing in-distribution from outof-distribution detections. We extract SAFE vectors for every detected object, and train a multilayer perceptron on
+the surrogate task of distinguishing adversarially perturbed
+from clean in-distribution examples. This circumvents the
+need for realistic OOD training data, computationally expensive generative models, or retraining of the base object detector.
+  </span>
+  
+
+  <span class="links">
+  <!-- 
+    [<a class="abstract">Abs</a>]
+   -->
+  
+    [<a href="http://arxiv.org/abs/2208.13930" target="_blank">arXiv</a>]
+  
+  
+  <!-- 
+    [<a href="https://arxiv.org/abs/2208.13930" target="_blank">PDF</a>]
+   -->
+  <!--  -->
+  
+  
+  
+  
+  </span>
+
+
+
+  <!-- Hidden abstract block -->
+
+</div>
+</li></ol>
+<ol class="bibliography"><li>
+
+<div id="wilson2021hyperdimensional">
+  
+    
+    <a href="https://openaccess.thecvf.com/content/WACV2023/papers/Wilson_Hyperdimensional_Feature_Fusion_for_Out-of-Distribution_Detection_WACV_2023_paper.pdf" class="title" target="_blank">Hyperdimensional Feature Fusion for Out-Of-Distribution Detection</a>
+    
+    <span class="author">
+      
+        
+          
+            
+              Samuel Wilson,
+            
+          
+        
+      
+        
+          
+            
+              Tobias Fischer,
+            
+          
+        
+      
+        
+          
+            Niko Sünderhauf,
+          
+        
+      
+        
+
+          
+            
+              Feras Dayoub.
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>In IEEE Winter Conference on Applications of Computer Vision (WACV),</em>
+    
+    
+      2023.
+    
+    </span>
+  
+
+  
+
+  
+  <a href="https://openaccess.thecvf.com/content/WACV2023/papers/Wilson_Hyperdimensional_Feature_Fusion_for_Out-of-Distribution_Detection_WACV_2023_paper.pdf" target="_blank"><img class="paper_thumb" src="/assets/paper-thumbnails/wilson2021hyperdimensional.png" /></a>
+  
+  
+  <span class="abstract">
+    We introduce powerful ideas from Hyperdimensional
+Computing into the challenging field of Out-of-Distribution
+(OOD) detection. In contrast to most existing works that perform OOD detection based on only a single layer of a neural
+network, we use similarity-preserving semi-orthogonal projection matrices to project the feature maps from multiple
+layers into a common vector space. By repeatedly applying the bundling operation ⊕, we create expressive classspecific descriptor vectors for all in-distribution classes.
+  </span>
+  
+
+  <span class="links">
+  <!-- 
+    [<a class="abstract">Abs</a>]
+   -->
+  
+    [<a href="http://arxiv.org/abs/2112.05341" target="_blank">arXiv</a>]
+  
+  
+  <!-- 
+    [<a href="https://openaccess.thecvf.com/content/WACV2023/papers/Wilson_Hyperdimensional_Feature_Fusion_for_Out-of-Distribution_Detection_WACV_2023_paper.pdf" target="_blank">PDF</a>]
+   -->
+  <!--  -->
+  
+  
+  
+  
+  </span>
+
+
+
+  <!-- Hidden abstract block -->
+
+</div>
+</li></ol>
+<ol class="bibliography"><li>
+
+<div id="miller2021gmmdet">
+  
+    
+    <a href="http://arxiv.org/abs/2104.01328" class="title" target="_blank">Uncertainty for Identifying Open-Set Errors in Visual Object Detection</a>
+    
+    <span class="author">
+      
+        
+          
+            
+              Dimity Miller,
+            
+          
+        
+      
+        
+          
+            Niko Sünderhauf,
+          
+        
+      
+        
+          
+            
+              Michael Milford,
+            
+          
+        
+      
+        
+
+          
+            
+              Feras Dayoub.
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>IEEE Robotics and Automation Letters (RA-L),</em>
+    
+    
+      2021.
+    
+    </span>
+  
+
+  
+
+  
+  <a href="http://arxiv.org/abs/2104.01328" target="_blank"><img class="paper_thumb" src="/assets/paper-thumbnails/miller21GMMDet.png" /></a>
+  
+  
+  <span class="abstract">
+    We propose GMM-Det, a real-time method for extracting
+epistemic uncertainty from object detectors to identify and reject open-set errors. GMM-Det trains the detector to produce a
+structured logit space that is modelled with class-specific Gaussian Mixture Models. At test time, open-set errors are identified
+by their low log-probability under all Gaussian Mixture Models.
+We test two common detector architectures, Faster R-CNN and
+RetinaNet, across three varied datasets spanning robotics and
+computer vision. Our results show that GMM-Det consistently
+outperforms existing uncertainty techniques for identifying and
+rejecting open-set detections, especially at the low-error-rate
+operating point required for safety-critical applications. GMMDet maintains object detection performance, and introduces
+only minimal computational overhead.
+  </span>
+  
+
+  <span class="links">
+  <!-- 
+    [<a class="abstract">Abs</a>]
+   -->
+  
+    [<a href="http://arxiv.org/abs/2104.01328" target="_blank">arXiv</a>]
+  
+  
+  <!-- 
+    [<a href="http://arxiv.org/abs/2104.01328" target="_blank">PDF</a>]
+   -->
+  <!--  -->
+  
+  
+  
+  
+  </span>
+
+
+
+  <!-- Hidden abstract block -->
+
+</div>
+</li></ol>
+<ol class="bibliography"><li>
+
+<div id="rahman2021fsnet">
+  
+    
+    <a href="https://ieeexplore.ieee.org/document/9682519/" class="title" target="_blank">FSNet: A Failure Detection Framework for Semantic Segmentation</a>
+    
+    <span class="author">
+      
+        
+          
+            
+              Quazi Marufur Rahman,
+            
+          
+        
+      
+        
+          
+            Niko Sünderhauf,
+          
+        
+      
+        
+          
+            
+              Peter Corke,
+            
+          
+        
+      
+        
+
+          
+            
+              Feras Dayoub.
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>IEEE Robotics and Automation Letters,</em>
+    
+    
+      2022.
+    
+    </span>
+  
+
+  
+
+  
+  <a href="https://ieeexplore.ieee.org/document/9682519/" target="_blank"><img class="paper_thumb" src="/assets/paper-thumbnails/rahman2021fsnet.png" /></a>
+  
+  
+  <span class="abstract">
+    Semantic segmentation is an important task that helps autonomous vehicles understand their surroundings and navigate safely. However, during deployment, even the most mature segmentation models are vulnerable to various external factors that can degrade the segmentation performance with potentially catastrophic consequences for the vehicle and its surroundings. To address this issue, we propose a failure detection framework to identify pixel-level misclassification. We do so by exploiting internal features of the segmentation model and training it simultaneously with a failure detection network. During deployment, the failure detector flags areas in the image where the segmentation model has failed to segment correctly.
+  </span>
+  
+
+  <span class="links">
+  <!-- 
+    [<a class="abstract">Abs</a>]
+   -->
+  
+    [<a href="http://arxiv.org/abs/2108.08748" target="_blank">arXiv</a>]
+  
+  
+  <!-- 
+    [<a href="https://ieeexplore.ieee.org/document/9682519/" target="_blank">PDF</a>]
+   -->
+  <!--  -->
+  
+  
+  
+  
+  </span>
+
+
+
+  <!-- Hidden abstract block -->
+
+</div>
+</li></ol>
+<ol class="bibliography"><li>
+
+<div id="miller2020cac">
+  
+    
+    <a href="https://arxiv.org/abs/2004.02434" class="title" target="_blank">Class Anchor Clustering: A Loss for Distance-based Open Set Recognition</a>
+    
+    <span class="author">
+      
+        
+          
+            
+              Dimity Miller,
+            
+          
+        
+      
+        
+          
+            Niko Sünderhauf,
+          
+        
+      
+        
+          
+            
+              Michael Milford,
+            
+          
+        
+      
+        
+
+          
+            
+              Feras Dayoub.
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>In IEEE Winter Conference on Applications of Computer Vision (WACV),</em>
+    
+    
+      2021.
+    
+    </span>
+  
+
+  
+
+  
+  <a href="https://arxiv.org/abs/2004.02434" target="_blank"><img class="paper_thumb" src="/assets/paper-thumbnails/miller2020cac.png" /></a>
+  
+  
+  <span class="abstract">
+    Existing open set classifiers distinguish between known and unknown inputs by measuring distance in a network’s logit space, assuming that known inputs cluster closer to the training data than unknown inputs. However, this approach is typically applied post-hoc to networks trained with cross-entropy loss, which neither guarantees nor encourages the hoped-for clustering behaviour. To overcome this limitation, we introduce Class Anchor Clustering (CAC) loss. CAC is an entirely distance-based loss that explicitly encourages training data to form tight clusters techniques on the challenging TinyImageNet dataset, achieving a 2.4% performance increase in AUROC. 
+  </span>
+  
+
+  <span class="links">
+  <!-- 
+    [<a class="abstract">Abs</a>]
+   -->
+  
+    [<a href="http://arxiv.org/abs/2004.02434" target="_blank">arXiv</a>]
+  
+  
+  <!-- 
+    [<a href="https://arxiv.org/abs/2004.02434" target="_blank">PDF</a>]
+   -->
+  <!--  -->
+  
+  
+  
+  
+  </span>
+
+
+
+  <!-- Hidden abstract block -->
+
+</div>
+</li></ol>
+<ol class="bibliography"><li>
+
+<div id="rahman2020monitoring">
+  
+    
+    <a href="https://arxiv.org/abs/2011.07750" class="title" target="_blank">Online Monitoring of Object Detection Performance Post-Deployment</a>
+    
+    <span class="author">
+      
+        
+          
+            
+              Quazi Marufur Rahman,
+            
+          
+        
+      
+        
+          
+            Niko Sünderhauf,
+          
+        
+      
+        
+
+          
+            
+              Feras Dayoub.
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>In Proc. of IEEE International Conference on Intelligent Robots and Systems (IROS),</em>
+    
+    
+      2021.
+    
+    </span>
+  
+
+  
+
+  
+  <a href="https://arxiv.org/abs/2011.07750" target="_blank"><img class="paper_thumb" src="/assets/paper-thumbnails/rahman2020monitoring.png" /></a>
+  
+  
+  <span class="abstract">
+    Post-deployment, an object detector is expected to operate at a similar level of performance that was reported on its testing dataset. However, when deployed onboard mobile robots that operate under varying and complex environmental conditions, the detector’s performance can fluctuate and occasionally degrade severely without warning. Undetected, this can lead the robot to take unsafe and risky actions based on low-quality and unreliable object detections. We address this problem and introduce a cascaded neural network that monitors the performance of the object detector by predicting the quality of its mean average precision (mAP) on a sliding window of the input frames.
+  </span>
+  
+
+  <span class="links">
+  <!-- 
+    [<a class="abstract">Abs</a>]
+   -->
+  
+    [<a href="http://arxiv.org/abs/2011.07750" target="_blank">arXiv</a>]
+  
+  
+  <!-- 
+    [<a href="https://arxiv.org/abs/2011.07750" target="_blank">PDF</a>]
+   -->
+  <!--  -->
+  
+  
+  
+  
+  </span>
+
+
+
+  <!-- Hidden abstract block -->
+
+</div>
+</li></ol>
+<ol class="bibliography"><li>
+
+<div id="rahman2020performance">
+  
+    
+    <a href="https://arxiv.org/abs/2009.08650" class="title" target="_blank">Performance Monitoring of Object Detection During Deployment</a>
+    
+    <span class="author">
+      
+        
+          
+            
+              Quazi Marufur Rahman,
+            
+          
+        
+      
+        
+          
+            Niko Sünderhauf,
+          
+        
+      
+        
+
+          
+            
+              Feras Dayoub.
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>arXiv preprint arXiv:2009.08650,</em>
+    
+    
+      2020.
+    
+    </span>
+  
+
+  
+
+  
+  <a href="https://arxiv.org/abs/2009.08650" target="_blank"><img class="paper_thumb" src="/assets/paper-thumbnails/rahman2020performance.png" /></a>
+  
+  
+  <span class="abstract">
+    Performance monitoring of object detection is crucial for safety-critical applications such as autonomous vehicles that operate under varying and complex environmental conditions. Currently, object detectors are evaluated using summary metrics based on a single dataset that is assumed to be representative of all future deployment conditions. In practice, this assumption does not hold, and the performance fluctuates as a function of the deployment conditions. To address this issue, we propose an introspection approach to performance monitoring during deployment without the need for ground truth data. We do so by predicting when the per-frame mean average precision drops below a critical threshold using the detector’s internal features.
+  </span>
+  
+
+  <span class="links">
+  <!-- 
+    [<a class="abstract">Abs</a>]
+   -->
+  
+    [<a href="http://arxiv.org/abs/2009.08650" target="_blank">arXiv</a>]
+  
+  
+  <!-- 
+    [<a href="https://arxiv.org/abs/2009.08650" target="_blank">PDF</a>]
+   -->
+  <!--  -->
+  
+  
+  
+  
+  </span>
+
+
+
+  <!-- Hidden abstract block -->
+
+</div>
+</li></ol>
+<ol class="bibliography"><li>
+
+<div id="hall2018probability">
+  
+    
+    <a href="https://arxiv.org/abs/1811.10800" class="title" target="_blank">Probabilistic Object Detection: Definition and Evaluation</a>
+    
+    <span class="author">
+      
+        
+          
+            
+              David Hall,
+            
+          
+        
+      
+        
+          
+            
+              Feras Dayoub,
+            
+          
+        
+      
+        
+          
+            
+              John Skinner,
+            
+          
+        
+      
+        
+          
+            
+              Peter Corke,
+            
+          
+        
+      
+        
+          
+            
+              Gustavo Carneiro,
+            
+          
+        
+      
+        
+          
+            
+              Anelia Angelova,
+            
+          
+        
+      
+        
+
+          
+            Niko Sünderhauf.
+        
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>In IEEE Winter Conference on Applications of Computer Vision (WACV),</em>
+    
+    
+      2020.
+    
+    </span>
+  
+
+  
+
+  
+  <a href="https://arxiv.org/abs/1811.10800" target="_blank"><img class="paper_thumb" src="/assets/paper-thumbnails/hall2018probability.png" /></a>
+  
+  
+  <span class="abstract">
+    We introduce Probabilistic Object Detection, the task of detecting objects in images and accurately quantifying the spatial and semantic uncertainties of the detections. Given the lack of methods capable of assessing such probabilistic object detections, we present the new Probability-based Detection Quality measure (PDQ). Unlike AP-based measures, PDQ has no arbitrary thresholds and rewards spatial and label quality, and foreground/background separation quality while explicitly penalising false positive and false negative detections.
+  </span>
+  
+
+  <span class="links">
+  <!-- 
+    [<a class="abstract">Abs</a>]
+   -->
+  
+    [<a href="http://arxiv.org/abs/1811.10800" target="_blank">arXiv</a>]
+  
+  
+  <!-- 
+    [<a href="https://arxiv.org/abs/1811.10800" target="_blank">PDF</a>]
+   -->
+  <!--  -->
+  
+  
+  
+  
+  </span>
+
+
+
+  <!-- Hidden abstract block -->
+
+</div>
+</li></ol>
+<ol class="bibliography"><li>
+
+<div id="suenderhauf2019probabilistic">
+  
+    
+    <a href="https://rdcu.be/bQR84" class="title" target="_blank">A Probabilistic Challenge for Object Detection</a>
+    
+    <span class="author">
+      
+        
+          
+            Niko Sünderhauf,
+          
+        
+      
+        
+          
+            
+              Feras Dayoub,
+            
+          
+        
+      
+        
+          
+            
+              David Hall,
+            
+          
+        
+      
+        
+          
+            
+              John Skinner,
+            
+          
+        
+      
+        
+          
+            
+              Haoyang Zhang,
+            
+          
+        
+      
+        
+          
+            
+              Gustavo Carneiro,
+            
+          
+        
+      
+        
+
+          
+            
+              Peter Corke.
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>Nature Machine Intelligence,</em>
+    
+    
+      2019.
+    
+    </span>
+  
+
+  
+
+  
+  <a href="https://rdcu.be/bQR84" target="_blank"><img class="paper_thumb" src="/assets/paper-thumbnails/suenderhauf19probabilistic.png" /></a>
+  
+  
+  <span class="abstract">
+    To safely operate in the real world, robots need to evaluate how confident they are about what they see.
+  A new competition challenges computer vision algorithms to not just detect and localize objects, but also report how certain they are.
+  To this end, we introduce Probabilistic Object Detection, the task of detecting objects in images and accurately quantifying the spatial and semantic uncertainties of the detections.
+  </span>
+  
+
+  <span class="links">
+  <!-- 
+    [<a class="abstract">Abs</a>]
+   -->
+  
+  
+  <!-- 
+    [<a href="https://rdcu.be/bQR84" target="_blank">PDF</a>]
+   -->
+  <!--  -->
+  
+  
+  
+  
+  </span>
+
+
+
+  <!-- Hidden abstract block -->
+
+</div>
+</li></ol>
+<ol class="bibliography"><li>
+
+<div id="miller2019benchmarking">
+  
+    
+    <a href="http://openaccess.thecvf.com/content_CVPRW_2019/papers/Uncertainty%20and%20Robustness%20in%20Deep%20Visual%20Learning/Miller_Benchmarking_Sampling-based_Probabilistic_Object_Detectors_CVPRW_2019_paper.pdf" class="title" target="_blank">Benchmarking Sampling-based Probabilistic Object Detectors</a>
+    
+    <span class="author">
+      
+        
+          
+            
+              Dimity Miller,
+            
+          
+        
+      
+        
+          
+            Niko Sünderhauf,
+          
+        
+      
+        
+          
+            
+              Haoyang Zhang,
+            
+          
+        
+      
+        
+          
+            
+              David Hall,
+            
+          
+        
+      
+        
+
+          
+            
+              Feras Dayoub.
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition Workshops,</em>
+    
+    
+      2019.
+    
+    </span>
+  
+
+  
+
+  
+  <a href="http://openaccess.thecvf.com/content_CVPRW_2019/papers/Uncertainty%20and%20Robustness%20in%20Deep%20Visual%20Learning/Miller_Benchmarking_Sampling-based_Probabilistic_Object_Detectors_CVPRW_2019_paper.pdf" target="_blank"><img class="paper_thumb" src="/assets/paper-thumbnails/miller2019benchmarking.png" /></a>
+  
+  
+  <span class="abstract">
+    This paper provides the first benchmark for sampling-based probabilistic object detectors. A probabilistic object
+  detector expresses uncertainty for all detections that reliably indicates object localisation and classification performance. We compare performance for two sampling-based
+  uncertainty techniques, namely Monte Carlo Dropout and Deep Ensembles, when implemented into one-stage and
+  two-stage object detectors, Single Shot MultiBox Detector and Faster R-CNN.
+  </span>
+  
+
+  <span class="links">
+  <!-- 
+    [<a class="abstract">Abs</a>]
+   -->
+  
+  
+  <!-- 
+    [<a href="http://openaccess.thecvf.com/content_CVPRW_2019/papers/Uncertainty%20and%20Robustness%20in%20Deep%20Visual%20Learning/Miller_Benchmarking_Sampling-based_Probabilistic_Object_Detectors_CVPRW_2019_paper.pdf" target="_blank">PDF</a>]
+   -->
+  <!--  -->
+  
+  
+  
+  
+  </span>
+
+
+
+  <!-- Hidden abstract block -->
+
+</div>
+</li></ol>
+<ol class="bibliography"><li>
+
+<div id="Miller19sampling">
+  
+    
+    <a href="https://arxiv.org/abs/1809.06006" class="title" target="_blank">Evaluating Merging Strategies for Sampling-based Uncertainty Techniques in Object Detection</a>
+    
+    <span class="author">
+      
+        
+          
+            
+              Dimity Miller,
+            
+          
+        
+      
+        
+          
+            
+              Feras Dayoub,
+            
+          
+        
+      
+        
+          
+            
+              Michael Milford,
+            
+          
+        
+      
+        
+
+          
+            Niko Sünderhauf.
+        
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>In Proc. of IEEE International Conference on Robotics and Automation (ICRA),</em>
+    
+    
+      2019.
+    
+    </span>
+  
+
+  
+
+  
+  <a href="https://arxiv.org/abs/1809.06006" target="_blank"><img class="paper_thumb" src="/assets/paper-thumbnails/miller18sampling.png" /></a>
+  
+  
+  <span class="abstract">
+    There has been a recent emergence of sampling-based techniques for estimating epistemic uncertainty in deep neural networks. While these methods can be applied to classification or semantic segmentation tasks by simply averaging samples, this is not the case for object detection, where detection sample bounding boxes must be accurately associated and merged. A weak merging strategy can significantly degrade the performance of the detector and yield an unreliable uncertainty measure. This paper provides the first in-depth investigation of the effect of different association and merging strategies. We compare different combinations of three spatial and two semantic affinity measures with four clustering methods for MC Dropout with a Single Shot Multi-Box Detector. Our results show that the correct choice of affinity-clustering combinations can greatly improve the effectiveness of the classification and spatial uncertainty estimation and the resulting object detection performance. We base our evaluation on a new mix of datasets that emulate near open-set conditions (semantically similar unknown classes), distant open-set conditions (semantically dissimilar unknown classes) and the common closed-set conditions (only known classes).
+  </span>
+  
+
+  <span class="links">
+  <!-- 
+    [<a class="abstract">Abs</a>]
+   -->
+  
+    [<a href="http://arxiv.org/abs/1809.06006" target="_blank">arXiv</a>]
+  
+  
+  <!-- 
+    [<a href="https://arxiv.org/abs/1809.06006" target="_blank">PDF</a>]
+   -->
+  <!--  -->
+  
+  
+  
+  
+  </span>
+
+
+
+  <!-- Hidden abstract block -->
+
+</div>
+</li></ol>
+<ol class="bibliography"><li>
+
+<div id="rahman2019traffic">
+  
+    
+    <a href="https://arxiv.org/abs/1903.06391" class="title" target="_blank">Did You Miss the Sign? A False Negative Alarm System for Traffic Sign Detectors</a>
+    
+    <span class="author">
+      
+        
+          
+            
+              Quazi Marufur Rahman,
+            
+          
+        
+      
+        
+          
+            Niko Sünderhauf,
+          
+        
+      
+        
+
+          
+            
+              Feras Dayoub.
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>In Proc. of IEEE International Conference on Intelligent Robots and Systems (IROS),</em>
+    
+    
+      2019.
+    
+    </span>
+  
+
+  
+
+  
+  <a href="https://arxiv.org/abs/1903.06391" target="_blank"><img class="paper_thumb" src="/assets/paper-thumbnails/rahman2019traffic.png" /></a>
+  
+  
+  <span class="abstract">
+    In this paper, we propose an approach to identify traffic signs that have been mistakenly discarded by the object detector. The proposed method raises an alarm when it discovers a failure by the object detector to detect a traffic sign. This approach can be useful to evaluate the performance of the detector during the deployment phase. We trained a single shot multi-box object detector to detect traffic signs and used its internal features to train a separate false negative detector (FND). During deployment, FND decides whether the traffic sign detector has missed a sign or not.
+  </span>
+  
+
+  <span class="links">
+  <!-- 
+    [<a class="abstract">Abs</a>]
+   -->
+  
+    [<a href="http://arxiv.org/abs/1903.06391" target="_blank">arXiv</a>]
+  
+  
+  <!-- 
+    [<a href="https://arxiv.org/abs/1903.06391" target="_blank">PDF</a>]
+   -->
+  <!--  -->
+  
+  
+  
+  
+  </span>
+
+
+
+  <!-- Hidden abstract block -->
+
+</div>
+</li></ol>
+<ol class="bibliography"><li>
+
+<div id="Miller18">
+  
+    
+    <a href="http://arxiv.org/abs/1710.06677" class="title" target="_blank">Dropout Sampling for Robust Object Detection in Open-Set Conditions</a>
+    
+    <span class="author">
+      
+        
+          
+            
+              Dimity Miller,
+            
+          
+        
+      
+        
+          
+            
+              Lachlan Nicholson,
+            
+          
+        
+      
+        
+          
+            
+              Feras Dayoub,
+            
+          
+        
+      
+        
+
+          
+            Niko Sünderhauf.
+        
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>In Proc. of IEEE International Conference on Robotics and Automation (ICRA),</em>
+    
+    
+      2018.
+    
+    </span>
+  
+
+  
+
+  
+  <a href="http://arxiv.org/abs/1710.06677" target="_blank"><img class="paper_thumb" src="/assets/paper-thumbnails/miller18dropout.png" /></a>
+  
+  
+  <span class="abstract">
+    Dropout Variational Inference, or Dropout Sampling, has been recently proposed as an
+approximation technique for Bayesian Deep Learning and evaluated for image classification
+and regression tasks. This paper investigates the utility of Dropout Sampling for object
+detection for the first time. We demonstrate how label uncertainty can be extracted from a
+state-of-the-art object detection system via Dropout Sampling. We show that this uncertainty
+can be utilized to increase object detection performance under the open-set conditions that
+are typically encountered in robotic vision. We evaluate this approach on a large synthetic
+dataset with 30,000 images, and a real-world dataset captured by a mobile robot in a
+versatile campus environment.
+  </span>
+  
+
+  <span class="links">
+  <!-- 
+    [<a class="abstract">Abs</a>]
+   -->
+  
+  
+  <!-- 
+    [<a href="http://arxiv.org/abs/1710.06677" target="_blank">PDF</a>]
+   -->
+  <!--  -->
+  
+  
+  
+  
+  </span>
+
+
+
+  <!-- Hidden abstract block -->
+
+</div>
+</li></ol>
+<ol class="bibliography"><li>
+
+<div id="Miller17a">
+  
+    
+    <a href="http://bayesiandeeplearning.org/2017/papers/20.pdf" class="title" target="_blank">Dropout Variational Inference Improves Object Detection in Open-Set Conditions</a>
+    
+    <span class="author">
+      
+        
+          
+            
+              Dimity Miller,
+            
+          
+        
+      
+        
+          
+            
+              Lachlan Nicholson,
+            
+          
+        
+      
+        
+          
+            
+              Feras Dayoub,
+            
+          
+        
+      
+        
+
+          
+            Niko Sünderhauf.
+        
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>In Proc. of NIPS Workshop on Bayesian Deep Learning,</em>
+    
+    
+      2017.
+    
+    </span>
+  
+
+  
+
+  
+  <a href="http://bayesiandeeplearning.org/2017/papers/20.pdf" target="_blank"><img class="paper_thumb" src="/assets/paper-thumbnails/miller17dropout.png" /></a>
+  
+  
+  <span class="abstract">
+    One of the biggest current challenges of visual object detection is reliable operation in open-set
+conditions. One way to handle the open-set problem is to utilize the uncertainty of the model to reject predictions
+with low probability. Bayesian Neural Networks (BNNs), with variational inference commonly
+used as an approximation, is an established approach to estimate model uncertainty. Here we extend the concept of Dropout sampling to object detection for the first time. We evaluate
+Bayesian object detection on a large synthetic and a real-world dataset and show how the estimated
+label uncertainty can be utilized to increase object detection performance under open-set conditions.
+  </span>
+  
+
+  <span class="links">
+  <!-- 
+    [<a class="abstract">Abs</a>]
+   -->
+  
+  
+  <!-- 
+    [<a href="http://bayesiandeeplearning.org/2017/papers/20.pdf" target="_blank">PDF</a>]
+   -->
+  <!--  -->
+  
+  
+  
+  
+  </span>
+
+
+
+  <!-- Hidden abstract block -->
+
+</div>
+</li></ol>
+<ol class="bibliography"><li>
+
+<div id="Dayoub17">
+  
+    
+    <a href="http://openaccess.thecvf.com/content_cvpr_2017_workshops/w5/papers/Dayoub_Episode-Based_Active_Learning_CVPR_2017_paper.pdf" class="title" target="_blank">Episode-Based Active Learning with Bayesian Neural Networks</a>
+    
+    <span class="author">
+      
+        
+          
+            
+              Feras Dayoub,
+            
+          
+        
+      
+        
+          
+            Niko Sünderhauf,
+          
+        
+      
+        
+
+          
+            
+              Peter Corke.
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>In Workshop on Deep Learning for Robotic Vision, Conference on Computer Vision and Pattern Recognition (CVPR),</em>
+    
+    
+      2017.
+    
+    </span>
+  
+
+  
+
+  
+  <a href="http://openaccess.thecvf.com/content_cvpr_2017_workshops/w5/papers/Dayoub_Episode-Based_Active_Learning_CVPR_2017_paper.pdf" target="_blank"><img class="paper_thumb" src="/assets/paper-thumbnails/dayoub17active.png" /></a>
+  
+  
+  <span class="abstract">
+    We investigate different strategies for active learning
+with Bayesian deep neural networks. We focus our analysis
+on scenarios where new, unlabeled data is obtained episodically,
+such as commonly encountered in mobile robotics
+applications. An evaluation of different strategies for acquisition,
+updating, and final training on the CIFAR-10 dataset
+shows that incremental network updates with final training
+on the accumulated acquisition set are essential for best
+performance, while limiting the amount of required human
+labeling labor.
+  </span>
+  
+
+  <span class="links">
+  <!-- 
+    [<a class="abstract">Abs</a>]
+   -->
+  
+  
+  <!-- 
+    [<a href="http://openaccess.thecvf.com/content_cvpr_2017_workshops/w5/papers/Dayoub_Episode-Based_Active_Learning_CVPR_2017_paper.pdf" target="_blank">PDF</a>]
+   -->
+  <!--  -->
+  
+  
+  
+  
+  </span>
+
+
+
+  <!-- Hidden abstract block -->
+
+</div>
+</li></ol>
+
+  </article>
+
+  
+
+  
+
+</div>
+
+      </div>
+    </div>
+
+    <footer>
+
+  <div class="wrapper">
+    &copy; Copyright 2025 Niko Sünderhauf.
+    Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+
+    
+  </div>
+
+</footer>
+
+
+    <!-- Load jQuery -->
+<script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
+
+<!-- Load Common JS -->
+<script src="https://nikosuenderhauf.github.io/assets/js/common.js"></script>
+
+
+<!-- Load KaTeX -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.js"></script>
+<script src="https://nikosuenderhauf.github.io/assets/js/katex.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+
+
+
+
+
+<!-- Include custom icon fonts -->
+<link rel="stylesheet" href="https://nikosuenderhauf.github.io/assets/css/fontawesome-all.min.css">
+<link rel="stylesheet" href="https://nikosuenderhauf.github.io/assets/css/academicons.min.css">
+
+<!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-135749210-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+
+  </body>
+
+</html>

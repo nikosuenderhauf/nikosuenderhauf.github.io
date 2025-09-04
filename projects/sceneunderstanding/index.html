@@ -1,0 +1,2692 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Niko Sünderhauf | Scene Understanding, Semantic SLAM, Implicit Representations</title>
+  <meta name="description" content="">
+
+  <link rel="shortcut icon" href="https://nikosuenderhauf.github.io/assets/img/favicon.ico">
+
+  <link rel="stylesheet" href="https://nikosuenderhauf.github.io/assets/css/main.css">
+  <link rel="canonical" href="https://nikosuenderhauf.github.io/projects/sceneunderstanding/">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    
+    <span class="site-title">
+        
+        <strong>Niko</strong> Sünderhauf
+    </span>
+    
+
+    <nav class="site-nav">
+      <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+      <div class="trigger">
+        <!-- About -->
+        <a class="page-link" href="https://nikosuenderhauf.github.io/">about</a>
+
+        <!-- Blog -->
+        <!-- <a class="page-link" href="https://nikosuenderhauf.github.io/blog/">blog</a> -->
+
+        <!-- Pages -->
+        
+          
+        
+          
+            <a class="page-link" href="https://nikosuenderhauf.github.io/cv/">bio</a>
+          
+        
+          
+        
+          
+        
+          
+            <a class="page-link" href="https://nikosuenderhauf.github.io/projects/">research</a>
+          
+        
+          
+            <a class="page-link" href="https://nikosuenderhauf.github.io/publications/">publications</a>
+          
+        
+          
+            <a class="page-link" href="https://nikosuenderhauf.github.io/teaching/">teaching</a>
+          
+        
+          
+            <a class="page-link" href="https://nikosuenderhauf.github.io/jobs/">recruiting</a>
+          
+        
+          
+            <a class="page-link" href="https://nikosuenderhauf.github.io/workshops/">workshops</a>
+          
+        
+          
+        
+          
+        
+
+        <!-- CV link -->
+        <!-- <a class="page-link" href="https://nikosuenderhauf.github.io/assets/pdf/CV.pdf">vitae</a> -->
+
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Scene Understanding, Semantic SLAM, Implicit Representations</h1>
+    <h5 class="post-description"></h5>
+  </header>
+
+  <article class="post-content Scene Understanding, Semantic SLAM, Implicit Representations clearfix">
+    <p>Making a robot understand what it sees is a fascinating goal in my current research.
+In the past we developed novel methods for <em>Semantic</em> Mapping and SLAM by combining object detection with simultaneous localisation and mapping (SLAM) techniques, representing the environment as a scene graph.
+More recently, we have investigated a fresh take on the problem and represent the environment with NeRFs or Gaussian Splatting.</p>
+
+<!-- The problem of Simultaneous Localization and Mapping (SLAM) describes the process of a robot building a map of its unknown environment, and at the same time using this still incomplete map to determine the robot’s position, and to navigate.
+
+SLAM is not unlike what seafarers in the past had to do when they explored the coast of a new continent for the first time.
+
+Most current SLAM systems are still based on primitive geometric features such as points, lines, or planes. The created maps therefore carry geometric information, but no immediate semantic information. For instance in the image below, we see a map consisting of many individual points.
+
+For us humans it is quite easy to identify individual objects such as monitors or chairs in this point cloud map. We automatically connect meaning (semantics) to the geometric structure we see. For a robot however, interpreting the map in this semantic way is a very hard problem.
+
+A robot that uses this point cloud map – for instance for navigation – can understand that something is in its way, but it does not know what kind of object it is: which of these many points are part of a chair? Which represent a monitor? Which belong to a human office worker?
+
+**Semantic Mapping** enriches the geometric map by semantic information. We can see below how some points in the map got identified as belonging to an object of a certain type. We illustrate this by assigning different colors to different object types, e.g. light blue for monitors and dark blue for keyboards.
+
+
+**Semantic SLAM** goes one step further. Semantic SLAM uses objects as the central entities in the map (instead of primitives such as points). The objects carry semantic meaning, such as class labels or affordances. This -->
+
+<h3 id="join-us-for-your-phd">Join us for your PhD!</h3>
+<p>If you want to do a PhD with us in this area, read more information <a href="../../jobs">here</a>.</p>
+
+<h3 id="representations-with-nerfs-and-gaussian-splatting">Representations with NeRFs and Gaussian Splatting</h3>
+
+<ol class="bibliography"><li>
+
+<div id="abou-chakra2025real">
+  
+    
+    <a href="https://arxiv.org/abs/2504.03597" class="title" target="_blank">Real-is-Sim: Bridging the Sim-to-Real Gap with a Dynamic Digital Twin for Real-World Robot Policy Evaluation</a>
+    
+    <span class="author">
+      
+        
+          
+            
+              Jad Abou-Chakra,
+            
+          
+        
+      
+        
+          
+            
+              Lingfeng Sun,
+            
+          
+        
+      
+        
+          
+            
+              Krishan Rana,
+            
+          
+        
+      
+        
+          
+            
+              Brandon May,
+            
+          
+        
+      
+        
+          
+            
+              Karl Schmeckpeper,
+            
+          
+        
+      
+        
+          
+            Niko Suenderhauf,
+          
+        
+      
+        
+          
+            
+              Maria Vittoria Minniti,
+            
+          
+        
+      
+        
+
+          
+            
+              Laura Herlant.
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>arXiv preprint arXiv:2504.03597,</em>
+    
+    
+      2025.
+    
+    </span>
+  
+
+  
+
+  
+  <a href="https://arxiv.org/abs/2504.03597" target="_blank"><img class="paper_thumb" src="/assets/paper-thumbnails/abou-chakra2025real.png" /></a>
+  
+  
+  <span class="abstract">
+    We introduce real-is-sim, a new approach to integrating simulation into behavior cloning pipelines. In contrast to real-only methods, which lack the ability to safely test policies before deployment, and sim-to-real methods, which require complex adaptation to cross the sim-to-real gap, our framework allows policies to seamlessly switch between running on real hardware and running in parallelized virtual environments. At the center of real-is-sim is a dynamic digital twin, powered by the Embodied Gaussian simulator, that synchronizes with the real world at 60Hz. This twin acts as a mediator between the behavior cloning policy and the real robot. Policies are trained using representations derived from simulator states and always act on the simulated robot, never the real one. During deployment, the real robot simply follows the simulated robot’s joint states, and the simulation is continuously corrected with real world measurements. This setup, where the simulator drives all policy execution and maintains real-time synchronization with the physical world, shifts the responsibility of crossing the sim-to-real gap to the digital twin’s synchronization mechanisms, instead of the policy itself.
+  </span>
+  
+
+  <span class="links">
+  <!-- 
+    [<a class="abstract">Abs</a>]
+   -->
+  
+    [<a href="http://arxiv.org/abs/2504.03597" target="_blank">arXiv</a>]
+  
+  
+    [<a href="https://real-is-sim.github.io/" target="_blank">website</a>]
+  
+  <!-- 
+    [<a href="https://arxiv.org/abs/2504.03597" target="_blank">PDF</a>]
+   -->
+  <!--  -->
+  
+  
+  
+  
+  </span>
+
+
+
+  <!-- Hidden abstract block -->
+
+</div>
+</li></ol>
+<ol class="bibliography"><li>
+
+<div id="jayanga2024multi">
+  
+    
+    <a href="https://arxiv.org/abs/2412.03911" class="title" target="_blank">Multi-View Pose-Agnostic Change Localization with Zero Labels</a>
+    
+    <span class="author">
+      
+        
+          
+            
+              Chamuditha Jayanga Galappaththige,
+            
+          
+        
+      
+        
+          
+            
+              Jason Lai,
+            
+          
+        
+      
+        
+          
+            
+              Lloyd Windrim,
+            
+          
+        
+      
+        
+          
+            
+              Donald Dansereau,
+            
+          
+        
+      
+        
+          
+            Niko Suenderhauf,
+          
+        
+      
+        
+
+          
+            
+              Dimity Miller.
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>In Conference on Computer Vision and Pattern Recognition (CVPR),</em>
+    
+    
+      2025.
+    
+    </span>
+  
+
+  
+
+  
+  <a href="https://arxiv.org/abs/2412.03911" target="_blank"><img class="paper_thumb" src="/assets/paper-thumbnails/chamu2024multi.png" /></a>
+  
+  
+  <span class="abstract">
+    We propose a novel label-free, pose-agnostic change detection method that integrates information from multiple viewpoints to construct a change-aware 3D Gaussian Splatting (3DGS) representation of the scene. With as few as 5 images of the post-change scene, our approach can learn additional change channels in a 3DGS and produce change masks that outperform single-view techniques. Our change-aware 3D scene representation additionally enables the generation of accurate change masks for unseen viewpoints. Experimental results demonstrate state-of-the-art performance in complex multi-object scenes, achieving a 1.7 and 1.6 improvement in Mean Intersection Over Union and F1 score respectively over other baselines. We also contribute a new real-world dataset to benchmark change detection in diverse challenging scenes in the presence of lighting variations.
+  </span>
+  
+
+  <span class="links">
+  <!-- 
+    [<a class="abstract">Abs</a>]
+   -->
+  
+    [<a href="http://arxiv.org/abs/2412.03911" target="_blank">arXiv</a>]
+  
+  
+  <!-- 
+    [<a href="https://arxiv.org/abs/2412.03911" target="_blank">PDF</a>]
+   -->
+  <!--  -->
+  
+  
+  
+  
+  </span>
+
+
+
+  <!-- Hidden abstract block -->
+
+</div>
+</li></ol>
+<ol class="bibliography"><li>
+
+<div id="abou-chakra2024physically">
+  
+    
+    <a href="https://openreview.net/forum?id=AEq0onGrN2" class="title" target="_blank">Physically Embodied Gaussian Splatting: A Realtime Correctable World Model for Robotics</a>
+    
+    <span class="author">
+      
+        
+          
+            
+              Jad Abou-Chakra,
+            
+          
+        
+      
+        
+          
+            
+              Krishan Rana,
+            
+          
+        
+      
+        
+          
+            
+              Feras Dayoub,
+            
+          
+        
+      
+        
+
+          
+            
+              Niko Suenderhauf.
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>In Conference on Robot Learning (CoRL),</em>
+    
+    
+      2024.
+    
+    </span>
+  
+
+  
+  <span class="award">Oral Presentation</span>
+  
+
+  
+  <a href="https://openreview.net/forum?id=AEq0onGrN2" target="_blank"><img class="paper_thumb" src="/assets/paper-thumbnails/abou-chakra2024physically.png" /></a>
+  
+  
+  <span class="abstract">
+    We propose a novel dual "Gaussian-Particle" representation that models the physical world while (i) enabling predictive simulation of future states and (ii) allowing online correction from visual observations in a dynamic world. Our representation comprises particles that capture the geometrical aspect of objects in the world and can be used alongside a particle-based physics system to anticipate physically plausible future states. Attached to these particles are 3D Gaussians that render images from any viewpoint through a splatting process thus capturing the visual state. By comparing the predicted and observed images, our approach generates "visual forces" that correct the particle positions while respecting known physical constraints. By integrating predictive physical modeling with continuous visually-derived corrections, our unified representation reasons about the present and future while synchronizing with reality.
+  </span>
+  
+
+  <span class="links">
+  <!-- 
+    [<a class="abstract">Abs</a>]
+   -->
+  
+    [<a href="http://arxiv.org/abs/2406.10788" target="_blank">arXiv</a>]
+  
+  
+    [<a href="https://embodied-gaussians.github.io/" target="_blank">website</a>]
+  
+  <!-- 
+    [<a href="https://openreview.net/forum?id=AEq0onGrN2" target="_blank">PDF</a>]
+   -->
+  <!--  -->
+  
+  
+  
+  
+  </span>
+
+
+
+  <!-- Hidden abstract block -->
+
+</div>
+</li></ol>
+<ol class="bibliography"><li>
+
+<div id="abouchakra2023splatting">
+  
+    
+    <a href="https://eprints.qut.edu.au/247354/1/Physically_Embodied_Gaussian_Splatting_Embedding_Physical_Priors_into_a_Visual_3D_World_Model_For_Robotics.pdf" class="title" target="_blank">Physically Embodied Gaussian Splatting: Embedding Physical Priors Into a Visual 3d World Model for Robotics</a>
+    
+    <span class="author">
+      
+        
+          
+            
+              Jad Abou-Chakra,
+            
+          
+        
+      
+        
+          
+            
+              Krishan Rana,
+            
+          
+        
+      
+        
+          
+            
+              Feras Dayoub,
+            
+          
+        
+      
+        
+
+          
+            Niko Sünderhauf.
+        
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>In Workshop for Neural Representation Learning for Robot Manipulation, Conference on Robot Learning (CoRL),</em>
+    
+    
+      2023.
+    
+    </span>
+  
+
+  
+
+  
+  <a href="https://eprints.qut.edu.au/247354/1/Physically_Embodied_Gaussian_Splatting_Embedding_Physical_Priors_into_a_Visual_3D_World_Model_For_Robotics.pdf" target="_blank"><img class="paper_thumb" src="/assets/paper-thumbnails/abouchakra2023splatting.png" /></a>
+  
+  
+  <span class="abstract">
+    Our dual Gaussian-Particle representation captures visual (Gaussians) and physical (particles) aspects of the world and enables forward prediction of robot interactions with the world.
+     A photometric loss between rendered Gaussians and observed images is computed (Gaussian Splatting) and converted into visual forces. These and other physical phenomena such as gravity, collisions, and mechanical forces are resolved by the always-active physics system and applied to the particles, which in turn influence the position of their associated Gaussians.
+  </span>
+  
+
+  <span class="links">
+  <!-- 
+    [<a class="abstract">Abs</a>]
+   -->
+  
+  
+    [<a href="https://embodied-gaussians.github.io/" target="_blank">website</a>]
+  
+  <!-- 
+    [<a href="https://eprints.qut.edu.au/247354/1/Physically_Embodied_Gaussian_Splatting_Embedding_Physical_Priors_into_a_Visual_3D_World_Model_For_Robotics.pdf" target="_blank">PDF</a>]
+   -->
+  <!--  -->
+  
+  
+  
+  
+  </span>
+
+
+
+  <!-- Hidden abstract block -->
+
+</div>
+</li></ol>
+<ol class="bibliography"><li>
+
+<div id="abouchakra2022particle">
+  
+    
+    <a href="https://arxiv.org/abs/2211.04041" class="title" target="_blank">ParticleNeRF: Particle Based Encoding for Online Neural Radiance Fields in Dynamic Scenes</a>
+    
+    <span class="author">
+      
+        
+          
+            
+              Jad Abou-Chakra,
+            
+          
+        
+      
+        
+          
+            
+              Feras Dayoub,
+            
+          
+        
+      
+        
+
+          
+            Niko Sünderhauf.
+        
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>In IEEE Winter Conference on Applications of Computer Vision (WACV),</em>
+    
+    
+      2024.
+    
+    </span>
+  
+
+  
+  <span class="award">Best Paper Honourable Mention &amp; Oral Presentation</span>
+  
+
+  
+  <a href="https://arxiv.org/abs/2211.04041" target="_blank"><img class="paper_thumb" src="/assets/paper-thumbnails/abouchakra2022particle.png" /></a>
+  
+  
+  <span class="abstract">
+    While existing Neural Radiance Fields (NeRFs) for dynamic scenes are offline methods with an emphasis on visual fidelity, our paper addresses the online use case that prioritises real-time adaptability. We present ParticleNeRF, a new approach that dynamically adapts to changes in the scene geometry by learning an up-to-date representation online, every 200ms. ParticleNeRF achieves this using a novel particle-based parametric encoding. We couple features to particles in space and backpropagate the photometric reconstruction loss into the particles’ position gradients, which are then interpreted as velocity vectors. Governed by a lightweight physics system to handle collisions, this lets the features move freely with the changing scene geometry.
+  </span>
+  
+
+  <span class="links">
+  <!-- 
+    [<a class="abstract">Abs</a>]
+   -->
+  
+    [<a href="http://arxiv.org/abs/2211.04041" target="_blank">arXiv</a>]
+  
+  
+    [<a href="https://sites.google.com/view/particlenerf" target="_blank">website</a>]
+  
+  <!-- 
+    [<a href="https://arxiv.org/abs/2211.04041" target="_blank">PDF</a>]
+   -->
+  <!--  -->
+  
+  
+  
+  
+  </span>
+
+
+
+  <!-- Hidden abstract block -->
+
+</div>
+</li></ol>
+<ol class="bibliography"><li>
+
+<div id="suenderhauf2022nerf">
+  
+    
+    <a href="https://arxiv.org/abs/2209.08718" class="title" target="_blank">Density-aware NeRF Ensembles: Quantifying Predictive Uncertainty in Neural Radiance Fields</a>
+    
+    <span class="author">
+      
+        
+          
+            Niko Sünderhauf,
+          
+        
+      
+        
+          
+            
+              Jad Abou-Chakra,
+            
+          
+        
+      
+        
+
+          
+            
+              Dimity Miller.
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>In IEEE Conference on Robotics and Automation (ICRA),</em>
+    
+    
+      2023.
+    
+    </span>
+  
+
+  
+
+  
+  <a href="https://arxiv.org/abs/2209.08718" target="_blank"><img class="paper_thumb" src="/assets/paper-thumbnails/suenderhauf2022nerf.png" /></a>
+  
+  
+  <span class="abstract">
+    
+  We show that ensembling effectively quantifies
+model uncertainty in Neural Radiance Fields (NeRFs) if a
+density-aware epistemic uncertainty term is considered. The
+naive ensembles investigated in prior work simply average
+rendered RGB images to quantify the model uncertainty caused
+by conflicting explanations of the observed scene. In contrast,
+we additionally consider the termination probabilities along
+individual rays to identify epistemic model uncertainty due to
+a lack of knowledge about the parts of a scene unobserved
+during training. We achieve new state-of-the-art performance
+across established uncertainty quantification benchmarks for
+NeRFs, outperforming methods that require complex changes
+to the NeRF architecture and training regime. We furthermore
+demonstrate that NeRF uncertainty can be utilised for next-best
+view selection and model refinement.
+  
+  </span>
+  
+
+  <span class="links">
+  <!-- 
+    [<a class="abstract">Abs</a>]
+   -->
+  
+    [<a href="http://arxiv.org/abs/2209.08718" target="_blank">arXiv</a>]
+  
+  
+  <!-- 
+    [<a href="https://arxiv.org/abs/2209.08718" target="_blank">PDF</a>]
+   -->
+  <!--  -->
+  
+  
+  
+  
+  </span>
+
+
+
+  <!-- Hidden abstract block -->
+
+</div>
+</li></ol>
+<ol class="bibliography"></ol>
+
+<h3 id="semantic-slam-and-semantic-mapping">Semantic SLAM and Semantic Mapping</h3>
+<p>We work on novel approaches to SLAM (Simultaneous Localization and Mapping) that create semantically meaningful maps by combining geometric and semantic information.</p>
+
+<p>We believe such semantically enriched maps will help robots understand our complex world and will ultimately increase the range and sophistication of interactions that robots can have in domestic and industrial deployment scenarios.</p>
+
+<!-- Read more on our dedicated project website [semanticslam.ai](http://www.semanticslam.ai). -->
+
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/w1-INFCpc20" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+</center>
+
+<ol class="bibliography"><li>
+
+<div id="garg2023robohop">
+  
+    
+    <a href="https://oravus.github.io/RoboHop/" class="title" target="_blank">RoboHop: Segment-based Topological Map Representation for Open-World Visual Navigation</a>
+    
+    <span class="author">
+      
+        
+          
+            
+              Sourav Garg,
+            
+          
+        
+      
+        
+          
+            
+              Krishan Rana,
+            
+          
+        
+      
+        
+          
+            
+              Mehdi Hosseinzadeh,
+            
+          
+        
+      
+        
+          
+            
+              Lachlan Mares,
+            
+          
+        
+      
+        
+          
+            Niko Suenderhauf,
+          
+        
+      
+        
+          
+            
+              Feras Dayoub,
+            
+          
+        
+      
+        
+
+          
+            
+              Ian Reid.
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>In IEEE Conference on Robotics and Automation (ICRA),</em>
+    
+    
+      2024.
+    
+    </span>
+  
+
+  
+  <span class="award">Oral Presentation at ICRA, Oral Presentation at CoRL Workshop</span>
+  
+
+  
+  <a href="https://oravus.github.io/RoboHop/" target="_blank"><img class="paper_thumb" src="/assets/paper-thumbnails/garg2024robohop.png" /></a>
+  
+  
+  <span class="abstract">
+    We propose a novel topological representation of an environment based on image segments, which are semantically meaningful and open-vocabulary queryable, conferring several advantages over previous works based on pixel-level features. Unlike 3D scene graphs, we create a purely topological graph but with segments as nodes, where edges are formed by a) associating segment-level descriptors between pairs of consecutive images and b) connecting neighboring segments within an image using their pixel centroids. This unveils a continuous sense of a ‘place’, defined by inter-image persistence of segments along with their intra-image neighbours. It further enables us to represent and update segment-level descriptors through neighborhood aggregation using graph convolution layers, which improves robot localization based on segment-level retrieval.
+  </span>
+  
+
+  <span class="links">
+  <!-- 
+    [<a class="abstract">Abs</a>]
+   -->
+  
+  
+    [<a href="https://oravus.github.io/RoboHop/" target="_blank">website</a>]
+  
+  <!-- 
+    [<a href="https://oravus.github.io/RoboHop/" target="_blank">PDF</a>]
+   -->
+  <!--  -->
+  
+  
+  
+  
+  </span>
+
+
+
+  <!-- Hidden abstract block -->
+
+</div>
+</li></ol>
+<ol class="bibliography"><li>
+
+<div id="deitke2022retro">
+  
+    
+    <a href="http://arxiv.org/abs/2210.06849" class="title" target="_blank">Retrospectives on the Embodied AI Workshop</a>
+    
+    <span class="author">
+      
+        
+          
+            
+              Matt Deitke,
+            
+          
+        
+      
+        
+          
+            
+              Dhruv Batra,
+            
+          
+        
+      
+        
+          
+            
+              Yonatan Bisk,
+            
+          
+        
+      
+        
+          
+            
+              Tommaso Campari,
+            
+          
+        
+      
+        
+          
+            
+              Angel X Chang,
+            
+          
+        
+      
+        
+          
+            
+              Devendra Singh Chaplot,
+            
+          
+        
+      
+        
+          
+            
+              Changan Chen,
+            
+          
+        
+      
+        
+          
+            
+              Claudia Pérez D’Arpino,
+            
+          
+        
+      
+        
+          
+            
+              Kiana Ehsani,
+            
+          
+        
+      
+        
+          
+            
+              Ali Farhadi,
+            
+          
+        
+      
+        
+
+          
+            
+               others.
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>arXiv preprint arXiv:2210.06849,</em>
+    
+    
+      2022.
+    
+    </span>
+  
+
+  
+
+  
+  <a href="http://arxiv.org/abs/2210.06849" target="_blank"><img class="paper_thumb" src="/assets/paper-thumbnails/deitke2022retro.png" /></a>
+  
+  
+  <span class="abstract">
+    We present a retrospective on the state of Embodied AI
+research. Our analysis focuses on 13 challenges presented
+at the Embodied AI Workshop at CVPR. These challenges
+are grouped into three themes: (1) visual navigation, (2) rearrangement, and (3) embodied vision-and-language. We
+discuss the dominant datasets within each theme, evaluation metrics for the challenges, and the performance of stateof-the-art models. We highlight commonalities between top
+approaches to the challenges and identify potential future
+directions for Embodied AI research.
+  </span>
+  
+
+  <span class="links">
+  <!-- 
+    [<a class="abstract">Abs</a>]
+   -->
+  
+    [<a href="http://arxiv.org/abs/2210.06849" target="_blank">arXiv</a>]
+  
+  
+  <!-- 
+    [<a href="http://arxiv.org/abs/2210.06849" target="_blank">PDF</a>]
+   -->
+  <!--  -->
+  
+  
+  
+  
+  </span>
+
+
+
+  <!-- Hidden abstract block -->
+
+</div>
+</li></ol>
+<ol class="bibliography"><li>
+
+<div id="hall2022benchbot">
+  
+    
+    <a href="https://journals.sagepub.com/doi/abs/10.1177/02783649211069404" class="title" target="_blank">BenchBot environments for active robotics (BEAR): Simulated data for active scene understanding research</a>
+    
+    <span class="author">
+      
+        
+          
+            
+              David Hall,
+            
+          
+        
+      
+        
+          
+            
+              Ben Talbot,
+            
+          
+        
+      
+        
+          
+            
+              Suman Raj Bista,
+            
+          
+        
+      
+        
+          
+            
+              Haoyang Zhang,
+            
+          
+        
+      
+        
+          
+            
+              Rohan Smith,
+            
+          
+        
+      
+        
+          
+            
+              Feras Dayoub,
+            
+          
+        
+      
+        
+
+          
+            Niko Sünderhauf.
+        
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>The International Journal of Robotics Research,</em>
+    
+    
+      2022.
+    
+    </span>
+  
+
+  
+
+  
+  <a href="https://journals.sagepub.com/doi/abs/10.1177/02783649211069404" target="_blank"><img class="paper_thumb" src="/assets/paper-thumbnails/hall2022benchbot.png" /></a>
+  
+  
+  <span class="abstract">
+    We present a platform to foster research in active scene understanding, consisting of high-fidelity simulated environments and a simple yet powerful API that controls a mobile robot in simulation and reality. In contrast to static, pre-recorded datasets that focus on the perception aspect of scene understanding, agency is a top priority in our work. We provide three levels of robot agency, allowing users to control a robot at varying levels of difficulty and realism. While the most basic level provides pre-defined trajectories and ground-truth localisation, the more realistic levels allow us to evaluate integrated behaviours comprising perception, navigation, exploration and SLAM. 
+  </span>
+  
+
+  <span class="links">
+  <!-- 
+    [<a class="abstract">Abs</a>]
+   -->
+  
+  
+    [<a href="https://qcr.github.io/dataset/benchbot-bear-data/" target="_blank">website</a>]
+  
+  <!-- 
+    [<a href="https://journals.sagepub.com/doi/abs/10.1177/02783649211069404" target="_blank">PDF</a>]
+   -->
+  <!--  -->
+  
+  
+  
+  
+  </span>
+
+
+
+  <!-- Hidden abstract block -->
+
+</div>
+</li></ol>
+<ol class="bibliography"><li>
+
+<div id="hall2020challenge">
+  
+    
+    <a href="https://arxiv.org/abs/2009.05246" class="title" target="_blank">The Robotic Vision Scene Understanding Challenge</a>
+    
+    <span class="author">
+      
+        
+          
+            
+              David Hall,
+            
+          
+        
+      
+        
+          
+            
+              Ben Talbot,
+            
+          
+        
+      
+        
+          
+            
+              Suman Raj Bista,
+            
+          
+        
+      
+        
+          
+            
+              Haoyang Zhang,
+            
+          
+        
+      
+        
+          
+            
+              Rohan Smith,
+            
+          
+        
+      
+        
+          
+            
+              Feras Dayoub,
+            
+          
+        
+      
+        
+
+          
+            Niko Sünderhauf.
+        
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>arXiv preprint arXiv:2009.05246,</em>
+    
+    
+      2020.
+    
+    </span>
+  
+
+  
+
+  
+  <a href="https://arxiv.org/abs/2009.05246" target="_blank"><img class="paper_thumb" src="/assets/paper-thumbnails/hall2020challenge.png" /></a>
+  
+  
+  <span class="abstract">
+    Being able to explore an environment and understand the location and type of all objects therein is important for indoor robotic platforms that must interact closely with humans. However, it is difficult to evaluate progress in this area due to a lack of standardized testing which is limited due to the need for active robot agency and perfect object ground-truth. To help provide a standard for testing scene understanding systems, we present a new robot vision scene understanding challenge using simulation to enable repeatable experiments with active robot agency. We provide two challenging task types, three difficulty levels, five simulated environments and a new evaluation measure for evaluating 3D cuboid object maps.
+  </span>
+  
+
+  <span class="links">
+  <!-- 
+    [<a class="abstract">Abs</a>]
+   -->
+  
+    [<a href="http://arxiv.org/abs/2009.05246" target="_blank">arXiv</a>]
+  
+  
+    [<a href="https://nikosuenderhauf.github.io/roboticvisionchallenges/scene-understanding" target="_blank">website</a>]
+  
+  <!-- 
+    [<a href="https://arxiv.org/abs/2009.05246" target="_blank">PDF</a>]
+   -->
+  <!--  -->
+  
+  
+  
+  
+  </span>
+
+
+
+  <!-- Hidden abstract block -->
+
+</div>
+</li></ol>
+<ol class="bibliography"><li>
+
+<div id="talbot2020benchbot">
+  
+    
+    <a href="https://arxiv.org/abs/2008.00635" class="title" target="_blank">Benchbot: Evaluating robotics research in photorealistic 3d simulation and on real robots</a>
+    
+    <span class="author">
+      
+        
+          
+            
+              Ben Talbot,
+            
+          
+        
+      
+        
+          
+            
+              David Hall,
+            
+          
+        
+      
+        
+          
+            
+              Haoyang Zhang,
+            
+          
+        
+      
+        
+          
+            
+              Suman Raj Bista,
+            
+          
+        
+      
+        
+          
+            
+              Rohan Smith,
+            
+          
+        
+      
+        
+          
+            
+              Feras Dayoub,
+            
+          
+        
+      
+        
+
+          
+            Niko Sünderhauf.
+        
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>arXiv preprint arXiv:2008.00635,</em>
+    
+    
+      2020.
+    
+    </span>
+  
+
+  
+
+  
+  <a href="https://arxiv.org/abs/2008.00635" target="_blank"><img class="paper_thumb" src="/assets/paper-thumbnails/talbot2020benchbot.png" /></a>
+  
+  
+  <span class="abstract">
+    We introduce BenchBot, a novel software suite for benchmarking the performance of robotics research across both photorealistic 3D simulations and real robot platforms. BenchBot provides a simple interface to the sensorimotor capabilities of a robot when solving robotics research problems; an interface that is consistent regardless of whether the target platform is simulated or a real robot. In this paper we outline the BenchBot system architecture, and explore the parallels between its user-centric design and an ideal research development process devoid of tangential robot engineering challenges.
+  </span>
+  
+
+  <span class="links">
+  <!-- 
+    [<a class="abstract">Abs</a>]
+   -->
+  
+    [<a href="http://arxiv.org/abs/2008.00635" target="_blank">arXiv</a>]
+  
+  
+    [<a href="http://www.benchbot.org" target="_blank">website</a>]
+  
+  <!-- 
+    [<a href="https://arxiv.org/abs/2008.00635" target="_blank">PDF</a>]
+   -->
+  <!--  -->
+  
+  
+  
+  
+  </span>
+
+
+
+  <!-- Hidden abstract block -->
+
+</div>
+</li></ol>
+<ol class="bibliography"><li>
+
+<div id="bista2021mapping">
+  
+    
+    <span class="title">Evaluating the Impact of Semantic Segmentation and Pose Estimationon Dense Semantic SLAM</span>
+    
+    <span class="author">
+      
+        
+          
+            
+              Suman Raj Bista,
+            
+          
+        
+      
+        
+          
+            
+              David Hall,
+            
+          
+        
+      
+        
+          
+            
+              Ben Talbot,
+            
+          
+        
+      
+        
+          
+            
+              Haoyang Zhang,
+            
+          
+        
+      
+        
+          
+            
+              Feras Dayoub,
+            
+          
+        
+      
+        
+
+          
+            Niko Sünderhauf.
+        
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>In Proc. of IEEE International Conference on Intelligent Robots and Systems (IROS),</em>
+    
+    
+      2021.
+    
+    </span>
+  
+
+  
+
+  
+  <a href="" target="_blank"><img class="paper_thumb" src="/assets/paper-thumbnails/bista21mapping.png" /></a>
+  
+  
+  <span class="abstract">
+    Recent Semantic SLAM methods combine classical geometry-based estimation with deep learning-based object detection or semantic segmentation.
+In this paper we evaluate the quality of semantic maps generated by state-of-the-art class- and instance-aware dense semantic SLAM algorithms whose codes are publicly available and explore the impacts both semantic segmentation and pose estimation have on the quality of semantic maps.
+We obtain these results by providing algorithms with ground-truth pose and/or semantic segmentation data available from simulated environments. We establish that semantic segmentation is the largest source of error through our experiments, dropping mAP and OMQ performance by up to 74.3% and 71.3% respectively.
+  </span>
+  
+
+  <span class="links">
+  <!-- 
+    [<a class="abstract">Abs</a>]
+   -->
+  
+  
+  <!--  -->
+  <!--  -->
+  
+  
+  
+  
+  </span>
+
+
+
+  <!-- Hidden abstract block -->
+
+</div>
+</li></ol>
+<ol class="bibliography"><li>
+
+<div id="nicholson18quadricslam">
+  
+    
+    <a href="https://ieeexplore.ieee.org/document/8440105/" class="title" target="_blank">QuadricSLAM: Constrained Dual Quadrics from Object Detections as Landmarks in Object-oriented SLAM</a>
+    
+    <span class="author">
+      
+        
+          
+            
+              Lachlan Nicholson,
+            
+          
+        
+      
+        
+          
+            
+              Michael Milford,
+            
+          
+        
+      
+        
+
+          
+            Niko Sünderhauf.
+        
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>IEEE Robotics and Automation Letters (RA-L),</em>
+    
+    
+      2018.
+    
+    </span>
+  
+
+  
+
+  
+  <a href="https://ieeexplore.ieee.org/document/8440105/" target="_blank"><img class="paper_thumb" src="/assets/paper-thumbnails/nicholson18quadricslam.png" /></a>
+  
+  
+  <span class="abstract">
+    In this paper, we use 2D object detections from multiple views to simultaneously estimate a 3D quadric surface for each object and localize the camera position. We derive a SLAM formulation that uses dual quadrics as 3D landmark representations, exploiting their ability to compactly represent the size, position and orientation of an object, and show how 2D object detections can directly constrain the quadric parameters via a novel geometric error formulation. We develop a sensor model for object detectors that addresses the challenge of partially visible objects, and demonstrate how to jointly estimate the camera pose and constrained dual quadric parameters in factor graph based SLAM with a general perspective camera.
+  </span>
+  
+
+  <span class="links">
+  <!-- 
+    [<a class="abstract">Abs</a>]
+   -->
+  
+    [<a href="http://arxiv.org/abs/1804.04011" target="_blank">arXiv</a>]
+  
+  
+    [<a href="http://semanticslam.ai/quadricslam.html" target="_blank">website</a>]
+  
+  <!-- 
+    [<a href="https://ieeexplore.ieee.org/document/8440105/" target="_blank">PDF</a>]
+   -->
+  <!--  -->
+  
+  
+  
+  
+  </span>
+
+
+
+  <!-- Hidden abstract block -->
+
+</div>
+</li></ol>
+<ol class="bibliography"><li>
+
+<div id="hosseinzadeh2018structure">
+  
+    
+    <span class="title">Structure Aware SLAM using Quadrics and Planes</span>
+    
+    <span class="author">
+      
+        
+          
+            
+              M Hosseinzadeh,
+            
+          
+        
+      
+        
+          
+            
+              Y Latif,
+            
+          
+        
+      
+        
+          
+            
+              T Pham,
+            
+          
+        
+      
+        
+          
+            
+              N Sünderhauf,
+            
+          
+        
+      
+        
+
+          
+            
+              I Reid.
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>In Proceedings of Asian Conference on Computer Vision (ACCV),</em>
+    
+    
+      2018.
+    
+    </span>
+  
+
+  
+
+  
+  
+
+  <span class="links">
+  <!--  -->
+  
+    [<a href="http://arxiv.org/abs/1804.09111" target="_blank">arXiv</a>]
+  
+  
+  <!--  -->
+  <!--  -->
+  
+  
+  
+  
+  </span>
+
+
+
+  <!-- Hidden abstract block -->
+
+</div>
+</li></ol>
+<ol class="bibliography"><li>
+
+<div id="Jablonsky18geometric">
+  
+    
+    <a href="https://arxiv.org/abs/1809.06977" class="title" target="_blank">An Orientation Factor for Object-Oriented SLAM</a>
+    
+    <span class="author">
+      
+        
+          
+            
+              Natalie Jablonsky,
+            
+          
+        
+      
+        
+          
+            
+              Michael Milford,
+            
+          
+        
+      
+        
+
+          
+            Niko Sünderhauf.
+        
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>arXiv preprint,</em>
+    
+    
+      2018.
+    
+    </span>
+  
+
+  
+
+  
+  <a href="https://arxiv.org/abs/1809.06977" target="_blank"><img class="paper_thumb" src="/assets/paper-thumbnails/jablonsky18geometric.png" /></a>
+  
+  
+  <span class="abstract">
+    Current approaches to object-oriented SLAM lack the ability to incorporate prior knowledge of the scene geometry, such as the expected global orientation of objects. We overcome this limitation by proposing a geometric factor that constrains the global orientation of objects in the map, depending on the objects’ semantics. This new geometric factor is a first example of how semantics can inform and improve geometry in object-oriented SLAM. We implement the geometric factor for the recently proposed QuadricSLAM that represents landmarks as dual quadrics. The factor probabilistically models the quadrics’ major axes to be either perpendicular to or aligned with the direction of gravity, depending on their semantic class. Our experiments on simulated and real-world datasets show that using the proposed factors to incorporate prior knowledge improves both the trajectory and landmark quality.
+  </span>
+  
+
+  <span class="links">
+  <!-- 
+    [<a class="abstract">Abs</a>]
+   -->
+  
+    [<a href="http://arxiv.org/abs/1809.06977" target="_blank">arXiv</a>]
+  
+  
+    [<a href="http://semanticslam.ai/geometricfactors.html" target="_blank">website</a>]
+  
+  <!-- 
+    [<a href="https://arxiv.org/abs/1809.06977" target="_blank">PDF</a>]
+   -->
+  <!--  -->
+  
+  
+  
+  
+  </span>
+
+
+
+  <!-- Hidden abstract block -->
+
+</div>
+</li></ol>
+<ol class="bibliography"><li>
+
+<div id="nicholson18quadricslam">
+  
+    
+    <a href="https://arxiv.org/abs/1804.04011v1" class="title" target="_blank">QuadricSLAM: Constrained Dual Quadrics from Object Detections as Landmarks in Semantic SLAM</a>
+    
+    <span class="author">
+      
+        
+          
+            
+              Lachlan Nicholson,
+            
+          
+        
+      
+        
+          
+            
+              Michael Milford,
+            
+          
+        
+      
+        
+
+          
+            Niko Sünderhauf.
+        
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>In Workshop on Representing a Complex World, International Conference on Robotics and Automation (ICRA),</em>
+    
+    
+      2018.
+    
+    </span>
+  
+
+  
+  <span class="award">Best Workshop Paper Award</span>
+  
+
+  
+  <a href="https://arxiv.org/abs/1804.04011v1" target="_blank"><img class="paper_thumb" src="/assets/paper-thumbnails/nicholson18quadricslamworkshop.png" /></a>
+  
+  
+  <span class="abstract">
+    We derive a SLAM formulation that uses dual quadrics as 3D landmark representations, exploiting their ability to compactly represent the size, position and orientation of an object, and show how 2D bounding boxes (such as those typically obtained from visual object detection systems) can directly constrain the quadric parameters via a novel geometric error formulation. We develop a sensor model for deep-learned object detectors that addresses the challenge of partial object detections often encountered in robotics applications, and demonstrate how to jointly estimate the camera pose and constrained dual quadric parameters in factor graph based SLAM with a general perspective camera.
+  </span>
+  
+
+  <span class="links">
+  <!-- 
+    [<a class="abstract">Abs</a>]
+   -->
+  
+    [<a href="http://arxiv.org/abs/1804.04011" target="_blank">arXiv</a>]
+  
+  
+    [<a href="http://semanticslam.ai/quadricslam.html" target="_blank">website</a>]
+  
+  <!-- 
+    [<a href="https://arxiv.org/abs/1804.04011v1" target="_blank">PDF</a>]
+   -->
+  <!--  -->
+  
+  
+  
+  
+  </span>
+
+
+
+  <!-- Hidden abstract block -->
+
+</div>
+</li></ol>
+<ol class="bibliography"><li>
+
+<div id="Suenderhauf17a">
+  
+    
+    <a href="https://ieeexplore.ieee.org/abstract/document/8206392/" class="title" target="_blank">Meaningful Maps With Object-Oriented Semantic Mapping</a>
+    
+    <span class="author">
+      
+        
+          
+            Niko Sünderhauf,
+          
+        
+      
+        
+          
+            
+              Trung T. Pham Pham,
+            
+          
+        
+      
+        
+          
+            
+              Yasir Latif,
+            
+          
+        
+      
+        
+
+          
+            
+              Michael Milford.
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>In Proc. of IEEE International Conference on Intelligent Robots and Systems (IROS),</em>
+    
+    
+      2017.
+    
+    </span>
+  
+
+  
+
+  
+  <a href="https://ieeexplore.ieee.org/abstract/document/8206392/" target="_blank"><img class="paper_thumb" src="/assets/paper-thumbnails/suenderhauf17maps.png" /></a>
+  
+  
+  <span class="abstract">
+    For intelligent robots to interact in meaningful ways with their environment, they must understand both the geometric and semantic properties of the scene surrounding them. The majority of research to date has addressed these mapping challenges separately, focusing on either geometric or semantic mapping. In this paper we address the problem of building environmental maps that include both semantically meaningful, object-level entities and point- or mesh-based geometrical representations. We simultaneously build geometric point cloud models of previously unseen instances of known object classes and create a map that contains these object models as central entities. Our system leverages sparse, feature-based RGB-D SLAM, image-based deep-learning object detection and 3D unsupervised segmentation.
+  </span>
+  
+
+  <span class="links">
+  <!-- 
+    [<a class="abstract">Abs</a>]
+   -->
+  
+  
+  <!-- 
+    [<a href="https://ieeexplore.ieee.org/abstract/document/8206392/" target="_blank">PDF</a>]
+   -->
+  <!--  -->
+  
+  
+  
+  
+  </span>
+
+
+
+  <!-- Hidden abstract block -->
+
+</div>
+</li></ol>
+<ol class="bibliography"><li>
+
+<div id="Suenderhauf16">
+  
+    
+    <a href="http://ieeexplore.ieee.org/abstract/document/7487796/" class="title" target="_blank">Place Categorization and Semantic Mapping on a Mobile Robot</a>
+    
+    <span class="author">
+      
+        
+          
+            Niko Sünderhauf,
+          
+        
+      
+        
+          
+            
+              Feras Dayoub,
+            
+          
+        
+      
+        
+          
+            
+              Sean McMahon,
+            
+          
+        
+      
+        
+          
+            
+              Ben Talbot,
+            
+          
+        
+      
+        
+          
+            
+              Ruth Schulz,
+            
+          
+        
+      
+        
+          
+            
+              Peter Corke,
+            
+          
+        
+      
+        
+          
+            
+              Gordon Wyeth,
+            
+          
+        
+      
+        
+          
+            
+              Ben Upcroft,
+            
+          
+        
+      
+        
+
+          
+            
+              Michael Milford.
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>Proc. of IEEE International Conference on Robotics and Automation (ICRA),</em>
+    
+    
+      2016.
+    
+    </span>
+  
+
+  
+
+  
+  <a href="http://ieeexplore.ieee.org/abstract/document/7487796/" target="_blank"><img class="paper_thumb" src="/assets/paper-thumbnails/suenderhauf16mapping.png" /></a>
+  
+  
+  <span class="abstract">
+    In this paper we focus on the challenging problem of place categorization and semantic mapping on a robot without environment-specific training. Motivated by their ongoing success in various visual recognition tasks, we build our system upon a state-of-the-art convolutional network. We overcome its closed-set limitations by complementing the network with a series of one-vs-all classifiers that can learn to recognize new semantic classes online. Prior domain knowledge is incorporated by embedding the classification system into a Bayesian filter framework that also ensures temporal coherence. We evaluate the classification accuracy of the system on a robot that maps a variety of places on our campus in real-time. We show how semantic information can boost robotic object detection performance and how the semantic map can be used to modulate the robot’s behaviour during navigation tasks. The system is made available to the community as a ROS module.
+  </span>
+  
+
+  <span class="links">
+  <!-- 
+    [<a class="abstract">Abs</a>]
+   -->
+  
+  
+  <!-- 
+    [<a href="http://ieeexplore.ieee.org/abstract/document/7487796/" target="_blank">PDF</a>]
+   -->
+  <!--  -->
+  
+  
+  
+  
+  </span>
+
+
+
+  <!-- Hidden abstract block -->
+
+</div>
+</li></ol>
+<ol class="bibliography"><li>
+
+<div id="Suenderhauf15d">
+  
+    
+    <a href="https://eprints.qut.edu.au/109668/1/109668.pdf" class="title" target="_blank">SLAM – Quo Vadis? In Support of Object Oriented and Semantic SLAM</a>
+    
+    <span class="author">
+      
+        
+          
+            Niko Sünderhauf,
+          
+        
+      
+        
+          
+            
+              Feras Dayoub,
+            
+          
+        
+      
+        
+          
+            
+              Sean McMahon,
+            
+          
+        
+      
+        
+          
+            
+              Markus Eich,
+            
+          
+        
+      
+        
+          
+            
+              Ben Upcroft,
+            
+          
+        
+      
+        
+
+          
+            
+              Michael Milford.
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>In Workshop on The Problem of Moving Sensors, Robotics: Science and Systems (RSS),</em>
+    
+    
+      2015.
+    
+    </span>
+  
+
+  
+
+  
+  <a href="https://eprints.qut.edu.au/109668/1/109668.pdf" target="_blank"><img class="paper_thumb" src="/assets/paper-thumbnails/suenderhauf15d.png" /></a>
+  
+  
+  <span class="abstract">
+    Most current SLAM systems are still based on
+primitive geometric features such as points, lines, or planes.
+The created maps therefore carry geometric information, but
+no immediate semantic information. With the recent significant
+advances in object detection and scene classification we think the
+time is right for the SLAM community to ask where the SLAM
+research should be going during the next years. As a possible
+answer to this question, we advocate developing SLAM systems
+that are more object oriented and more semantically enriched
+than the current state of the art. This paper provides an overview
+of our ongoing work in this direction.
+  </span>
+  
+
+  <span class="links">
+  <!-- 
+    [<a class="abstract">Abs</a>]
+   -->
+  
+  
+  <!-- 
+    [<a href="https://eprints.qut.edu.au/109668/1/109668.pdf" target="_blank">PDF</a>]
+   -->
+  <!--  -->
+  
+  
+  
+  
+  </span>
+
+
+
+  <!-- Hidden abstract block -->
+
+</div>
+</li></ol>
+
+<hr />
+
+<h3 id="scene-understanding">Scene Understanding</h3>
+<ol class="bibliography"><li>
+
+<div id="Trung18">
+  
+    
+    <a href="http://arxiv.org/abs/1709.07158" class="title" target="_blank">SceneCut: Joint Geometric and Object Segmentation for Indoor Scenes</a>
+    
+    <span class="author">
+      
+        
+          
+            
+              Trung T. Pham,
+            
+          
+        
+      
+        
+          
+            
+              Thanh-Toan Do,
+            
+          
+        
+      
+        
+          
+            Niko Sünderhauf,
+          
+        
+      
+        
+          
+            
+              Ian Reid,
+            
+          
+        
+      
+        
+
+          
+            
+              Michael Milford.
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>In Proc. of IEEE International Conference on Robotics and Automation (ICRA),</em>
+    
+    
+      2018.
+    
+    </span>
+  
+
+  
+
+  
+  <a href="http://arxiv.org/abs/1709.07158" target="_blank"><img class="paper_thumb" src="/assets/paper-thumbnails/pham18scenecut.png" /></a>
+  
+  
+  <span class="abstract">
+    This paper presents SceneCut, a novel approach to jointly discover previously unseen
+objects and non-object surfaces using a single RGB-D image. SceneCut’s joint reasoning
+over scene semantics and geometry allows a robot to detect and segment object instances
+in complex scenes where modern deep learning-based methods either fail to separate
+object instances, or fail to detect objects that were not seen during training. SceneCut
+automatically decomposes a scene into meaningful regions which either represent objects
+or scene surfaces. The decomposition is qualified by an unified energy function over
+objectness and geometric fitting. We show how this energy function can be optimized
+efficiently by utilizing hierarchical segmentation trees.
+  </span>
+  
+
+  <span class="links">
+  <!-- 
+    [<a class="abstract">Abs</a>]
+   -->
+  
+  
+  <!-- 
+    [<a href="http://arxiv.org/abs/1709.07158" target="_blank">PDF</a>]
+   -->
+  <!--  -->
+  
+  
+  
+  
+  </span>
+
+
+
+  <!-- Hidden abstract block -->
+
+</div>
+</li></ol>
+<ol class="bibliography"><li>
+
+<div id="Rezazadegan15">
+  
+    
+    <span class="title">Enhancing Human Action Recognition with Region Proposals</span>
+    
+    <span class="author">
+      
+        
+          
+            
+              Fahimeh Rezazadegan,
+            
+          
+        
+      
+        
+          
+            
+              Sareh Shirazi,
+            
+          
+        
+      
+        
+          
+            Niko Sünderhauf,
+          
+        
+      
+        
+          
+            
+              Michael Milford,
+            
+          
+        
+      
+        
+
+          
+            
+              Ben Upcroft.
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>In Proceedings of the Australasian Conference on Robotics and Automation (ACRA),</em>
+    
+    
+      2015.
+    
+    </span>
+  
+
+  
+
+  
+  
+
+  <span class="links">
+  <!--  -->
+  
+  
+  <!--  -->
+  <!--  -->
+  
+  
+  
+  
+  </span>
+
+
+
+  <!-- Hidden abstract block -->
+
+</div>
+</li></ol>
+<ol class="bibliography"><li>
+
+<div id="Suenderhauf15b">
+  
+    
+    <a href="https://eprints.qut.edu.au/109683/1/109683.pdf" class="title" target="_blank">Continuous Factor Graphs For Holistic Scene Understanding</a>
+    
+    <span class="author">
+      
+        
+          
+            Niko Sünderhauf,
+          
+        
+      
+        
+          
+            
+              Ben Upcroft,
+            
+          
+        
+      
+        
+
+          
+            
+              Michael Milford.
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>In Workshop on Scene Understanding (SUNw), Intl. Conf. on Computer Vision and Pattern Recognition (CVPR),</em>
+    
+    
+      2015.
+    
+    </span>
+  
+
+  
+
+  
+  <a href="https://eprints.qut.edu.au/109683/1/109683.pdf" target="_blank"><img class="paper_thumb" src="/assets/paper-thumbnails/suenderhauf15b.png" /></a>
+  
+  
+  <span class="abstract">
+    We propose a novel mathematical formulation for the
+holistic scene understanding problem and transform it from
+the discrete into the continuous domain. The problem can
+then be modeled with a nonlinear continuous factor graph,
+and the MAP solution is found via least squares optimization.
+We evaluate our method on the realistic NYU2 dataset.
+  </span>
+  
+
+  <span class="links">
+  <!-- 
+    [<a class="abstract">Abs</a>]
+   -->
+  
+  
+  <!-- 
+    [<a href="https://eprints.qut.edu.au/109683/1/109683.pdf" target="_blank">PDF</a>]
+   -->
+  <!--  -->
+  
+  
+  
+  
+  </span>
+
+
+
+  <!-- Hidden abstract block -->
+
+</div>
+</li></ol>
+
+<hr />
+
+<h3 id="scene-understanding-hazard-detection">Scene Understanding: Hazard Detection</h3>
+<ol class="bibliography"><li>
+
+<div id="McMahon17">
+  
+    
+    <a href="https://ieeexplore.ieee.org/document/7959072/" class="title" target="_blank">Multi-Modal Trip Hazard Affordance Detection On Construction Sites</a>
+    
+    <span class="author">
+      
+        
+          
+            
+              Sean McMahon,
+            
+          
+        
+      
+        
+          
+            Niko Sünderhauf,
+          
+        
+      
+        
+          
+            
+              Ben Upcroft,
+            
+          
+        
+      
+        
+
+          
+            
+              Michael J Milford.
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>IEEE Robotics and Automation Letters (RA-L),</em>
+    
+    
+      2017.
+    
+    </span>
+  
+
+  
+
+  
+  <a href="https://ieeexplore.ieee.org/document/7959072/" target="_blank"><img class="paper_thumb" src="/assets/paper-thumbnails/mcmahon17hazards.png" /></a>
+  
+  
+  <span class="abstract">
+    Trip hazards are a significant contributor to accidents on construction and manufacturing sites. We conduct a comprehensive investigation into the performance characteristics of 11 different colors and depth fusion approaches, including four fusion and one nonfusion approach, using color and two types of depth images. Trained and tested on more than 600 labeled trip hazards over four floors and 2000 m2 in an active construction site, this approach was able to differentiate between identical objects in different physical configurations. Outperforming a color-only detector, our multimodal trip detector fuses color and depth information to achieve a 4% absolute improvement in F1-score. These investigative results and the extensive publicly available dataset move us one step closer to assistive or fully automated safety inspection systems on construction sites.
+  </span>
+  
+
+  <span class="links">
+  <!-- 
+    [<a class="abstract">Abs</a>]
+   -->
+  
+  
+  <!-- 
+    [<a href="https://ieeexplore.ieee.org/document/7959072/" target="_blank">PDF</a>]
+   -->
+  <!--  -->
+  
+  
+  
+  
+  </span>
+
+
+
+  <!-- Hidden abstract block -->
+
+</div>
+</li></ol>
+<ol class="bibliography"><li>
+
+<div id="McMahon17a">
+  
+    
+    <a href="http://www.araa.asn.au/acra/acra2017/papers/pap104s1-file1.pdf" class="title" target="_blank">Auxiliary Tasks to Improve Trip Hazard Affordance Detection</a>
+    
+    <span class="author">
+      
+        
+          
+            
+              Sean McMahon,
+            
+          
+        
+      
+        
+          
+            
+              Tong Shen,
+            
+          
+        
+      
+        
+          
+            Niko Sünderhauf,
+          
+        
+      
+        
+          
+            
+              Ian Reid,
+            
+          
+        
+      
+        
+          
+            
+              Chunhua Shen,
+            
+          
+        
+      
+        
+
+          
+            
+              Michael Milford.
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>In Proceedings of the Australasian Conference on Robotics and Automation (ACRA),</em>
+    
+    
+      2017.
+    
+    </span>
+  
+
+  
+
+  
+  <a href="http://www.araa.asn.au/acra/acra2017/papers/pap104s1-file1.pdf" target="_blank"><img class="paper_thumb" src="/assets/paper-thumbnails/mcmahon17a.png" /></a>
+  
+  
+  <span class="abstract">
+    We propose to train a CNN performing pixel-wise trip detection with three auxiliary tasks to help the CNN better infer scene geometric properties of trip hazards. Of the three approaches investigated pixel-wise ground plane estimation, pixel depth estimation and pixel height above ground plane estimation, the first approach allowed the trip detector to achieve a 11.1% increase in Trip IOU over earlier work. These new approaches make it plausible to deploy a robotic platform to perform trip hazard detection, and so potentially reduce the number of injuries on construction sites.
+  </span>
+  
+
+  <span class="links">
+  <!-- 
+    [<a class="abstract">Abs</a>]
+   -->
+  
+  
+  <!-- 
+    [<a href="http://www.araa.asn.au/acra/acra2017/papers/pap104s1-file1.pdf" target="_blank">PDF</a>]
+   -->
+  <!--  -->
+  
+  
+  
+  
+  </span>
+
+
+
+  <!-- Hidden abstract block -->
+
+</div>
+</li></ol>
+<ol class="bibliography"><li>
+
+<div id="McMahon15b">
+  
+    
+    <a href="http://www.araa.asn.au/acra/acra2015/papers/pap158.pdf" class="title" target="_blank">TripNet: Detecting Trip Hazards on Construction Sites</a>
+    
+    <span class="author">
+      
+        
+          
+            
+              Sean McMahon,
+            
+          
+        
+      
+        
+          
+            Niko Sünderhauf,
+          
+        
+      
+        
+          
+            
+              Michael Milford,
+            
+          
+        
+      
+        
+
+          
+            
+              Ben Upcroft.
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>In Proceedings of the Australasian Conference on Robotics and Automation (ACRA),</em>
+    
+    
+      2015.
+    
+    </span>
+  
+
+  
+
+  
+  <a href="http://www.araa.asn.au/acra/acra2015/papers/pap158.pdf" target="_blank"><img class="paper_thumb" src="/assets/paper-thumbnails/mcmahon15.png" /></a>
+  
+  
+  <span class="abstract">
+    This paper introduces TripNet, a robotic vision system that detects trip hazards using raw construction site images.
+  TripNet performs trip hazard identification using only camera imagery and minimal training with a pre-trained Convolutional Neural Network (CNN) rapidly fine-tuned on a small corpus of labelled image regions from construction sites. There is no reliance on prior scene segmentation methods during deployment. Trip-Net achieves comparable performance to a human on a dataset recorded in two distinct real world construction sites. TripNet exhibits spatial and temporal generalization by functioning in previously unseen parts of a construction site and over time periods of several weeks.
+  
+  </span>
+  
+
+  <span class="links">
+  <!-- 
+    [<a class="abstract">Abs</a>]
+   -->
+  
+  
+  <!-- 
+    [<a href="http://www.araa.asn.au/acra/acra2015/papers/pap158.pdf" target="_blank">PDF</a>]
+   -->
+  <!--  -->
+  
+  
+  
+  
+  </span>
+
+
+
+  <!-- Hidden abstract block -->
+
+</div>
+</li></ol>
+
+  </article>
+
+  
+
+  
+
+</div>
+
+      </div>
+    </div>
+
+    <footer>
+
+  <div class="wrapper">
+    &copy; Copyright 2025 Niko Sünderhauf.
+    Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+
+    
+  </div>
+
+</footer>
+
+
+    <!-- Load jQuery -->
+<script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
+
+<!-- Load Common JS -->
+<script src="https://nikosuenderhauf.github.io/assets/js/common.js"></script>
+
+
+<!-- Load KaTeX -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.js"></script>
+<script src="https://nikosuenderhauf.github.io/assets/js/katex.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+
+
+
+
+
+<!-- Include custom icon fonts -->
+<link rel="stylesheet" href="https://nikosuenderhauf.github.io/assets/css/fontawesome-all.min.css">
+<link rel="stylesheet" href="https://nikosuenderhauf.github.io/assets/css/academicons.min.css">
+
+<!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-135749210-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+
+  </body>
+
+</html>

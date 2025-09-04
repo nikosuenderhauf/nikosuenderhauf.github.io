@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Niko Sünderhauf | research</title>
+  <meta name="description" content="">
+
+  <link rel="shortcut icon" href="https://nikosuenderhauf.github.io/assets/img/favicon.ico">
+
+  <link rel="stylesheet" href="https://nikosuenderhauf.github.io/assets/css/main.css">
+  <link rel="canonical" href="https://nikosuenderhauf.github.io/projects/">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    
+    <span class="site-title">
+        
+        <strong>Niko</strong> Sünderhauf
+    </span>
+    
+
+    <nav class="site-nav">
+      <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+      <div class="trigger">
+        <!-- About -->
+        <a class="page-link" href="https://nikosuenderhauf.github.io/">about</a>
+
+        <!-- Blog -->
+        <!-- <a class="page-link" href="https://nikosuenderhauf.github.io/blog/">blog</a> -->
+
+        <!-- Pages -->
+        
+          
+        
+          
+            <a class="page-link" href="https://nikosuenderhauf.github.io/cv/">bio</a>
+          
+        
+          
+        
+          
+        
+          
+            <a class="page-link" href="https://nikosuenderhauf.github.io/projects/">research</a>
+          
+        
+          
+            <a class="page-link" href="https://nikosuenderhauf.github.io/publications/">publications</a>
+          
+        
+          
+            <a class="page-link" href="https://nikosuenderhauf.github.io/teaching/">teaching</a>
+          
+        
+          
+            <a class="page-link" href="https://nikosuenderhauf.github.io/jobs/">recruiting</a>
+          
+        
+          
+            <a class="page-link" href="https://nikosuenderhauf.github.io/workshops/">workshops</a>
+          
+        
+          
+        
+          
+        
+
+        <!-- CV link -->
+        <!-- <a class="page-link" href="https://nikosuenderhauf.github.io/assets/pdf/CV.pdf">vitae</a> -->
+
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">research</h1>
+    <h5 class="post-description">past and current research projects.</h5>
+  </header>
+
+  <article class="post-content research clearfix">
+    <h3 id="robot-learning">Robot Learning</h3>
+<p><a href="learningtonavigate"><img class="col one" src="/assets/img/projects/robot_learning_showcase.png" /></a>
+How can robots best learn to interact with the world, manipulate objects, and navigate in challenging environments, all to execute complex tasks, such as tidying up an apartment or assist humans in their everyday domestic chores? I am interested in developing learning-based approaches are effective and efficient, and scale to complicated long-horizon tasks. We combine modern techniques such as imitation learning, LLMs, Vision-Language Models, and reinforcement learning with classical control and navigation. <a href="learningtonavigate">Read more …</a></p>
+
+<h3 id="scene-understanding-semantic-slam-and-implicit-representations">Scene Understanding, Semantic SLAM, and Implicit Representations</h3>
+<p><a href="sceneunderstanding"><img class="col one" src="/assets/img/projects/scenegraph.png" /></a>
+Making a robot understand what it sees is a fascinating goal in my current research.
+In the past we developed novel methods for <em>Semantic</em> Mapping and SLAM by combining object detection with simultaneous localisation and mapping (SLAM) techniques, representing the environment as a scene graph.
+More recently, we have investigated a fresh take on the problem and represent the environment with NeRFs or Gaussian Splatting. <a href="sceneunderstanding">Read more …</a></p>
+
+<!-- Our ongoing research in scene understanding will help to provide answers to a robot’s questions like „What are these objects I can see in front of me?“ (object detection and recognition), „What can I do with these objects?“ (affordance detection), „Am I in an office, a kitchen, or a living room? What can I expect to find here?“ (semantic mapping, holistic scene understanding.
+
+Furthermore, we work towards making semantic perception robust enough to be used on autonomous robots. To achieve this goal, we analyse the key differences between robotic vision and computer vision (where great breakthroughs have happened since 2013 with the advent of convolutional networks), and adapt learning procedures and network architectures accordingly.  -->
+
+<h3 id="uncertainty-and-realiability-of-deep-learning-for-robotic-perception">Uncertainty and Realiability of Deep Learning for Robotic Perception</h3>
+<p><a href="uncertainty"><img class="col one" src="/assets/img/projects/uncertainty.png" /></a>
+Despite the enormous progress of deep learning over the past decade, and the appearance of foundation models such as large language models or vision-language models in the past few years, questions about their reliability and robustnes remain. How do deep learning models react when presented with out-of-distribution data? How can they express the uncertainty in their predictions, and know when they don’t know? Are recent foundation models immune to open-set or out-of-distribution conditions?
+These questions are of enormous importance if we want to apply deep learning (and AI in general) to safety-critical applications where mistakes could have catastrophic consequences. <a href="uncertainty">Read more …</a></p>
+
+<hr />
+
+<h2 id="past-research-directions">Past Research Directions</h2>
+
+<h3 id="visual-place-recognition-in-changing-environments-2011--2021">Visual Place Recognition in Changing Environments (2011 – 2021)</h3>
+<p><a href="placerecognition"><img class="col one" src="/assets/img/projects/placeRec.png" /></a>
+An autonomous robot that operates on our campus should be able to recognize different places when it comes back to them after some time. This is important to support reliable navigation and localisation and therefore enable the robot to perform a useful task.</p>
+
+<p>The problem of visual place recognition gets challenging if the visual appearance of these places changed in the meantime. This usually happens due to changes in the lighting conditions (think day vs. night or early morning vs. late afternoon), shadows, different weather conditions, or even different seasons.</p>
+
+<p><a name="past projects"></a></p>
+
+<p>We develop algorithms for vision-based place recognition that can deal with these changes in visual appearance. <a href="placerecognition">Read more …</a></p>
+
+<h3 id="robotic-vision-evaluation-and-benchmarking-2019--2023">Robotic Vision Evaluation and Benchmarking (2019 – 2023)</h3>
+<p>Big benchmark competitions like <a href="http://www.image-net.org/challenges/LSVRC/">ILSVRC</a> or <a href="http://cocodataset.org">COCO</a> fuelled much of the progress in computer vision and deep learning over the past years. We aim to recreate this success for robotic vision.</p>
+
+<p>To this end, we develop a set of new benchmark challenges for robotic vision that evaluate probabilistic object detection, scene understanding, uncertainty estimation, continuous learning for domain adaptation, continuous learning to incorporate previuosly unseen classes,
+active learning, and active vision.
+We combine the variety and complexity of real-world data with the flexibility of synthetic graphics and physics engines.
+<a href="http://www.roboticvisionchallenge.org">Read more …</a></p>
+
+<h3 id="the-dlr-spacebot-cup-2013">The DLR SpaceBot Cup (2013)</h3>
+<div class="img_row">
+<a href="spacebotcup"><img class="col one" src="/assets/img/projects/spacebot/robot.png" /></a>
+<a href="spacebotcup"><img class="col two" src="/assets/img/projects/spacebot/alle_Roboter.png" /></a>
+</div>
+<div class="col three caption">
+      (Left) Our two robots, Phobos and Deimos, in the rugged Mars-like terrain after the contest. (Right) The robots of all teams after the competition.
+</div>
+
+<p>In 2013, ten teams from German universities and research institutes participated in a national robot competition called SpaceBot Cup, organized by the DLR Space Administration.</p>
+
+<p>The robots had one hour to autonomously explore and map a challenging Mars-like environment, find, transport, and manipulate two objects, and navigate back to the landing site. Localization without GPS in an unstructured environment was a major issue as was mobile manipulation and very restricted communication. We entered the competition with a multi-robot system of two rovers operating on the ground plus a quadrotor UAV simulating an observing orbiting satellite.</p>
+
+<p>We relied on ROS as the software infrastructure. Despite (or because of) faults, communication loss and break- downs, it was a valuable experience with many lessons learned. <a href="spacebotcup">Read more …</a></p>
+
+<h3 id="switchable-constraints-for-robust-slam-2011--2013">Switchable Constraints for Robust SLAM (2011 – 2013)</h3>
+<p><a href="switchableConstraints"><img class="col one" src="/assets/img/projects/manhattan.png" /></a>
+Current state of the art solutions of the SLAM problem are based on efﬁcient sparse optimization techniques and represent the problem as probabilistic constraint graphs. The optimizer, the so called back-end of the system, relies heavily on the topological correctness of the graph structure and is not robust against misplaced constraint edges. Especially edges representing false positive loop closures will lead to the divergence of current solvers.</p>
+
+<p>We propose to augment the original optimization problem by a new set of hidden variables. These switch variables allow the optimizer to estimate the optimal graph topology and the optimal covariance for each potential outlier constraint. Despite the increased number of variables, the sparse structure of the problem is maintained, which allows efficient calculations. <a href="switchableConstraints">Read more …</a></p>
+
+<h3 id="multipath-mitigation-for-gnss-based-vehicle-localization-2012--2013">Multipath Mitigation for GNSS-based Vehicle Localization (2012 – 2013)</h3>
+<p><a href="gnss"><img class="col one" src="/assets/img/projects/3Sats.png" /></a>
+A common challenge for vehicle localization based on global navigation satellite systems (GNSS) is the multipath problem when high buildings block the direct line of sight to one or several satellites. The blocked signals may still reach the receiver on the ground via one or several reflections on building structures or the ground. Since the signal path is longer for the reflected signal, ranging errors occur that can either prolongate the observed pseudorange or, due to correlation effects, shorten it. This leads to severely biased position estimates.</p>
+
+<p>We work on methods for mitigation of such effects and apply approaches of robust estimation using graphical models.  <a href="gnss">Read more …</a></p>
+
+<h3 id="application-of-biologically-inspired-methods-for-autonomous-navigation-and-slam-2010">Application of Biologically Inspired Methods for Autonomous Navigation and SLAM (2010)</h3>
+
+<p><a href="bioinspired"><img class="col one pad10" src="/assets/img/projects/poseCellNetwork.png" /></a>
+Since the 1970’s different types of neurons involved in spacial navigation have been identified in the brains of rats, primates and humans. Several experiments of different researchers show that these cells code the position and orientation of the animal in its environment.
+Neurologists and theoretical biologists have been developing models that help to understand the behaviour of animals as well as humans in different situations. These models explain the workings of the different cell assemblies and their connections with other areas in the brain.</p>
+
+<p>We are interested in these developements and want to derive efficient algorithms that help solving navigation tasks and SLAM on autonomous mobile robots. Our goal is explicitly not to mimic the behaviour of the involved biological processes on the level of single neurons or even spike trains. Instead, we want to understand the principles behind these biological processes and project them onto higher levels of abstraction that are suitable for implementation and application on autonomous systems. <a href="bioinspired">Read more …</a></p>
+
+<h3 id="autonomous-quadrotor-uavs-2007--2009">Autonomous Quadrotor UAVs (2007 – 2009)</h3>
+<p><a href="UAVs"><img class="col one pad10" src="/assets/img/projects/pelican.png" /></a>
+In 2007 we started working with quadrotors by using 3 AscTec Hummingbirds shortly after they became available. From the beginning, our research has focused on fully autonomous systems in indoor/GPS-denied environments without external sensors or computation. Since this required additional on-board sensors and computing power we got an AscTec Pelican quadrotor in 2010 because of its higher available payload.</p>
+
+<p>The results of several projects using these MAVs with additional sensors and modifications have been published in a number of papers, e.g. an autonomous landing procedure by using a camera and a self-made optical flow sensor or <a href="https://youtu.be/kmMzc2-ray0">one of the first autonomous indoor flights using a Kinect on the Pelican</a>. This work has been conducted in close collaboration with <a href="https://www.tu-chemnitz.de/etit/proaut/en/team/svenLange.html">Sven Lange</a> and other colleagues at Chemnitz University of Technology. Check out their project website for up-to-date information. <a href="UAVs">Read more …</a></p>
+
+<center><iframe width="560" height="315" src="https://www.youtube.com/embed/kmMzc2-ray0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe></center>
+
+<h3 id="stereo-odometry-and-visual-odometry-2004--2007">Stereo Odometry and Visual Odometry (2004 – 2007)</h3>
+<p><img class="col one pad10" src="/assets/img/projects/pointMatching.png" />
+Estimating its ego-motion is one of the most important capabilities for an autonomous mobile platform. Without reliable ego-motion estimation no long-term navigation is possible. Besides odometry, inertial sensors, DGPS, laser range finders and so on, vision based algorithms can contribute a lot of information. Stereo odometry is a vision based motion estimation algorithm that estimates the ego-motion of a stereo camera through its environment by evaluating the captured images.</p>
+
+<p>Stereo Odometry was the topic of my first scientific research project. I started working on it during a research internship at <a href="http://www.laas.fr">LAAS / CNRS</a> in Toulouse, France under the supervision of <a href="https://scholar.google.com.au/citations?user=7cgLDwUAAAAJ&amp;hl=en&amp;oi=ao">Simon Lacroix</a> and <a href="https://scholar.google.com.au/citations?user=hczHVxEAAAAJ&amp;hl=en">Kurt Konolige</a>.</p>
+
+<h3 id="roboking--organizing-a-nation-wide-robotics-competition-for-students-2004--2008">RoboKing – Organizing a Nation-Wide Robotics Competition for Students (2004 – 2008)</h3>
+<p><a href="roboking"><img class="col one pad10" src="/assets/img/projects/roboking/3.jpg" /></a>
+RoboKing was an annual robotics challenge for high school students between 12 and 19 years of age. It was organized by a team of students and research associates working at the chair of Automation Technology at Chemnitz University of Technology in Germany.</p>
+
+<p>Our goal was to raise student’s interest in robotics and engineering and computer science in general, and to motivate them to study an engineering subject at university.</p>
+
+<p>I was part of the organizing team during all these years, which was both a great fun and a fantastic experience. <a href="roboking">Read more …</a></p>
+
+<!--
+**A bit of Text**
+
+Some maths:
+
+$$
+\begin{align*}
+  & \phi(x,y) = \phi \left(\sum_{i=1}^n x_ie_i, \sum_{j=1}^n y_je_j \right)
+  = \sum_{i=1}^n \sum_{j=1}^n x_i y_j \phi(e_i, e_j) = \\
+  & (x_1, \ldots, x_n) \left( \begin{array}{ccc}
+      \phi(e_1, e_1) & \cdots & \phi(e_1, e_n) \\
+      \vdots & \ddots & \vdots \\
+      \phi(e_n, e_1) & \cdots & \phi(e_n, e_n)
+    \end{array} \right)
+  \left( \begin{array}{c}
+      y_1 \\
+      \vdots \\
+      y_n
+    \end{array} \right)
+\end{align*}
+$$
+
+Some Code:
+
+
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">test</span><span class="p">(</span><span class="n">a</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+  <span class="c1"># Example can be run directly in your JavaScript console
+</span>  <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+    <span class="n">a</span><span class="o">=</span><span class="p">[</span><span class="n">x</span><span class="p">.</span><span class="n">strip</span><span class="p">(</span><span class="s">'.'</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">b</span><span class="p">{</span><span class="n">i</span><span class="p">}]</span></code></pre></figure>
+
+
+~~~py
+def test(a=1):
+  # Example can be run directly in your JavaScript console
+  import numpy as np
+  for i in range(5):
+    a=[x.strip('.') for x in b{i}]
+
+~~~
+
+
+<div class="img_row">
+    <img class="col one" src="/assets/img/12.jpg" alt="" title="example image"/>
+    <img class="col one" src="/assets/img/12.jpg" alt="" title="example image"/>
+    <img class="col one" src="/assets/img/12.jpg" alt="" title="example image"/>
+</div>
+
+
+<div class="col three caption">
+    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
+</div>
+<div class="img_row">
+    <img class="col three" src="/assets/img/5.jpg" alt="" title="example image"/>
+</div>
+
+
+![image](/assets/img/12.jpg){:width='33%'}
+<div class="col three caption">
+    This image can also have a caption. It's like magic.
+</div>
+
+-->
+<!--
+
+
+
+
+
+<div class="project ">
+    <div class="thumbnail">
+        <a href="https://nikosuenderhauf.github.io/projects/UAVs/">
+        
+        <div class="thumbnail blankbox"></div>
+            
+        <span>
+            <h1>Autonomous Quadrotor UAVs (2007 - 2009)</h1>
+            <br/>
+            <p></p>
+        </span>
+        </a>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div class="project ">
+    <div class="thumbnail">
+        <a href="https://nikosuenderhauf.github.io/projects/bioinspired/">
+        
+        <div class="thumbnail blankbox"></div>
+            
+        <span>
+            <h1>Application of Biologically Inspired Methods for Autonomous Navigation and SLAM (2010)</h1>
+            <br/>
+            <p></p>
+        </span>
+        </a>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div class="project ">
+    <div class="thumbnail">
+        <a href="https://nikosuenderhauf.github.io/projects/gnss/">
+        
+        <div class="thumbnail blankbox"></div>
+            
+        <span>
+            <h1>Robust GNSS-based Vehicle Localization in Urban Environments (2012-2013)</h1>
+            <br/>
+            <p></p>
+        </span>
+        </a>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div class="project ">
+    <div class="thumbnail">
+        <a href="https://nikosuenderhauf.github.io/projects/learningtonavigate/">
+        
+        <div class="thumbnail blankbox"></div>
+            
+        <span>
+            <h1>Robot Learning</h1>
+            <br/>
+            <p></p>
+        </span>
+        </a>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div class="project ">
+    <div class="thumbnail">
+        <a href="https://nikosuenderhauf.github.io/projects/placerecognition/">
+        
+        <div class="thumbnail blankbox"></div>
+            
+        <span>
+            <h1>Visual Place Recognition in Changing Environments</h1>
+            <br/>
+            <p></p>
+        </span>
+        </a>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div class="project ">
+    <div class="thumbnail">
+        <a href="https://nikosuenderhauf.github.io/projects/roboking/">
+        
+        <div class="thumbnail blankbox"></div>
+            
+        <span>
+            <h1>RoboKing</h1>
+            <br/>
+            <p>A nationwide robotics competition for high school students.</p>
+        </span>
+        </a>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div class="project ">
+    <div class="thumbnail">
+        <a href="https://nikosuenderhauf.github.io/projects/sceneunderstanding/">
+        
+        <div class="thumbnail blankbox"></div>
+            
+        <span>
+            <h1>Scene Understanding, Semantic SLAM, Implicit Representations</h1>
+            <br/>
+            <p></p>
+        </span>
+        </a>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div class="project ">
+    <div class="thumbnail">
+        <a href="https://nikosuenderhauf.github.io/projects/spacebotcup/">
+        
+        <img class="thumbnail" src="https://nikosuenderhauf.github.io/assets/img/projects/spacebot/Teamfoto.png"/>
+            
+        <span>
+            <h1>The DLR SpaceBot Cup 2013</h1>
+            <br/>
+            <p></p>
+        </span>
+        </a>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div class="project ">
+    <div class="thumbnail">
+        <a href="https://nikosuenderhauf.github.io/projects/switchableConstraints/">
+        
+        <div class="thumbnail blankbox"></div>
+            
+        <span>
+            <h1>Switchable Constraints for Robust SLAM (2011 - 2013)</h1>
+            <br/>
+            <p></p>
+        </span>
+        </a>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div class="project ">
+    <div class="thumbnail">
+        <a href="https://nikosuenderhauf.github.io/projects/uncertainty/">
+        
+        <div class="thumbnail blankbox"></div>
+            
+        <span>
+            <h1>Reliability of Deep Learning for Robotics</h1>
+            <br/>
+            <p></p>
+        </span>
+        </a>
+    </div>
+</div>
+
+
+
+ -->
+
+  </article>
+
+  
+
+  
+    <div class="social">
+  <span class="contacticon center">
+    <a href="mailto:%6E%69%6B%6F.%73%75%65%6E%64%65%72%68%61%75%66@%71%75%74.%65%64%75.%61%75"><i class="fas fa-envelope"></i></a>
+    
+    <a href="https://scholar.google.com/citations?user=WnKjfFEAAAAJ" target="_blank" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+    
+    <a href="https://www.linkedin.com/in/nikosuenderhauf" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    <a href="https://twitter.com/nikosuenderhauf" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+    
+  </span>
+
+  <div class="col three caption">
+    
+  </div>
+</div>
+
+  
+
+</div>
+
+      </div>
+    </div>
+
+    <footer>
+
+  <div class="wrapper">
+    &copy; Copyright 2025 Niko Sünderhauf.
+    Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+
+    
+  </div>
+
+</footer>
+
+
+    <!-- Load jQuery -->
+<script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
+
+<!-- Load Common JS -->
+<script src="https://nikosuenderhauf.github.io/assets/js/common.js"></script>
+
+
+<!-- Load KaTeX -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.js"></script>
+<script src="https://nikosuenderhauf.github.io/assets/js/katex.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+
+
+
+
+
+<!-- Include custom icon fonts -->
+<link rel="stylesheet" href="https://nikosuenderhauf.github.io/assets/css/fontawesome-all.min.css">
+<link rel="stylesheet" href="https://nikosuenderhauf.github.io/assets/css/academicons.min.css">
+
+<!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-135749210-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+
+  </body>
+
+</html>
