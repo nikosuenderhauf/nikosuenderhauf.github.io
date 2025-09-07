@@ -12,7 +12,7 @@ I am seeking an enthusiastic Postdoctoral Research Fellow to make a decisive con
 
 As part of the [ARIAM Research Hub](http://www.ariamhub.com), you’ll work closely with me, our vibrant QCR team of academics, engineers, and PhD students, and expert colleagues from USyd (control) and ANU (planning). Together, we are pushing the boundaries of learning from demonstration, aiming to tackle key challenges in sample efficiency and generalisation.
 
-I am looking to fill this position **immediately** (from September 2025). Please [contact me](#how-to-apply) if you are interested.
+I am looking to fill this position **as soon as possible** (advertised in September 2025). Please [contact me](#how-to-apply) if you are interested.
 
 ### Position Details
  * Type: Full-time, fixed-term (24 months)
@@ -78,7 +78,7 @@ To apply, please email the following materials to 📧 niko.suenderhauf@qut.edu.
  * Your CV, including a full list of publications
  * A motivation letter and research plan (max 3 pages)
  * A statement on how you meet the selection criteria above (max 2 pages)
- * A statement on how you plan to meet the key responsibilities above (max 2 pages)
+ * A statement on how you plan to address the key responsibilities of the role (max 2 pages)
  * Contact details for 1–2 referees, or attach reference letters
 
 <!-- ## Postdoctoral Research Fellow -->
