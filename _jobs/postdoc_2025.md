@@ -65,9 +65,10 @@ You should have:
 
 ### Selection Criteria
  * Completion of a PhD in robotics or a related field
- * A clear research agenda and the demonstrated ability to conduct independent, high-quality research
- * Track record of publication in top robotics, ML, or vision venues
- * Deep expertise in robotics, machine learning, or computer vision
+ * A strong and clear research agenda to advance robot learning
+ * Demonstrated ability to conduct independent, high-quality research
+ * Track record of publication of robot learning work in top venues in robotics (especially CoRL and RSS)
+ * Deep expertise in robotic learning, general robotics, machine learning, and computer vision
  * Proficiency in Python, PyTorch, and general software development on Linux
  * Experience working with robot hardware: arms, mobile bases, cameras, other sensors
  * Excellent written and verbal communication skills
