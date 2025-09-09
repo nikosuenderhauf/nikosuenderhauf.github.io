@@ -1,0 +1,1437 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Niko Sünderhauf | Visual Place Recognition in Changing Environments</title>
+  <meta name="description" content="">
+
+  <link rel="shortcut icon" href="https://nikosuenderhauf.github.io/assets/img/favicon.ico">
+
+  <link rel="stylesheet" href="https://nikosuenderhauf.github.io/assets/css/main.css">
+  <link rel="canonical" href="https://nikosuenderhauf.github.io/projects/placerecognition/">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    
+    <span class="site-title">
+        
+        <strong>Niko</strong> Sünderhauf
+    </span>
+    
+
+    <nav class="site-nav">
+      <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+      <div class="trigger">
+        <!-- About -->
+        <a class="page-link" href="https://nikosuenderhauf.github.io/">about</a>
+
+        <!-- Blog -->
+        <!-- <a class="page-link" href="https://nikosuenderhauf.github.io/blog/">blog</a> -->
+
+        <!-- Pages -->
+        
+          
+        
+          
+            <a class="page-link" href="https://nikosuenderhauf.github.io/cv/">bio</a>
+          
+        
+          
+        
+          
+        
+          
+            <a class="page-link" href="https://nikosuenderhauf.github.io/projects/">research</a>
+          
+        
+          
+            <a class="page-link" href="https://nikosuenderhauf.github.io/publications/">publications</a>
+          
+        
+          
+            <a class="page-link" href="https://nikosuenderhauf.github.io/teaching/">teaching</a>
+          
+        
+          
+            <a class="page-link" href="https://nikosuenderhauf.github.io/jobs/">recruiting</a>
+          
+        
+          
+            <a class="page-link" href="https://nikosuenderhauf.github.io/workshops/">workshops</a>
+          
+        
+          
+        
+          
+        
+
+        <!-- CV link -->
+        <!-- <a class="page-link" href="https://nikosuenderhauf.github.io/assets/pdf/CV.pdf">vitae</a> -->
+
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Visual Place Recognition in Changing Environments</h1>
+    <h5 class="post-description"></h5>
+  </header>
+
+  <article class="post-content Visual Place Recognition in Changing Environments clearfix">
+    <p>The picture below illustrates the idea of place recognition: An autonomous robot that operates in an environment (for example our university campus) should be able to recognize different places when it comes back to them after some time. This is important to support reliable navigation, mapping, and localisation. Robust place recognition is therefore a crucial capability for an autonomous robot.</p>
+
+<div class="img_row">
+<img class="col half" src="/assets/img/projects/placeRecognition.png" />
+<img class="col half" src="/assets/img/projects/placeRecChallenges.png" />
+</div>
+
+<p>The problem of visual place recognition gets challenging if the visual appearance of these places changed in the meantime. This usually happens due to changes in the lighting conditions (think day vs. night or early morning vs. late afternoon), shadows, different weather conditions, or even different seasons.
+We develop algorithms for vision-based place recognition that can deal with these changes in visual appearance.</p>
+
+<p>A general overview of the topic can be found in our survey paper:</p>
+<ol class="bibliography"><li>
+
+<div id="Lowry15">
+  
+    
+    <a href="/assets/papers/visual_place_recognition_a_survey.pdf" class="title" target="_blank">Visual Place Recognition: A Survey</a>
+    
+    <span class="author">
+      
+        
+          
+            
+              Stephanie Lowry,
+            
+          
+        
+      
+        
+          
+            Niko Sünderhauf,
+          
+        
+      
+        
+          
+            
+              Paul Newman,
+            
+          
+        
+      
+        
+          
+            
+              John J Leonard,
+            
+          
+        
+      
+        
+          
+            
+              David Cox,
+            
+          
+        
+      
+        
+          
+            
+              Peter Corke,
+            
+          
+        
+      
+        
+
+          
+            
+              Michael J Milford.
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>Transactions on Robotics (TRO),</em>
+    
+    
+      2015.
+    
+    </span>
+  
+
+  
+
+  
+  <a href="/assets/papers/visual_place_recognition_a_survey.pdf" target="_blank"><img class="paper_thumb" src="/assets/paper-thumbnails/lowry15survey.png" /></a>
+  
+  
+  <span class="abstract">
+    This paper presents a survey of the visual place
+recognition research landscape. We start by introducing the
+concepts behind place recognition – the role of place recognition
+in the animal kingdom, how a “place” is defined in a robotics
+context, and the major components of a place recognition system.
+We then survey visual place recognition solutions for
+environments where appearance change is assumed to be
+negligible. Long term robot operations have revealed that
+environments continually change; consequently we survey place
+recognition solutions that implicitly or explicitly account for
+appearance change within the environment. Finally we close with
+a discussion of the future of visual place recognition, in particular
+with respect to the rapid advances being made in the related
+fields of deep learning, semantic scene understanding and video
+description.
+  </span>
+  
+
+  <span class="links">
+  <!-- 
+    [<a class="abstract">Abs</a>]
+   -->
+  
+  
+  <!-- 
+    [<a href="/assets/papers/visual_place_recognition_a_survey.pdf" target="_blank">PDF</a>]
+   -->
+  <!--  -->
+  
+  
+  
+  
+  </span>
+
+
+
+  <!-- Hidden abstract block -->
+
+</div>
+</li></ol>
+
+<h3 id="convolutional-networks-for-place-recognition-under-challenging-conditions-ongoing-since-2014">Convolutional Networks for Place Recognition under Challenging Conditions (ongoing since 2014)</h3>
+<p>In two papers published at RSS and IROS 2015 we explored how Convolutional Networks can be utilized for robust visual place recognition. We found that the features from middle layers of these networks are robust against appearance changes and can be used as change-robust landmark descriptors. Since then, Sourav Garg has pushed the topic forward with publications at ICRA and RSS 2018.</p>
+
+<h4 id="publications">Publications</h4>
+<ol class="bibliography"><li>
+
+<div id="ming2021topometric">
+  
+    
+    <a href="https://ieeexplore.ieee.org/abstract/document/9484728" class="title" target="_blank">Probabilistic Appearance-Invariant Topometric Localization with New Place Awareness</a>
+    
+    <span class="author">
+      
+        
+          
+            
+              Ming Xu,
+            
+          
+        
+      
+        
+          
+            
+              Tobias Fischer,
+            
+          
+        
+      
+        
+          
+            Niko Sünderhauf,
+          
+        
+      
+        
+
+          
+            
+              Michael Milford.
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>IEEE Robotics and Automation Letters (RA-L),</em>
+    
+    
+      2021.
+    
+    </span>
+  
+
+  
+
+  
+  <a href="https://ieeexplore.ieee.org/abstract/document/9484728" target="_blank"><img class="paper_thumb" src="/assets/paper-thumbnails/ming21topometric.png" /></a>
+  
+  
+  <span class="abstract">
+    We present a new probabilistic topometric localization system which incorporates full 3-dof odometry into the motion model and furthermore, adds an “off-map” state within the state-estimation framework, allowing query traverses which feature significant route detours from the reference map to be successfully localized. We perform extensive evaluation on multiple query traverses from the Oxford RobotCar dataset exhibiting both significant appearance change and deviations from routes previously traversed.
+  </span>
+  
+
+  <span class="links">
+  <!-- 
+    [<a class="abstract">Abs</a>]
+   -->
+  
+    [<a href="http://arxiv.org/abs/2107.07707" target="_blank">arXiv</a>]
+  
+  
+  <!-- 
+    [<a href="https://ieeexplore.ieee.org/abstract/document/9484728" target="_blank">PDF</a>]
+   -->
+  <!--  -->
+  
+  
+  
+  
+  </span>
+
+
+
+  <!-- Hidden abstract block -->
+
+</div>
+</li></ol>
+<ol class="bibliography"><li>
+
+<div id="ming2021probabilistic">
+  
+    
+    <a href="https://ieeexplore.ieee.org/abstract/document/9268070/" class="title" target="_blank">Probabilistic Visual Place Recognition for Hierarchical Localization</a>
+    
+    <span class="author">
+      
+        
+          
+            
+              Ming Xu,
+            
+          
+        
+      
+        
+          
+            Niko Sünderhauf,
+          
+        
+      
+        
+
+          
+            
+              Michael Milford.
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>IEEE Robotics and Automation Letters (RA-L),</em>
+    
+    
+      2021.
+    
+    </span>
+  
+
+  
+
+  
+  <a href="https://ieeexplore.ieee.org/abstract/document/9268070/" target="_blank"><img class="paper_thumb" src="/assets/paper-thumbnails/ming2021probabilistic.png" /></a>
+  
+  
+  <span class="abstract">
+    We propose two methods which adapt image retrieval techniques used for visual place recognition to the Bayesian state estimation formulation for localization. We demonstrate significant improvements to the
+  localization accuracy of the coarse localization stage using our methods, whilst retaining state-of-the-art performance under severe appearance change. Using extensive experimentation on the Oxford RobotCar dataset, results show that our approach
+  outperforms comparable state-of-the-art methods in terms of precision-recall performance for localizing image sequences. In addition, our proposed methods provides the flexibility
+  to contextually scale localization latency in order to achieve these improvements.
+  </span>
+  
+
+  <span class="links">
+  <!-- 
+    [<a class="abstract">Abs</a>]
+   -->
+  
+    [<a href="http://arxiv.org/abs/2105.03091" target="_blank">arXiv</a>]
+  
+  
+  <!-- 
+    [<a href="https://ieeexplore.ieee.org/abstract/document/9268070/" target="_blank">PDF</a>]
+   -->
+  <!--  -->
+  
+  
+  
+  
+  </span>
+
+
+
+  <!-- Hidden abstract block -->
+
+</div>
+</li></ol>
+<ol class="bibliography"><li>
+
+<div id="garg2019semantic">
+  
+    
+    <a href="https://doi.org/10.1177%2F0278364919839761" class="title" target="_blank">Semantic–geometric visual place recognition: a new perspective for reconciling opposing views</a>
+    
+    <span class="author">
+      
+        
+          
+            
+              Sourav Garg,
+            
+          
+        
+      
+        
+          
+            Niko Sünderhauf,
+          
+        
+      
+        
+
+          
+            
+              Michael Milford.
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>The International Journal of Robotics Research (IJRR),</em>
+    
+    
+      2022.
+    
+    </span>
+  
+
+  
+
+  
+  <a href="https://doi.org/10.1177%2F0278364919839761" target="_blank"><img class="paper_thumb" src="/assets/paper-thumbnails/garg18rss.png" /></a>
+  
+  
+  <span class="abstract">
+    We propose a hybrid image descriptor that semantically aggregates salient visual information, complemented by appearance-based description, and augment a conventional coarse-to-fine recognition pipeline with keypoint correspondences extracted from within the convolutional feature maps of a pre-trained network. Finally, we introduce descriptor normalization and local score enhancement strategies for improving the robustness of the system. Using both existing benchmark datasets and extensive new datasets that for the first time combine the three challenges of opposing viewpoints, lateral viewpoint shifts, and extreme appearance change, we show that our system can achieve practical place recognition performance where existing state-of-the-art methods fail.
+  </span>
+  
+
+  <span class="links">
+  <!-- 
+    [<a class="abstract">Abs</a>]
+   -->
+  
+  
+  <!-- 
+    [<a href="https://doi.org/10.1177%2F0278364919839761" target="_blank">PDF</a>]
+   -->
+  <!--  -->
+  
+  
+  
+  
+  </span>
+
+
+
+  <!-- Hidden abstract block -->
+
+</div>
+</li></ol>
+<ol class="bibliography"><li>
+
+<div id="garg2019look">
+  
+    
+    <a href="https://arxiv.org/abs/1902.07381" class="title" target="_blank">Look No Deeper: Recognizing Places from Opposing Viewpoints under Varying Scene Appearance using Single-View Depth Estimation</a>
+    
+    <span class="author">
+      
+        
+          
+            
+              Sourav Garg,
+            
+          
+        
+      
+        
+          
+            
+              V Babu,
+            
+          
+        
+      
+        
+          
+            
+              Thanuja Dharmasiri,
+            
+          
+        
+      
+        
+          
+            
+              Stephen Hausler,
+            
+          
+        
+      
+        
+          
+            Niko Sünderhauf,
+          
+        
+      
+        
+          
+            
+              Swagat Kumar,
+            
+          
+        
+      
+        
+          
+            
+              Tom Drummond,
+            
+          
+        
+      
+        
+
+          
+            
+              Michael Milford.
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>In Proc. of IEEE International Conference on Robotics and Automation (ICRA),</em>
+    
+    
+      2019.
+    
+    </span>
+  
+
+  
+
+  
+  <a href="https://arxiv.org/abs/1902.07381" target="_blank"><img class="paper_thumb" src="/assets/paper-thumbnails/garg2019look.png" /></a>
+  
+  
+  <span class="abstract">
+    We present a new depth-and temporal-aware visual place recognition system that solves the opposing viewpoint, extreme appearance-change visual place recognition problem. Our system performs sequence-to-single matching by extracting depth-filtered keypoints using a state-of-the-art depth estimation pipeline, constructing a keypoint sequence over multiple frames from the reference dataset, and comparing those keypoints to those in a single query image. We evaluate the system on a challenging benchmark dataset and show that it consistently outperforms state-of-the-art techniques. We also develop a range of diagnostic simulation experiments that characterize the contribution of depth-filtered keypoint sequences with respect to key domain parameters including degree of appearance change and camera motion.
+  </span>
+  
+
+  <span class="links">
+  <!-- 
+    [<a class="abstract">Abs</a>]
+   -->
+  
+    [<a href="http://arxiv.org/abs/1902.07381" target="_blank">arXiv</a>]
+  
+  
+  <!-- 
+    [<a href="https://arxiv.org/abs/1902.07381" target="_blank">PDF</a>]
+   -->
+  <!--  -->
+  
+  
+  
+  
+  </span>
+
+
+
+  <!-- Hidden abstract block -->
+
+</div>
+</li></ol>
+<ol class="bibliography"><li>
+
+<div id="garg2018lost">
+  
+    
+    <a href="https://arxiv.org/pdf/1804.05526" class="title" target="_blank">LoST? Appearance-Invariant Place Recognition for Opposite Viewpoints using Visual Semantics</a>
+    
+    <span class="author">
+      
+        
+          
+            
+              Sourav Garg,
+            
+          
+        
+      
+        
+          
+            Niko Sünderhauf,
+          
+        
+      
+        
+
+          
+            
+              Michael Milford.
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>In Proc. of Robotics: Science and Systems (RSS),</em>
+    
+    
+      2018.
+    
+    </span>
+  
+
+  
+
+  
+  <a href="https://arxiv.org/pdf/1804.05526" target="_blank"><img class="paper_thumb" src="/assets/paper-thumbnails/garg18rss.png" /></a>
+  
+  
+  <span class="abstract">
+    In this paper we develop a suite of novel semantic- and appearance-based techniques to enable for the first time high performance place recognition in the challenging scenario of recognizing places when returning from the opposite direction. We first propose a novel Local Semantic Tensor (LoST) descriptor of images using the convolutional feature maps from a state-of-the-art dense semantic segmentation network. Then, to verify the spatial semantic arrangement of the top matching candidates, we develop a novel approach for mining semantically-salient keypoint correspondences. 
+  </span>
+  
+
+  <span class="links">
+  <!-- 
+    [<a class="abstract">Abs</a>]
+   -->
+  
+  
+  <!-- 
+    [<a href="https://arxiv.org/pdf/1804.05526" target="_blank">PDF</a>]
+   -->
+  <!--  -->
+  
+  
+  
+  
+  </span>
+
+
+
+  <!-- Hidden abstract block -->
+
+</div>
+</li></ol>
+<ol class="bibliography"><li>
+
+<div id="Garg18">
+  
+    
+    <a href="https://arxiv.org/pdf/1801.05078" class="title" target="_blank">Don’t Look Back: Robustifying Place Categorization for Viewpoint- and Condition-Invariant Place Recognition</a>
+    
+    <span class="author">
+      
+        
+          
+            
+              Sourav Garg,
+            
+          
+        
+      
+        
+          
+            Niko Sünderhauf,
+          
+        
+      
+        
+
+          
+            
+              Michael Milford.
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>In Proc. of IEEE International Conference on Robotics and Automation (ICRA),</em>
+    
+    
+      2018.
+    
+    </span>
+  
+
+  
+
+  
+  <a href="https://arxiv.org/pdf/1801.05078" target="_blank"><img class="paper_thumb" src="/assets/paper-thumbnails/garg18lookBack.png" /></a>
+  
+  
+  <span class="abstract">
+    In this work, we develop a novel methodology for using the semantics-aware
+higher-order layers of deep neural networks for recognizing
+specific places from within a reference database. To further
+improve the robustness to appearance change, we develop a
+descriptor normalization scheme that builds on the success of
+normalization schemes for pure appearance-based techniques.
+  </span>
+  
+
+  <span class="links">
+  <!-- 
+    [<a class="abstract">Abs</a>]
+   -->
+  
+  
+  <!-- 
+    [<a href="https://arxiv.org/pdf/1801.05078" target="_blank">PDF</a>]
+   -->
+  <!--  -->
+  
+  
+  
+  
+  </span>
+
+
+
+  <!-- Hidden abstract block -->
+
+</div>
+</li></ol>
+<ol class="bibliography"><li>
+
+<div id="Suenderhauf15a">
+  
+    
+    <a href="/assets/papers/rss15_placeRec.pdf" class="title" target="_blank">Place Recognition with ConvNet Landmarks: Viewpoint-Robust, Condition-Robust, Training-Free</a>
+    
+    <span class="author">
+      
+        
+          
+            Niko Sünderhauf,
+          
+        
+      
+        
+          
+            
+              Sareh Shirazi,
+            
+          
+        
+      
+        
+          
+            
+              Adam Jacobson,
+            
+          
+        
+      
+        
+          
+            
+              Feras Dayoub,
+            
+          
+        
+      
+        
+          
+            
+              Edward Pepperell,
+            
+          
+        
+      
+        
+          
+            
+              Ben Upcroft,
+            
+          
+        
+      
+        
+
+          
+            
+              Michael Milford.
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>In Proc. of Robotics: Science and Systems (RSS),</em>
+    
+    
+      2015.
+    
+    </span>
+  
+
+  
+
+  
+  <a href="/assets/papers/rss15_placeRec.pdf" target="_blank"><img class="paper_thumb" src="/assets/paper-thumbnails/suenderhauf15rss.png" /></a>
+  
+  
+  <span class="abstract">
+    Here
+we present an approach that adapts state-of-the-art object
+proposal techniques to identify potential landmarks within an
+image for place recognition. We use the astonishing power
+of convolutional neural network features to identify matching
+landmark proposals between images to perform place recognition
+over extreme appearance and viewpoint variations. Our system
+does not require any form of training, all components are generic
+enough to be used off-the-shelf. We present a range of challenging
+experiments in varied viewpoint and environmental conditions.
+We demonstrate superior performance to current state-of-the-art
+techniques.
+  </span>
+  
+
+  <span class="links">
+  <!-- 
+    [<a class="abstract">Abs</a>]
+   -->
+  
+  
+  <!-- 
+    [<a href="/assets/papers/rss15_placeRec.pdf" target="_blank">PDF</a>]
+   -->
+  <!--  -->
+  
+  
+    [<a href="https://nikosuenderhauf.github.io/assets/papers/RSS-15-poster.pdf" target="_blank">Poster</a>]
+  
+  
+  
+  </span>
+
+
+
+  <!-- Hidden abstract block -->
+
+</div>
+</li></ol>
+<ol class="bibliography"><li>
+
+<div id="Suenderhauf15">
+  
+    
+    <a href="/assets/papers/IROS15-placeRecognition.pdf" class="title" target="_blank">On the Performance of ConvNet Features for Place Recognition</a>
+    
+    <span class="author">
+      
+        
+          
+            Niko Sünderhauf,
+          
+        
+      
+        
+          
+            
+              Feras Dayoub,
+            
+          
+        
+      
+        
+          
+            
+              Sareh Shirazi,
+            
+          
+        
+      
+        
+          
+            
+              Ben Upcroft,
+            
+          
+        
+      
+        
+
+          
+            
+              Michael Milford.
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>In Proc. of IEEE International Conference on Intelligent Robots and Systems (IROS),</em>
+    
+    
+      2015.
+    
+    </span>
+  
+
+  
+
+  
+  <a href="/assets/papers/IROS15-placeRecognition.pdf" target="_blank"><img class="paper_thumb" src="/assets/paper-thumbnails/suenderhauf15iros.png" /></a>
+  
+  
+  <span class="abstract">
+    This paper comprehensively evaluates
+and compares the utility of three state-of-the-art ConvNets on
+the problems of particular relevance to navigation for robots;
+viewpoint-invariance and condition-invariance, and for the first
+time enables real-time place recognition performance using
+ConvNets with large maps by integrating a variety of existing
+(locality-sensitive hashing) and novel (semantic search space
+partitioning) optimization techniques. We present extensive
+experiments on four real world datasets cultivated to evaluate
+each of the specific challenges in place recognition. The results
+demonstrate that speed-ups of two orders of magnitude can
+be achieved with minimal accuracy degradation, enabling
+real-time performance. We confirm that networks trained for
+semantic place categorization also perform better at (specific)
+place recognition when faced with severe appearance changes
+and provide a reference for which networks and layers are
+optimal for different aspects of the place recognition problem.
+  </span>
+  
+
+  <span class="links">
+  <!-- 
+    [<a class="abstract">Abs</a>]
+   -->
+  
+  
+  <!-- 
+    [<a href="/assets/papers/IROS15-placeRecognition.pdf" target="_blank">PDF</a>]
+   -->
+  <!--  -->
+  
+  
+  
+  
+  </span>
+
+
+
+  <!-- Hidden abstract block -->
+
+</div>
+</li></ol>
+
+<h3 id="predicting-appearance-changes-2013--2015">Predicting Appearance Changes (2013 – 2015)</h3>
+<p><img src="/assets/img/projects/changePrediction.png" alt="" class="col half" />
+In earlier work, conducted at TU Chemnitz with colleagues Peer Neubert and Peter Protzel, we explored the possibilities of predicting the visual changes in appearance between different seasons.</p>
+
+<p>This is a more active approach to robust place recognition, since it aims at reaching robustness not by becoming invariant to changes, but rather  learn them from experience, and use the learned model to predict how a place would appear under different conditions (e.g. in winter or in summer).</p>
+
+<p>Coming from the pre-deep learning era, our results look rather coarse. A number of groups have applied generative adverserial networks (GANs) to this problem and achieved far more superior results.</p>
+
+<h4 id="publications-1">Publications</h4>
+
+<ol class="bibliography"><li>
+
+<div id="neubert2015superpixel">
+  
+    
+    <a href="/assets/papers/ACP_RAS.pdf" class="title" target="_blank">Superpixel-based appearance change prediction for long-term navigation across seasons</a>
+    
+    <span class="author">
+      
+        
+          
+            
+              Peer Neubert,
+            
+          
+        
+      
+        
+          
+            Niko Sünderhauf,
+          
+        
+      
+        
+
+          
+            
+              Peter Protzel.
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>Robotics and Autonomous Systems,</em>
+    
+    
+      2015.
+    
+    </span>
+  
+
+  
+
+  
+  <a href="/assets/papers/ACP_RAS.pdf" target="_blank"><img class="paper_thumb" src="/assets/paper-thumbnails/neubert15change.png" /></a>
+  
+  
+  <span class="abstract">
+    The goal of our work is to support
+existing approaches to place recognition by learning how the
+visual appearance of an environment changes over time and by
+using this learned knowledge to predict its appearance under
+different environmental conditions. We describe the general
+idea of appearance change prediction (ACP) and investigate
+properties of our novel implementation based on vocabularies
+of superpixels (SP-ACP). This paper deepens the
+understanding of the proposed SP-ACP system and evaluates
+the influence of its parameters. We present the results of a largescale
+experiment on the complete 10 hour Nordland dataset and
+appearance change predictions between different combinations
+of seasons.
+  </span>
+  
+
+  <span class="links">
+  <!-- 
+    [<a class="abstract">Abs</a>]
+   -->
+  
+  
+  <!-- 
+    [<a href="/assets/papers/ACP_RAS.pdf" target="_blank">PDF</a>]
+   -->
+  <!--  -->
+  
+  
+  
+  
+  </span>
+
+
+
+  <!-- Hidden abstract block -->
+
+</div>
+</li></ol>
+<ol class="bibliography"><li>
+
+<div id="Neubert13b">
+  
+    
+    <a href="/assets/papers/ECMR13_ACP.pdf" class="title" target="_blank">Appearance Change Prediction for Long-Term Navigation Across Seasons</a>
+    
+    <span class="author">
+      
+        
+          
+            
+              Peer Neubert,
+            
+          
+        
+      
+        
+          
+            Niko Sünderhauf,
+          
+        
+      
+        
+
+          
+            
+              Peter Protzel.
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>In Proceedings of European Conference on Mobile Robotics (ECMR),</em>
+    
+    
+      2013.
+    
+    </span>
+  
+
+  
+
+  
+  
+
+  <span class="links">
+  <!--  -->
+  
+  
+  <!-- 
+    [<a href="/assets/papers/ECMR13_ACP.pdf" target="_blank">PDF</a>]
+   -->
+  <!--  -->
+  
+  
+  
+  
+  </span>
+
+
+
+  <!-- Hidden abstract block -->
+
+</div>
+</li></ol>
+<ol class="bibliography"><li>
+
+<div id="Suenderhauf13b">
+  
+    
+    <a href="/assets/papers/openseqslam.pdf" class="title" target="_blank">Are We There Yet? Challenging SeqSLAM on a 3000 km Journey Across All
+    Four Seasons.</a>
+    
+    <span class="author">
+      
+        
+          
+            Niko Sünderhauf,
+          
+        
+      
+        
+          
+            
+              Peer Neubert,
+            
+          
+        
+      
+        
+
+          
+            
+              Peter Protzel.
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>In Proceedings of Workshop on Long-Term Autonomy, IEEE International
+    Conference on Robotics and Automation (ICRA),</em>
+    
+    
+      2013.
+    
+    </span>
+  
+
+  
+
+  
+  
+
+  <span class="links">
+  <!--  -->
+  
+  
+  <!-- 
+    [<a href="/assets/papers/openseqslam.pdf" target="_blank">PDF</a>]
+   -->
+  <!--  -->
+  
+  
+  
+  
+  </span>
+
+
+
+  <!-- Hidden abstract block -->
+
+</div>
+</li></ol>
+<ol class="bibliography"><li>
+
+<div id="Suenderhauf13d">
+  
+    
+    <a href="/assets/papers/rss13Workshop.pdf" class="title" target="_blank">Predicting the Change – A Step Towards Life-Long Operation in Everyday Environments</a>
+    
+    <span class="author">
+      
+        
+          
+            Niko Sünderhauf,
+          
+        
+      
+        
+          
+            
+              Peer Neubert,
+            
+          
+        
+      
+        
+
+          
+            
+              Peter Protzel.
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>In Proceedings of Robotics: Science and Systems (RSS) Robotics Challenges
+    and Vision Workshop,</em>
+    
+    
+      2013.
+    
+    </span>
+  
+
+  
+
+  
+  
+
+  <span class="links">
+  <!--  -->
+  
+  
+  <!-- 
+    [<a href="/assets/papers/rss13Workshop.pdf" target="_blank">PDF</a>]
+   -->
+  <!--  -->
+  
+  
+  
+  
+  </span>
+
+
+
+  <!-- Hidden abstract block -->
+
+</div>
+</li></ol>
+
+<h3 id="brief-gist-2011">BRIEF-Gist (2011)</h3>
+<ol class="bibliography"><li>
+
+<div id="Suenderhauf11">
+  
+    
+    <a href="/assets/papers/briefGist.pdf" class="title" target="_blank">BRIEF-Gist – Closing the Loop by Simple Means</a>
+    
+    <span class="author">
+      
+        
+          
+            Niko Sünderhauf,
+          
+        
+      
+        
+
+          
+            
+              Peter Protzel.
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>In Proc. of IEEE Intl. Conf. on Intelligent Robots and Systems (IROS),</em>
+    
+    
+      2011.
+    
+    </span>
+  
+
+  
+
+  
+  
+
+  <span class="links">
+  <!--  -->
+  
+  
+  <!-- 
+    [<a href="/assets/papers/briefGist.pdf" target="_blank">PDF</a>]
+   -->
+  <!--  -->
+  
+  
+  
+  
+  </span>
+
+
+
+  <!-- Hidden abstract block -->
+
+</div>
+</li></ol>
+
+  </article>
+
+  
+
+  
+
+</div>
+
+      </div>
+    </div>
+
+    <footer>
+
+  <div class="wrapper">
+    &copy; Copyright 2025 Niko Sünderhauf.
+    Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+
+    
+  </div>
+
+</footer>
+
+
+    <!-- Load jQuery -->
+<script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
+
+<!-- Load Common JS -->
+<script src="https://nikosuenderhauf.github.io/assets/js/common.js"></script>
+
+
+<!-- Load KaTeX -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.js"></script>
+<script src="https://nikosuenderhauf.github.io/assets/js/katex.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+
+
+
+
+
+<!-- Include custom icon fonts -->
+<link rel="stylesheet" href="https://nikosuenderhauf.github.io/assets/css/fontawesome-all.min.css">
+<link rel="stylesheet" href="https://nikosuenderhauf.github.io/assets/css/academicons.min.css">
+
+<!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-135749210-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+
+  </body>
+
+</html>

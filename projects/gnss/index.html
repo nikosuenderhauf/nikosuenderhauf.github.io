@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Niko Sünderhauf | Robust GNSS-based Vehicle Localization in Urban Environments (2012-2013)</title>
+  <meta name="description" content="">
+
+  <link rel="shortcut icon" href="https://nikosuenderhauf.github.io/assets/img/favicon.ico">
+
+  <link rel="stylesheet" href="https://nikosuenderhauf.github.io/assets/css/main.css">
+  <link rel="canonical" href="https://nikosuenderhauf.github.io/projects/gnss/">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    
+    <span class="site-title">
+        
+        <strong>Niko</strong> Sünderhauf
+    </span>
+    
+
+    <nav class="site-nav">
+      <input type="checkbox" id="nav-trigger" class="nav-trigger">
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewbox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"></path>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"></path>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"></path>
+            </svg>
+          </span>
+        </label>
+
+      <div class="trigger">
+        <!-- About -->
+        <a class="page-link" href="https://nikosuenderhauf.github.io/">about</a>
+
+        <!-- Blog -->
+        <!-- <a class="page-link" href="https://nikosuenderhauf.github.io/blog/">blog</a> -->
+
+        <!-- Pages -->
+        
+          
+        
+          
+            <a class="page-link" href="https://nikosuenderhauf.github.io/cv/">bio</a>
+          
+        
+          
+        
+          
+        
+          
+            <a class="page-link" href="https://nikosuenderhauf.github.io/projects/">research</a>
+          
+        
+          
+            <a class="page-link" href="https://nikosuenderhauf.github.io/publications/">publications</a>
+          
+        
+          
+            <a class="page-link" href="https://nikosuenderhauf.github.io/teaching/">teaching</a>
+          
+        
+          
+            <a class="page-link" href="https://nikosuenderhauf.github.io/jobs/">recruiting</a>
+          
+        
+          
+            <a class="page-link" href="https://nikosuenderhauf.github.io/workshops/">workshops</a>
+          
+        
+          
+        
+          
+        
+
+        <!-- CV link -->
+        <!-- <a class="page-link" href="https://nikosuenderhauf.github.io/assets/pdf/CV.pdf">vitae</a> -->
+
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Robust GNSS-based Vehicle Localization in Urban Environments (2012-2013)</h1>
+    <h5 class="post-description"></h5>
+  </header>
+
+  <article class="post-content Robust GNSS-based Vehicle Localization in Urban Environments (2012-2013) clearfix">
+    <p>A common challenge for vehicle localization based on global navigation satellite systems (GNSS) is the multipath and non-line-of-sight (NLOS) problem.</p>
+
+<p>This problem occurs for instance in urban areas with high buildings: Although the direct line of sight to a satellite is blocked by a building, its signal may still reach the receiver on the ground via one or several reflections on building structures or the ground. Since the signal path is longer for the reflected signal, ranging errors occur that can either prolongate the observed pseudorange or, due to correlation effects, shorten it.</p>
+
+<div class="img_row">
+<img class="col one" src="/assets/img/projects/gnss/multipath.png">
+<img class="col one" src="/assets/img/projects/gnss/nlos.png">
+<img class="col one" src="/assets/img/projects/gnss/3Sats-outlier.png">
+</div>
+<div class="col three caption">
+Multipath and non-line-of-sight effects severely impede the quality of satellite-based localisation in urban environments.
+</div>
+
+<p>Multipath effects can also occur when the direct line of sight is free. In this situation, the signal is received directly, but is also reflected on a building or another structure in the vicinity of the receiver. Hence the signal is received multiple times, leading to correlation errors. The observations that are subject to multipath effects can be considered outliers that can severely bias the least squares estimate of the receiver’s position. Even a single multipath measurement can lead to a defective position estimate. The problem gets worse if one considers that in urban environments not only one, but several satellite observations might be affected by multipath effects.</p>
+
+<h3 id="our-approach">Our Approach</h3>
+
+<p><img class="right pad20" src="/assets/img/projects/gnss/trajectory.png">
+Our work transfers the concept of <a href="/projects/switchableConstraints">switchable constraints</a> from the field of SLAM (Simultaneous Localization and Mapping) in robotics to the domain of GNSS-based localization.</p>
+
+<p>The <a href="/projects/switchableConstraints">switchable constraints</a> approach is very versatile and can be applied to other least squares problems where outliers have to be expected. Therefore we could successfully transfer the gained insights from SLAM into the domain of GNSS-based localization. Our papers (see below) demonstrate how multipath observations can be identified and rejected during the least squares optimization that solves for the position estimate, without additional a priori knowledge or additional sensor information.</p>
+
+<p>We provide an introduction to factor graphs and how the GNSS-based localization problem can be expressed using such a graph structure. This will help the reader to understand the key idea of the proposed robust optimization scheme. The image on the right presents results acquired from a real-world dataset and compares our proposed solution against a highly accurate ground truth.</p>
+
+<h3 id="publications">Publications</h3>
+<ol class="bibliography"><li>
+
+<div id="Suenderhauf13c">
+  
+    
+    <a href="/assets/papers/IV13-NLOS-iSAM2.pdf" class="title" target="_blank">Switchable Constraints and Incremental Smoothing for Online Mitigation
+    of Non-Line-of-Sight and Multipath Effects</a>
+    
+    <span class="author">
+      
+        
+          
+            Niko Sünderhauf,
+          
+        
+      
+        
+          
+            
+              Marcus Obst,
+            
+          
+        
+      
+        
+          
+            
+              Sven Lange,
+            
+          
+        
+      
+        
+          
+            
+              Gerd Wanielik,
+            
+          
+        
+      
+        
+
+          
+            
+              Peter Protzel.
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>In Proc. of IEEE Intelligent Vehicles Symposium (IV),</em>
+    
+    
+      2013.
+    
+    </span>
+  
+
+  
+
+  
+  <a href="/assets/papers/IV13-NLOS-iSAM2.pdf" target="_blank"><img class="paper_thumb" src="/assets/paper-thumbnails/suenderhauf13iv.png"></a>
+  
+  
+  <span class="abstract">
+    Reliable vehicle positioning is a crucial requirement
+for many applications of advanced driver assistance
+systems. While satellite navigation provides a reasonable performance
+in general, it often suffers from multipath and non-line-of-sight
+errors when it is applied in urban areas and therefore
+does not guarantee consistent results anymore. Our paper
+proposes a novel online method that identifies and excludes
+the affected pseudorange measurements. Our approach does
+not depend on additional sensors, maps, or environmental
+models. We rather formulate the positioning problem as a
+Bayesian inference problem in a factor graph and combine
+the recently developed concept of switchable constraints with
+an algorithm for efficient incremental inference in such graphs.
+We furthermore introduce the concepts of auxiliary updates and
+factor graph pruning in order to accelerate convergence while
+keeping the graph size and required runtime bounded. A realworld
+experiment demonstrates that the resulting algorithm is
+able to successfully localize despite a large number of satellite
+observations are influenced by NLOS or multipath effects.
+  </span>
+  
+
+  <span class="links">
+  <!-- 
+    [<a class="abstract">Abs</a>]
+   -->
+  
+  
+  <!-- 
+    [<a href="/assets/papers/IV13-NLOS-iSAM2.pdf" target="_blank">PDF</a>]
+   -->
+  <!--  -->
+  
+  
+  
+  
+  </span>
+
+
+
+  <!-- Hidden abstract block -->
+
+</div>
+</li></ol>
+<ol class="bibliography"><li>
+
+<div id="Suenderhauf13">
+  
+    
+    <a href="/assets/papers/suenderhauf13delays.pdf" class="title" target="_blank">Incremental Sensor Fusion in Factor Graphs with Unknown Delays</a>
+    
+    <span class="author">
+      
+        
+          
+            Niko Sünderhauf,
+          
+        
+      
+        
+          
+            
+              Sven Lange,
+            
+          
+        
+      
+        
+
+          
+            
+              Peter Protzel.
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>In Proc. of ESA Symposium on Advanced Space Technologies in Robotics
+    and Automation (ASTRA),</em>
+    
+    
+      2013.
+    
+    </span>
+  
+
+  
+
+  
+  <a href="/assets/papers/suenderhauf13delays.pdf" target="_blank"><img class="paper_thumb" src="/assets/paper-thumbnails/suenderhauf13delays.png"></a>
+  
+  
+  <span class="abstract">
+     Our paper addresses the problem of performing
+incremental sensor fusion in factor graphs when
+some of the sensor information arrive with a significant
+unknown delay. We develop and compare two techniques
+to handle such delayed measurements under mild conditions
+on the characteristics of that delay: We consider
+the unknown delay to be bounded and quantizable into
+multiples of the state transition cycle time. The proposed
+methods are evaluated using a simulation of a dynamic
+3-DoF system that fuses odometry and GPS measurements.
+  </span>
+  
+
+  <span class="links">
+  <!-- 
+    [<a class="abstract">Abs</a>]
+   -->
+  
+  
+  <!-- 
+    [<a href="/assets/papers/suenderhauf13delays.pdf" target="_blank">PDF</a>]
+   -->
+  <!--  -->
+  
+  
+  
+  
+  </span>
+
+
+
+  <!-- Hidden abstract block -->
+
+</div>
+</li></ol>
+<ol class="bibliography"><li>
+
+<div id="Suenderhauf12c">
+  
+    
+    <a href="/assets/papers/IV12-multipathMitigation.pdf" class="title" target="_blank">Multipath Mitigation in GNSS-Based Localization using Robust Optimization</a>
+    
+    <span class="author">
+      
+        
+          
+            Niko Sünderhauf,
+          
+        
+      
+        
+          
+            
+              Marcus Obst,
+            
+          
+        
+      
+        
+          
+            
+              Gerd Wanielik,
+            
+          
+        
+      
+        
+
+          
+            
+              Peter Protzel.
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>In Proc. of IEEE Intelligent Vehicles Symposium (IV),</em>
+    
+    
+      2012.
+    
+    </span>
+  
+
+  
+
+  
+  <a href="/assets/papers/IV12-multipathMitigation.pdf" target="_blank"><img class="paper_thumb" src="/assets/paper-thumbnails/suenderhauf12iv.png"></a>
+  
+  
+  <span class="abstract">
+    Our paper adapts recent advances in the SLAM
+(Simultaneous Localization and Mapping) literature to the
+problem of multipath mitigation and proposes a novel approach
+to successfully localize a vehicle despite a significant
+number of multipath observations. We show that GNSS-based
+localization problems can be modelled as factor graphs and
+solved using efficient nonlinear least squares methods that
+exploit the sparsity inherent in the problem formulation. Using
+a recently developed novel approach for robust optimization,
+satellite observations that are subject to multipath errors can be
+successfully identified and rejected during the optimization process.
+We demonstrate the feasibility of the proposed approach
+on a real-world urban dataset and compare it to an existing
+method of multipath detection.
+  </span>
+  
+
+  <span class="links">
+  <!-- 
+    [<a class="abstract">Abs</a>]
+   -->
+  
+  
+  <!-- 
+    [<a href="/assets/papers/IV12-multipathMitigation.pdf" target="_blank">PDF</a>]
+   -->
+  <!--  -->
+  
+  
+  
+  
+  </span>
+
+
+
+  <!-- Hidden abstract block -->
+
+</div>
+</li></ol>
+<ol class="bibliography"><li>
+
+<div id="Suenderhauf12b">
+  
+    
+    <a href="http://nbn-resolving.de/urn:nbn:de:bsz:ch1-qucosa-86443" class="title" target="_blank">Robust Optimization for Simultaneous Localization and Mapping</a>
+    
+    <span class="author">
+      
+        
+
+          
+            Niko Sünderhauf.
+        
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>PhD Thesis. Chemnitz University of Technology</em>
+    
+    
+      2012.
+    
+    </span>
+  
+
+  
+
+  
+  
+
+  <span class="links">
+  <!--  -->
+  
+  
+  <!-- 
+    [<a href="http://nbn-resolving.de/urn:nbn:de:bsz:ch1-qucosa-86443" target="_blank">PDF</a>]
+   -->
+  <!--  -->
+  
+  
+  
+  
+  </span>
+
+
+
+  <!-- Hidden abstract block -->
+
+</div>
+</li></ol>
+
+  </article>
+
+  
+
+  
+
+</div>
+
+      </div>
+    </div>
+
+    <footer>
+
+  <div class="wrapper">
+    © Copyright 2025 Niko Sünderhauf.
+    Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+
+    
+  </div>
+
+</footer>
+
+
+    <!-- Load jQuery -->
+<script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
+
+<!-- Load Common JS -->
+<script src="https://nikosuenderhauf.github.io/assets/js/common.js"></script>
+
+
+<!-- Load KaTeX -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.js"></script>
+<script src="https://nikosuenderhauf.github.io/assets/js/katex.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+
+
+
+
+
+<!-- Include custom icon fonts -->
+<link rel="stylesheet" href="https://nikosuenderhauf.github.io/assets/css/fontawesome-all.min.css">
+<link rel="stylesheet" href="https://nikosuenderhauf.github.io/assets/css/academicons.min.css">
+
+<!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-135749210-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+
+  </body>
+
+</html>
