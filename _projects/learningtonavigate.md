@@ -13,14 +13,14 @@ We combine modern techniques such as imitation learning, LLMs, Vision-Language M
 
 
 ### Join us for your PhD or Postdoc!
-I am hiring a Postdoc in Robot Learning starting immediately (from September 2025). Please [check here](../../jobs/postdoc_2025) if you are interested.
+<!-- I am hiring a Postdoc in Robot Learning starting immediately (from September 2025). Please [check here](../../jobs/postdoc_2025) if you are interested. -->
 
 If you want to do a PhD with us in this area, read more information [here](../../jobs).
 
 ### Publications
 
+{% bibliography -f conferences -q @*[id=abouchakra2026realisim]* %}
 {% bibliography -f conferences -q @*[id=rana2025policy]* %}
-{% bibliography -f arxiv -q @*[id=abou-chakra2025real]* %}
 {% bibliography -f conferences -q @*[id=rana2025imle]* %}
 {% bibliography -f conferences -q @*[id=abou-chakra2024physically]* %}
 {% bibliography -f conferences -q @*[id=padalkar2023open]* %}

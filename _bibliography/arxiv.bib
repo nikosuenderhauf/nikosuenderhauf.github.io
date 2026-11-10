@@ -1,16 +1,42 @@
 ---
 ---
 
-@article{abou-chakra2025real,
-  title={Real-is-Sim: Bridging the Sim-to-Real Gap with a Dynamic Digital Twin for Real-World Robot Policy Evaluation},
-  author={Abou-Chakra, Jad and Sun, Lingfeng and Rana, Krishan and May, Brandon and Schmeckpeper, Karl and Suenderhauf, Niko and Minniti, Maria Vittoria and Herlant, Laura},
-  journal={arXiv preprint arXiv:2504.03597},
-  year={2025},
-  arxiv={2504.03597},
-  link={https://arxiv.org/abs/2504.03597},
-  thumb={abou-chakra2025real.png},
-  abstract={We introduce real-is-sim, a new approach to integrating simulation into behavior cloning pipelines. In contrast to real-only methods, which lack the ability to safely test policies before deployment, and sim-to-real methods, which require complex adaptation to cross the sim-to-real gap, our framework allows policies to seamlessly switch between running on real hardware and running in parallelized virtual environments. At the center of real-is-sim is a dynamic digital twin, powered by the Embodied Gaussian simulator, that synchronizes with the real world at 60Hz. This twin acts as a mediator between the behavior cloning policy and the real robot. Policies are trained using representations derived from simulator states and always act on the simulated robot, never the real one. During deployment, the real robot simply follows the simulated robot's joint states, and the simulation is continuously corrected with real world measurements. This setup, where the simulator drives all policy execution and maintains real-time synchronization with the physical world, shifts the responsibility of crossing the sim-to-real gap to the digital twin's synchronization mechanisms, instead of the policy itself.},
-  html={https://real-is-sim.github.io/}
+@article{galappaththige2026oscdpp,
+  title={{O-SCD++}: Replay-Free Online Scene Change Detection via Recursive Evidence Fusion},
+  author={Galappaththige, Chamuditha Jayanga and Lai, Jason and Windrim, Lloyd and Patten, Timothy and Dansereau, Donald G. and Suenderhauf, Niko and Miller, Dimity},
+  journal={arXiv preprint arXiv:2610.24462},
+  year={2026},
+  arxiv={2610.24462},
+  link={https://arxiv.org/abs/2610.24462},
+  html={https://chumsy0725.github.io/O-SCD/plusplus/},
+  code={https://github.com/Chumsy0725/O-SCD},
+  thumb={galappaththige2026oscdpp.jpg},
+  abstract={We present a replay-free formulation for online scene change detection. Since the reference map remains fixed, each observation can be transferred directly to its Gaussians with one backward renderer pass, reducing multi-view fusion to an exact two-scalar recursion per primitive without storing or revisiting past observations. The self-supervised objective also yields an exact label-free decision threshold. On PASLCD, the method improves mean intersection over union from 0.489 to 0.575 and throughput from 11.8 to 25.6 frames per second.}
+}
+
+@article{lai2026plenoci,
+  title={{PlenoCI}: Plenoptic CharacterIstics for View Dependence Aware Change Classification},
+  author={Lai, Jason and Galappaththige, Chamuditha Jayanga and Suenderhauf, Niko and Miller, Dimity and Dansereau, Donald G.},
+  journal={arXiv preprint arXiv:2609.28930},
+  year={2026},
+  arxiv={2609.28930},
+  link={https://arxiv.org/abs/2609.28930},
+  html={https://js0n-lai.github.io/plenoci/},
+  thumb={lai2026plenoci.webp},
+  abstract={We introduce Plenoptic CharacterIstics, a feature built from the plenoptic field approximated by radiance-field representations such as 3D Gaussian Splatting. Closed-form analytic plenoptic derivatives capture view-dependent structures while ignoring Lambertian texture and remain robust to underconstrained reconstructions. An instance-aware change pipeline achieves state-of-the-art results on CL-Splats, and PlenoCI classifies changes as geometric or appearance-based with balanced accuracy comparable to the strongest baseline.}
+}
+
+@article{galappaththige2026gsdiff,
+  title={From Pixels to Primitives: Scene Change Detection in 3D Gaussian Splatting},
+  author={Galappaththige, Chamuditha Jayanga and Lai, Jason and Patten, Timothy and Dansereau, Donald and Suenderhauf, Niko and Miller, Dimity},
+  journal={arXiv preprint arXiv:2605.07203},
+  year={2026},
+  arxiv={2605.07203},
+  link={https://arxiv.org/abs/2605.07203},
+  html={https://chumsy0725.github.io/GS-DIFF/},
+  code={https://github.com/Chumsy0725/GS-DIFF},
+  thumb={galappaththige2026gsdiff.png},
+  abstract={We show that native 3D Gaussian attributes---position, anisotropic covariance, and color---carry sufficient signal for scene change detection without rendering and comparing images. GS-Diff models geometric and photometric drift between independently optimized reconstructions and weights change scores by per-primitive observability. The method produces multi-view-consistent change maps by construction, separates geometric from appearance changes, and improves mean Intersection over Union by approximately 17 percent over the prior state of the art.}
 }
 
 @article{raine2024reducing,

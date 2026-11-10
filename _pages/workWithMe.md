@@ -9,13 +9,13 @@ enable_katex: true
 
 ---
 
-### Postdoctoral Research Fellow
-I am offering a **24 month contract for a postdoc** to work with me on Robot Learning. Please read the [position description](postdoc_2025) (advertised: September 2025) and contact me if you are interested.
+<!-- ### Postdoctoral Research Fellow
+I am offering a **24 month contract for a postdoc** to work with me on Robot Learning. Please read the [position description](postdoc_2025) (advertised: September 2025) and contact me if you are interested. -->
 
 ### I currently have no open positions for postdocs or PhD students.
 Please check back in the future for new opportunities. 
 
-A new round of PhD scholarships at QUT will be advertised in mid-2026 for a start in 2027.
+A new round of PhD scholarships at QUT will be advertised in mid-2027 for a start in 2028.
 
 <!-- 
 ### Apply now for your PhD with me in 2025!

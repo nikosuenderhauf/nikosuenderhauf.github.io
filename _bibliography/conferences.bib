@@ -1,6 +1,44 @@
 ---
 ---
 
+@inproceedings{galappaththige2026uncertainty,
+  title={Predictive Photometric Uncertainty in Gaussian Splatting for Novel View Synthesis},
+  author={Galappaththige, Chamuditha Jayanga and Gottwald, Thomas and Stehr, Peter and Heinert, Edgar and Suenderhauf, Niko and Miller, Dimity and Rottmann, Matthias},
+  booktitle={European Conference on Computer Vision (ECCV)},
+  year={2026},
+  arxiv={2603.22786},
+  link={https://arxiv.org/abs/2603.22786},
+  html={https://chumsy0725.github.io/3DGS-Uncertainty/},
+  thumb={galappaththige2026uncertainty.png},
+  abstract={We introduce a lightweight, plug-and-play framework for pixel-wise, view-dependent predictive uncertainty estimation in 3D Gaussian Splatting. The post-hoc method formulates uncertainty as a Bayesian-regularized linear least-squares optimization over reconstruction residuals, extracting a per-primitive uncertainty channel without modifying the scene representation or degrading visual fidelity. We demonstrate that this reliability signal improves state-of-the-art performance across active view selection, pose-agnostic scene change detection, and pose-agnostic anomaly detection.}
+}
+
+@inproceedings{galappaththige2026online,
+  title={Changes in Real Time: Online Scene Change Detection with Multi-View Fusion},
+  author={Galappaththige, Chamuditha Jayanga and Lai, Jason and Windrim, Lloyd and Dansereau, Donald and Suenderhauf, Niko and Miller, Dimity},
+  booktitle={IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2026},
+  arxiv={2511.12370},
+  link={https://openaccess.thecvf.com/content/CVPR2026/html/Galappaththige_Changes_in_Real_Time_Online_Scene_Change_Detection_with_Multi-View_CVPR_2026_paper.html},
+  html={https://chumsy0725.github.io/O-SCD/},
+  code={https://github.com/Chumsy0725/O-SCD},
+  award={CVPR Highlight},
+  thumb={galappaththige2026online.jpg},
+  abstract={We present an online scene change detection approach that is pose-agnostic, label-free, and multi-view consistent. A self-supervised fusion loss combines change cues across observations, while fast PnP-based pose estimation and change-guided updates maintain a 3D Gaussian Splatting representation. The method operates at over 10 FPS and achieves state-of-the-art performance, surpassing both online and offline baselines on challenging real-world datasets.}
+}
+
+@inproceedings{abouchakra2026realisim,
+  title={Real-is-Sim: Bridging the Sim-to-Real Gap with a Dynamic Digital Twin for Real-World Robot Policy Evaluation},
+  author={Abou-Chakra, Jad and Sun, Lingfeng and Rana, Krishan and May, Brandon and Schmeckpeper, Karl and Suenderhauf, Niko and Minniti, Maria Vittoria and Herlant, Laura},
+  booktitle={IEEE International Conference on Robotics and Automation (ICRA)},
+  year={2026},
+  arxiv={2504.03597},
+  link={https://arxiv.org/abs/2504.03597},
+  html={https://real-is-sim.github.io/},
+  thumb={abou-chakra2025real.png},
+  abstract={We introduce real-is-sim, a new approach to integrating simulation into behavior cloning pipelines. At its center is a dynamic digital twin, powered by the Embodied Gaussian simulator, that synchronizes with the real world at 60 Hz. Policies train on simulator-derived representations and always act on the simulated robot; during deployment, the real robot follows the simulated joint states while real-world measurements continuously correct the simulation. This shifts responsibility for crossing the sim-to-real gap from the policy to the digital twin's synchronization mechanisms.}
+}
+
 @inproceedings{rana2025policy,
   title={{Learning from 10 Demos: Generalisable and Sample-Efficient Policy Learning with Oriented Affordance Frames}},
   author={Rana, Krishan and Abou-Chakra, Jad and Garg, Sourav and Lee, Robert and Reid, Ian and S{\"u}nderhauf, Niko},  
